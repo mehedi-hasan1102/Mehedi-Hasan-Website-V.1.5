@@ -1,105 +1,127 @@
 import React from "react";
-import { Helmet } from 'react-helmet-async';
-import { FileText, Mail } from 'lucide-react';
+import { Download } from "lucide-react";
+import {
+  SiReact,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiTailwindcss,
+  SiFirebase,
+  SiJavascript,
+  SiTypescript,
+  SiNextdotjs,
+} from "react-icons/si";
+import Typewriter from "typewriter-effect";
 
-const phrases = [
-  "I craft stunning UIs with React & Tailwind",
-  "I build full-stack web apps with the MERN stack",
-  "I develop responsive, scalable applications using MongoDB, Express, React & Node.js",
-  "I create dynamic APIs with Express and Node.js",
-  "I design and manage NoSQL databases with MongoDB",
-  "I implement seamless user experiences with React",
-  "I integrate backend services and frontend interfaces",
+const techIcons = [
+  { icon: SiReact, label: "React" },
+  { icon: SiNextdotjs, label: "Next.js" },
+  { icon: SiNodedotjs, label: "Node.js" },
+  { icon: SiExpress, label: "Express.js" },
+  { icon: SiMongodb, label: "MongoDB" },
+  { icon: SiTailwindcss, label: "Tailwind CSS" },
+  { icon: SiFirebase, label: "Firebase" },
+  { icon: SiJavascript, label: "JavaScript" },
+  { icon: SiTypescript, label: "TypeScript" },
 ];
-
-const Typewriter = () => {
-  const [text, setText] = React.useState("");
-  const [phraseIndex, setPhraseIndex] = React.useState(0);
-  const [charIndex, setCharIndex] = React.useState(0);
-  const [deleting, setDeleting] = React.useState(false);
-
-  React.useEffect(() => {
-    const timeout = setTimeout(() => {
-      const current = phrases[phraseIndex];
-      if (!deleting) {
-        setText(current.substring(0, charIndex + 1));
-        setCharIndex((prev) => prev + 1);
-        if (charIndex + 1 === current.length) setDeleting(true);
-      } else {
-        setText(current.substring(0, charIndex - 1));
-        setCharIndex((prev) => prev - 1);
-        if (charIndex === 0) {
-          setDeleting(false);
-          setPhraseIndex((prev) => (prev + 1) % phrases.length);
-        }
-      }
-    }, deleting ? 40 : 120);
-    return () => clearTimeout(timeout);
-  }, [charIndex, deleting, phraseIndex]);
-
-  return (
-    <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center md:text-left">
-      {text}
-      <span className="border-r-2 border-current animate-pulse ml-1"></span>
-    </h1>
-  );
-};
 
 const HeroSection = () => {
   return (
-    <>
-      <Helmet>
-        <title>Mehedi Hasan | Full-Stack Developer Portfolio</title>
-      </Helmet>
-
-      <section id="home">
-        <div className="md:pl-24 min-h-screen px-6 py-20 bg-base-100 text-base-content flex items-center">
-          <main className="flex flex-col md:flex-row items-center max-w-7xl mx-auto gap-12 w-full">
-
-            {/* Text content */}
-            <div className="flex-1 text-center md:text-left px-6 py-10 space-y-8">
-              <p className="text-xl font-light font-serif">Hi, I’m</p>
-              <h1 className="text-4xl sm:text-5xl font-bold font-serif">Mehedi Hasan</h1>
-              <Typewriter />
-
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start ">
-                <a
-                  href="https://drive.google.com/uc?export=download&id=1855oZnOicLuZU-ZLXQUxO-hj1hXI9LH8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline flex items-center gap-2 px-5 py-2 font-semibold shadow hover:scale-105 transition-transform duration-300"
-                >
-                  <FileText className="w-5 h-5" />
-                  My Resume
-                </a>
-
-                <a
-                  href="#contact"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="btn btn-outline flex items-center gap-2 px-5 py-2 font-semibold shadow hover:scale-105 transition-transform duration-300"
-                >
-                  <Mail className="w-5 h-5" />
-                  Contact Me
-                </a>
-              </div>
-            </div>
-
-            {/* Image */}
-            <div className="flex-1 flex justify-center order-first md:order-last mt-8 md:mt-0">
+    <section className="max-w-6xl min-h-[80vh] mx-auto px-6 py-16 mt-24 flex items-center justify-center bg-base-100 transition-colors duration-300">
+      <div className="grid md:grid-cols-2 items-center gap-12 w-full">
+        {/* Left: Profile Image */}
+        <div className="flex justify-center relative">
+          <div className="w-64 h-72 md:w-72 md:h-80 relative">
+            <div
+              className="w-full h-full overflow-hidden"
+              style={{
+                clipPath:
+                  "polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)",
+              }}
+            >
               <img
                 src="https://i.ibb.co/jZkXcSJJ/6b2a9bc5-6b88-468c-93a6-ff8d4e71cd1c33.png"
                 alt="Mehedi Hasan"
-                className="bg-base-200 text-base-content max-h-[500px] w-auto shadow-lg p-6 md:p-8 border border-base-content/10"
+                className="w-full h-full object-cover bg-base-200"
               />
             </div>
-            
-          </main>
+            <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-primary text-primary-content px-4 py-2 rounded-full font-semibold text-sm shadow-md">
+              &lt;/&gt;
+            </div>
+          </div>
         </div>
-      </section>
-    </>
+
+        {/* Right: Content */}
+        <div>
+          <span className="text-sm text-base-content/60 font-mono">
+            &lt;span&gt;Hey, I’m Mehedi&lt;/span&gt;
+          </span>
+
+          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight mt-2 text-base-content">
+            Junior <span className="text-primary">{`{Full Stack}`}</span> Web Developer{" "}
+            <span className="inline-block w-44">
+              <Typewriter
+                options={{
+                  strings: [" _ _", " _ _ _", " _ _ _ _"],
+                  autoStart: true,
+                  loop: true,
+                  delay: 75,
+                  deleteSpeed: 50,
+                  pauseFor: 2000,
+                }}
+              />
+            </span>
+          </h1>
+
+          <p className="text-base text-base-content/80 mt-4 max-w-xl">
+            I specialize in building high-performance, scalable web and mobile
+            applications using modern frameworks and tools such as React,
+            Node.js, MongoDB, and more.
+          </p>
+
+          {/* Tech Icons Scroll Section */}
+          <div className="mt-6 flex items-center gap-2">
+            <div className="relative overflow-hidden max-w-[260px] md:max-w-[300px] lg:max-w-[360px]">
+              <div className="flex items-center gap-4 animate-scroll-horizontal w-max pr-16">
+                {techIcons.concat(techIcons).map(({ icon: Icon, label }, idx) => (
+                  <div
+                    key={idx}
+                    className="w-12 h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition duration-300"
+                    title={label}
+                  >
+                    <Icon className="w-6 h-6 text-primary" />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <span className="text-sm font-mono text-base-content/60">...and more</span>
+          </div>
+
+          {/* Download CV Button */}
+          <a
+            href="/Mehedi_Hasan_CV.pdf"
+            download
+            className="mt-8 inline-flex items-center gap-2 text-primary hover:underline font-mono transition-colors duration-300"
+          >
+            <Download size={18} />
+            [ Download CV ]
+          </a>
+        </div>
+      </div>
+
+      {/* Scroll Animation */}
+      <style>
+        {`
+          @keyframes scroll-horizontal {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .animate-scroll-horizontal {
+            animation: scroll-horizontal 25s linear infinite;
+          }
+        `}
+      </style>
+    </section>
   );
 };
 

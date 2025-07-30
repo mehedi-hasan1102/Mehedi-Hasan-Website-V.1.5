@@ -18,13 +18,15 @@ import ContactMe from '../components/ContactMe';
 import NotFound from '../components/NotFound';
 
 import { HelmetProvider } from 'react-helmet-async';
+import Footer from '../components/footer';
+import SkillsSection from '../components/SkillsSection';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     children: [
-      { index: true, element: <><HeroSection /><AboutMe /><ProjectSection /><ContactMe /></> },
+      { index: true, element: <><HeroSection /><AboutMe /><SkillsSection /><ProjectSection /><ContactMe /><Footer/> </> },
       { path: 'blogs', element: <Blogs /> },
     ],
   },

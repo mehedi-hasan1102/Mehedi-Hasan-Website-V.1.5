@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Phone, Mail, MapPin } from "lucide-react"; 
+import { Phone, Mail, MapPin } from "lucide-react";
 
 const ContactMe = () => {
   const formRef = useRef();
@@ -11,10 +11,10 @@ const ContactMe = () => {
 
     emailjs
       .sendForm(
-        "service_o3qo36f", // your EmailJS service ID
-        "template_z368suy", // your EmailJS template ID
+        "service_o3qo36f",
+        "template_z368suy",
         formRef.current,
-        "UFLgRUB3KBnkwrw5_" // your public key
+        "UFLgRUB3KBnkwrw5_"
       )
       .then(
         () => {
@@ -28,115 +28,108 @@ const ContactMe = () => {
   };
 
   return (
-   
     <section
       id="contact"
-      className="min-h-screen  items-center justify-center bg-base-100 text-white px-6 py-20"
+      className="min-h-screen bg-base-100 text-base-content py-20 px-6"
     >
-      <div>  <h2 className="text-3xl md:text-4xl font-semibold text-green-400 mb-8">
-            Let’s connect
-          </h2></div>
+      <div className="max-w-5xl mx-auto w-full">
+        <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-8">
+          Let’s connect
+        </h2>
 
-      <div className=" flex max-w-6xl w-full  md:grid-cols-2 gap-12">
-
-        
-        {/* Left Side: Form */}
-        <div>
-         
-
-          <form
-            ref={formRef}
-            onSubmit={sendEmail}
-            className="flex flex-col gap-4"
-          >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your name"
-                required
-                className="w-full bg-transparent border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-green-400"
-              />
-              <input
-                type="text"
-                name="phone"
-                placeholder="Phone"
-                className="w-full bg-transparent border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-green-400"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-                className="w-full bg-transparent border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-green-400"
-              />
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                className="w-full bg-transparent border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-green-400"
-              />
-            </div>
-
-            <textarea
-              name="message"
-              rows="6"
-              placeholder="Message"
-              required
-              className="bg-transparent border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-green-400"
-            ></textarea>
-
-            <button
-              type="submit"
-              className="flex items-center gap-2 text-white mt-2 font-medium hover:text-green-400 transition"
+        <div className="flex flex-col md:flex-row gap-12">
+          {/* Form */}
+          <div className="w-full md:w-1/2">
+            <form
+              ref={formRef}
+              onSubmit={sendEmail}
+              className="flex flex-col gap-4"
             >
-              Send Message <span className="text-green-400">↗</span>
-            </button>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                  className="input input-bordered w-full"
+                />
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone"
+                  className="input input-bordered w-full"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  className="input input-bordered w-full"
+                />
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  className="input input-bordered w-full"
+                />
+              </div>
 
-            {success === true && (
-              <p className="text-green-400 mt-2">Message sent successfully!</p>
-            )}
-            {success === false && (
-              <p className="text-red-400 mt-2">Failed to send. Try again.</p>
-            )}
-          </form>
-        </div>
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Message"
+                required
+                className="textarea textarea-bordered w-full"
+              ></textarea>
 
-        {/* Right Side: Contact Info */}
-        <div className="flex flex-col gap-6 mt-10 md:mt-0">
-          {/* Phone */}
-          <div className="flex items-center gap-4">
-            <div className="p-3 rounded-md border border-gray-700 text-green-400">
-              <Phone size={20} />
-            </div>
-            <div>
-              <p className="text-gray-400 text-sm">Phone Number</p>
-              <p className="font-mono">+1-234-567-8901</p>
-            </div>
+            
+
+<button
+  type="submit"
+  className="flex items-center gap-2 mt-2 font-medium text-primary hover:text-primary/80 transition"
+>
+  Send Message <span>↗</span>
+</button>
+
+              {success === true && (
+                <p className="text-success mt-2">Message sent successfully!</p>
+              )}
+              {success === false && (
+                <p className="text-error mt-2">Failed to send. Try again.</p>
+              )}
+            </form>
           </div>
 
-          {/* Email */}
-          <div className="flex items-center gap-4">
-            <div className="p-3 rounded-md border border-gray-700 text-green-400">
-              <Mail size={20} />
+          {/* Contact Info */}
+          <div className="w-full md:w-1/2 flex flex-col gap-6">
+            <div className="flex items-center gap-4">
+              <div className="p-3 rounded-md border border-base-300 text-primary">
+                <Phone size={20} />
+              </div>
+              <div>
+                <p className="text-sm opacity-70">Phone Number</p>
+                <p className="font-mono">+8801747874773</p>
+              </div>
             </div>
-            <div>
-              <p className="text-gray-400 text-sm">Email</p>
-              <p className="font-mono">contact@william.design</p>
-            </div>
-          </div>
 
-         
-         
-
-          {/* Address */}
-          <div className="flex items-center gap-4">
-            <div className="p-3 rounded-md border border-gray-700 text-green-400">
-              <MapPin size={20} />
+            <div className="flex items-center gap-4">
+              <div className="p-3 rounded-md border border-base-300 text-primary">
+                <Mail size={20} />
+              </div>
+              <div>
+                <p className="text-sm opacity-70">Email</p>
+                <p className="font-mono">mehedi.hasan11023@gmail.com</p>
+              </div>
             </div>
-            <div>
-              <p className="text-gray-400 text-sm">Address</p>
-              <p className="font-mono">0811 Erdman Prairie, Joaville CA</p>
+
+            <div className="flex items-center gap-4">
+              <div className="p-3 rounded-md border border-base-300 text-primary">
+                <MapPin size={20} />
+              </div>
+              <div>
+                <p className="text-sm opacity-70">Address</p>
+                <p className="font-mono">Mymensingh,Bangladesh</p>
+              </div>
             </div>
           </div>
         </div>

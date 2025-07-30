@@ -8,7 +8,7 @@ const Layout = () => {
   return (
     <>
       <Navbar />
-      <SocialSidebar />
+      
       <main>
         <Outlet />
       </main>
