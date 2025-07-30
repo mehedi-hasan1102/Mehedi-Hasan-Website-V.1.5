@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Menu,
   X,
@@ -9,7 +10,13 @@ import {
   Sun,
 } from "lucide-react";
 
-const navItems = ["About me", "Resume", "Services", "Portfolio", "Blog", "Contact"];
+const navItems = [
+  { label: "Home", to: "/" },
+  { label: "About me", to: "#about-me" },
+  { label: "Portfolio", to: "#portfolio" },
+  { label: "Blog", to: "/blog" },
+  { label: "Contact", to: "#contact-me" },
+];
 
 const socialLinks = [
   { icon: Facebook, url: "#", label: "Facebook" },
@@ -35,6 +42,31 @@ const Navbar = () => {
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
+  const renderNavItem = (item) => {
+    if (item.to.startsWith("/")) {
+      return (
+        <Link
+          key={item.label}
+          to={item.to}
+          className="hover:text-primary transition"
+          onClick={() => setMenuOpen(false)}
+        >
+          {item.label}
+        </Link>
+      );
+    }
+    return (
+      <a
+        key={item.label}
+        href={item.to}
+        className="hover:text-primary transition"
+        onClick={() => setMenuOpen(false)}
+      >
+        {item.label}
+      </a>
+    );
+  };
+
   return (
     <header className="max-w-5xl fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] md:w-[90%]">
       <div className="flex items-center justify-between bg-base-100/90 text-base-content px-6 py-3 rounded-xl shadow-lg backdrop-blur-md border border-base-300">
@@ -48,15 +80,7 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6 text-base-content/80">
-          {navItems.map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase().replace(/\s/g, "-")}`}
-              className="hover:text-primary transition"
-            >
-              {item}
-            </a>
-          ))}
+          {navItems.map(renderNavItem)}
 
           {/* Social Icons */}
           <div className="flex items-center gap-4 ml-4">
@@ -94,16 +118,7 @@ const Navbar = () => {
       {/* Mobile Dropdown */}
       {menuOpen && (
         <div className="mt-2 bg-base-100/90 backdrop-blur-md border border-base-300 rounded-xl text-base-content px-6 py-4 flex flex-col gap-4 md:hidden">
-          {navItems.map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase().replace(/\s/g, "-")}`}
-              className="hover:text-primary transition"
-              onClick={() => setMenuOpen(false)}
-            >
-              {item}
-            </a>
-          ))}
+          {navItems.map(renderNavItem)}
 
           {/* Social + Theme */}
           <div className="flex items-center gap-4 mt-4">

@@ -32,7 +32,7 @@ const techIconsRow2 = [
 
 const SkillsSection = () => {
   return (
-    <section className="bg-base-100 text-base-content font-mono py-16 px-4">
+    <section id="resume" className="bg-base-100 text-base-content font-mono py-16 px-4">
       <div className="max-w-5xl mx-auto border border-primary rounded-md p-8">
         <div className="mb-6">
           <p className="text-sm text-primary">• Projects</p>

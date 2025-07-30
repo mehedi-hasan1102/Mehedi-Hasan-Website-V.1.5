@@ -29,7 +29,7 @@ const ContactMe = () => {
 
   return (
     <section
-      id="contact"
+      id="contact-me"
       className="min-h-screen bg-base-100 text-base-content py-20 px-6"
     >
       <div className="max-w-5xl mx-auto w-full">

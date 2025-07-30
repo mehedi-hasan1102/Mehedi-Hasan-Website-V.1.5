@@ -251,7 +251,7 @@ const ProjectSection = () => {
   const latestProjects = [...projects].slice(-3).reverse(); // latest 3
 
   return (
-    <section className="bg-base-100 py-10 px-4 font-mono max-w-5xl mx-auto">
+    <section id="portfolio" className="bg-base-100 py-10 px-4 font-mono max-w-5xl mx-auto">
       <h2 className="text-sm text-primary tracking-wide">* Projects</h2>
       <h1 className="text-3xl font-bold mb-8 text-base-content">My Recent Works</h1>
 

@@ -3,7 +3,7 @@ import { GraduationCap, BookOpenCheck } from "lucide-react";
 
 const AboutSections = () => {
   return (
-    <section className="bg-base-100 text-base-content font-mono py-16 px-6">
+    <section id="about-me" className="bg-base-100 text-base-content font-mono py-16 px-6">
       <div className="max-w-5xl mx-auto space-y-16">
         {/* Education + Research Section */}
         <div className="grid md:grid-cols-2 gap-10">
