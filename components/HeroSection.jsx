@@ -55,11 +55,11 @@ const HeroSection = () => {
         <div>
           {/* This line contains Mehedi Hasan + typing effect */}
           <span className="text-sm text-base-content/60 font-mono flex items-center gap-2">
-            &lt;span&gt;Hey, I’m Mehedi Hasan
+            &lt;span&gt;Hey, I’m 
             <span className="text-primary">
               <Typewriter
                 options={{
-                  strings: ["_"],
+                  strings: ["Mehedi Hasan"],
                   autoStart: true,
                   loop: true,
                   delay: 100,
