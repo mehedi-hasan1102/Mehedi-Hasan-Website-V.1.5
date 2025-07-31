@@ -37,7 +37,7 @@ const Footer = () => {
               <FaXTwitter />
             </a>
             <a
-              href="https://www.linkedin.com/in/mehedihasan1102/"
+              href="https://www.linkedin.com/in/mehedi-hasan1102/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary transition"
