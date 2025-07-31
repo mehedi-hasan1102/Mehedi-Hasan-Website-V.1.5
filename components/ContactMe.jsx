@@ -144,7 +144,7 @@ const ContactMe = () => {
               <div>
                 <p className="text-sm opacity-70">Video Call</p>
                 <a
-                  href="https://calendly.com/mehedi-hasan11023"
+                  href="https://calendly.com/mehedi-hasan1102"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-mono   hover:underline text-primary/80 transition"
