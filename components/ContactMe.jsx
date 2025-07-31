@@ -33,7 +33,7 @@ const ContactMe = () => {
       id="contact-me"
       className="min-h-screen bg-base-100 text-base-content pt-24 px-6"
     >
-      <div className="max-w-5xl mx-auto w-full">
+      <div className="max-w-4xl mx-auto w-full">
         <p className="text-sm text-primary">• Contact</p>
         <h1 className="text-3xl font-bold mb-8 text-base-content">Let’s connect</h1>
 

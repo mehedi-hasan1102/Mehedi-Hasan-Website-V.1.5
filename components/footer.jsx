@@ -4,7 +4,7 @@ import { FaGithub, FaXTwitter, FaLinkedin } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-base-100 text-base-content font-mono text-sm py-10">
-      <div className="max-w-5xl mx-auto w-full px-4">
+      <div className="max-w-4xl mx-auto w-full px-4">
         {/* Top Border */}
         <div className="border-t border-base-300 w-full mb-6" />
 

@@ -27,7 +27,7 @@ const techIcons = [
 
 const HeroSection = () => {
   return (
-    <section id="home" className="max-w-5xl min-h-[80vh] mx-auto px-6 py-16 pt-24 flex items-center justify-center bg-base-100 transition-colors duration-300">
+    <section id="home" className="max-w-4xl min-h-[80vh] mx-auto px-6 py-16 pt-24 flex items-center justify-center bg-base-100 transition-colors duration-300">
       <div className="grid md:grid-cols-2 items-center gap-12 w-full">
         {/* Left: Profile Image */}
         <div className="flex justify-center relative">
