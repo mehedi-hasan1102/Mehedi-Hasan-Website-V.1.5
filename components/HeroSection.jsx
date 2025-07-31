@@ -59,7 +59,7 @@ const HeroSection = () => {
             <span className="text-primary">
               <Typewriter
                 options={{
-                  strings: ["_", "_ _", "_ _ _"],
+                  strings: ["_"],
                   autoStart: true,
                   loop: true,
                   delay: 100,
