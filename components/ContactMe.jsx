@@ -149,7 +149,7 @@ const ContactMe = () => {
                   rel="noopener noreferrer"
                   className="font-mono   hover:underline text-primary/80 transition"
                 >
-                  Book a Call via Calendly 
+                  Book a Call via Calendly  <span>↗</span>
                 </a>
               </div>
             </div>
