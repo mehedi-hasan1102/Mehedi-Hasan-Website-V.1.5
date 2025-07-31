@@ -91,9 +91,9 @@ const ContactMe = () => {
 
               <button
                 type="submit"
-                className="flex items-center gap-2 mt-2 font-medium text-primary hover:text-primary/80 transition"
+                className="  whitespace-pre mt-8 inline-flex items-center gap-2 text-primary hover:underline font-mono transition-colors duration-300"
               >
-                Send Message <span >↗</span>
+                 Send Message <span  >↗</span>
               </button>
 
 

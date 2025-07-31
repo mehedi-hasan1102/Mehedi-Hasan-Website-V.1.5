@@ -99,9 +99,9 @@ const ProjectSection = () => {
         {visibleProjects < projects.length && (
           <button
             onClick={showMoreProjects}
-            className="flex items-center gap-2 mt-2 font-medium text-primary hover:text-primary/80 transition"
+            className="mt-8 inline-flex items-center gap-2 text-primary hover:underline font-mono transition-colors duration-300"
           >
-            show more project <span >↗</span>
+           <span >+</span> Show More Project 
           </button>
         )}
       </div>

@@ -6,10 +6,13 @@ import {
   SiNextdotjs,
   SiFirebase,
   SiTypescript,
-  SiAngular,
-  SiLaravel,
+
   SiTailwindcss,
-  SiVuedotjs,
+  SiExpress,
+  SiGit,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
 } from "react-icons/si";
 
 // Row 1 icons
@@ -19,15 +22,19 @@ const techIconsRow1 = [
   { icon: SiNodedotjs, label: "Node.js" },
   { icon: SiNextdotjs, label: "Next.js" },
   { icon: SiFirebase, label: "Firebase" },
+  { icon: SiExpress, label: "Express.js" },
 ];
 
 // Row 2 icons
 const techIconsRow2 = [
-  { icon: SiVuedotjs, label: "Vue.js" },
-  { icon: SiAngular, label: "Angular" },
-  { icon: SiLaravel, label: "Laravel" },
+
+
   { icon: SiTailwindcss, label: "Tailwind CSS" },
-  { icon: SiTypescript, label: "TypeScript" },
+  { icon: SiTypescript, label: "TypeScript" }, 
+{ icon: SiGit, label: "Git" },
+  { icon: SiHtml5, label: "HTML5" },
+  { icon: SiCss3, label: "CSS3" },
+  { icon: SiJavascript, label: "JavaScript" },
 ];
 
 const SkillsSection = () => {
@@ -79,13 +86,13 @@ const SkillsSection = () => {
               <strong>Front-End:</strong> HTML, CSS, JavaScript, React
             </li>
             <li>
-              <strong>Back-End:</strong> Node.js, Express 
+              <strong>Back-End:</strong> Node.js, Express
             </li>
             <li>
               <strong>Databases:</strong> MongoDB
             </li>
             <li>
-              <strong>Tools & Platforms:</strong> Git,  Firebase 
+              <strong>Tools & Platforms:</strong> Git,  Firebase
             </li>
             <li>
               <strong>Others:</strong> RESTful APIs
