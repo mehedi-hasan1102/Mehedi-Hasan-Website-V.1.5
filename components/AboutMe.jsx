@@ -19,6 +19,10 @@ const AboutSections = () => {
                   <span className="text-primary">National university, Bangladesh</span>
                 </p>
                 <p className="text-base-content/60">Bachelor’s Degree in Physics</p>
+              <p className="text-base-content/60">
+  <span >Expected in 2025:</span>
+</p>
+
               </li>
               <li className="pl-3 border-l border-primary">
                 <p className="text-base-content font-semibold">
@@ -27,12 +31,21 @@ const AboutSections = () => {
                 <p className="text-base-content/60">
                   HSC in Science
                 </p>
+                 <p className="text-base-content/60">
+                  2013–2015:{" "}
+                </p>
               </li>
               <li className="pl-3 border-l border-primary">
                 <p className="text-base-content font-semibold">
                   <span className="text-primary">Guzirkuna High School, Durgapur</span>
                 </p>
                 <p className="text-base-content/60">SSC in Science</p>
+
+                 
+                  <p className="text-base-content/60">
+                  2005–2011:{" "}
+                </p>
+                
               </li>
             </ul>
           </div>
@@ -46,14 +59,20 @@ const AboutSections = () => {
             <ul className="space-y-5 text-sm">
               <li className="pl-3 border-l border-primary">
                 <p className="text-base-content font-semibold">
-                   {" "}
+                  
                   <span className="text-primary">
                     Complete Web Development Course
-                  </span>
+                  </span>{" "} 
                 </p>
                 <p className="text-base-content/60">
                   Programming Hero
                 </p>
+                <p className="text-base-content/60">
+                  <p className="text-base-content/60">
+                  2025–Present:{" "}
+                </p>
+                </p>
+
               </li>
               {/* <li className="pl-3 border-l border-primary">
                 <p className="text-base-content font-semibold">
