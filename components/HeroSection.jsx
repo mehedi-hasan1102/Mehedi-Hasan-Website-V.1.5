@@ -55,7 +55,7 @@ const HeroSection = () => {
         <div>
           {/* This line contains Mehedi Hasan + typing effect */}
           <span className="text-sm text-base-content/60 font-mono flex items-center gap-2">
-            &lt;span&gt;Hey, I’m 
+            &lt;span&gt; Hey, I’m 
             <span className="text-primary">
               <Typewriter
                 options={{
@@ -77,7 +77,7 @@ const HeroSection = () => {
 
           
           <span className="  mt-4 max-w-xl text-sm text-base-content/60 font-mono flex items-center gap-2">
-            &lt;p&gt;With expertise in cutting-edge technologies such as NodeJS, React,  and NextJS... I deliver web solutions that are both innovative and robust.
+            &lt;p&gt; With expertise in cutting-edge technologies such as NodeJS, React,  and NextJS... I deliver web solutions that are both innovative and robust.
             
             &lt;/p&gt;
           </span>
