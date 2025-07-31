@@ -40,7 +40,7 @@ const HeroSection = () => {
               }}
             >
               <img
-                src="https://i.ibb.co/jZkXcSJJ/6b2a9bc5-6b88-468c-93a6-ff8d4e71cd1c33.png"
+                src="https://i.ibb.co/S4VvHSng/b.png"
                 alt="Mehedi Hasan"
                 className="w-full h-full object-cover bg-base-200"
               />
@@ -53,24 +53,26 @@ const HeroSection = () => {
 
         {/* Right: Content */}
         <div>
-          <span className="text-sm text-base-content/60 font-mono">
-            &lt;span&gt;Hey, I’m Mehedi&lt;/span&gt;
-          </span>
-
-          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight mt-2 text-base-content">
-            Junior <span className="text-primary">{`{Full Stack}`}</span> Web Developer{" "}
-            <span className="inline-block w-44">
+          {/* This line contains Mehedi Hasan + typing effect */}
+          <span className="text-sm text-base-content/60 font-mono flex items-center gap-2">
+            &lt;span&gt;Hey, I’m Mehedi Hasan
+            <span className="text-primary">
               <Typewriter
                 options={{
-                  strings: [" _ _", " _ _ _", " _ _ _ _"],
+                  strings: ["_", "_ _", "_ _ _"],
                   autoStart: true,
                   loop: true,
-                  delay: 75,
+                  delay: 100,
                   deleteSpeed: 50,
                   pauseFor: 2000,
                 }}
               />
             </span>
+            &lt;/span&gt;
+          </span>
+
+          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight mt-4 text-base-content">
+            Junior <span className="text-primary">{`{Full Stack}`}</span> Web Developer
           </h1>
 
           <p className="text-base text-base-content/80 mt-4 max-w-xl">

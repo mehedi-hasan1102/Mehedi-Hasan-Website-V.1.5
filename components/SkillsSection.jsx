@@ -76,19 +76,19 @@ const SkillsSection = () => {
           {/* Skills List */}
           <ul className="text-sm space-y-3 tracking-wide">
             <li>
-              <strong>Front-End:</strong> HTML, CSS, JavaScript, React, Angular
+              <strong>Front-End:</strong> HTML, CSS, JavaScript, React
             </li>
             <li>
-              <strong>Back-End:</strong> Node.js, Express, Python, Django
+              <strong>Back-End:</strong> Node.js, Express 
             </li>
             <li>
-              <strong>Databases:</strong> MySQL, PostgreSQL, MongoDB
+              <strong>Databases:</strong> MongoDB
             </li>
             <li>
-              <strong>Tools & Platforms:</strong> Git, Docker, AWS, Heroku
+              <strong>Tools & Platforms:</strong> Git,  Firebase 
             </li>
             <li>
-              <strong>Others:</strong> RESTful APIs, GraphQL, Agile Methodologies
+              <strong>Others:</strong> RESTful APIs
             </li>
           </ul>
         </div>

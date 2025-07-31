@@ -277,16 +277,16 @@ const ProjectSection = () => {
 
               <div className="text-xs border-t border-base-300 pt-3 space-y-2">
                 <div>
-                  <span className="font-semibold text-base-content/60">
+                  {/* <span className="font-semibold text-base-content/60">
                     Client:
                   </span>{" "}
-                  Conceptual Project
+                  Conceptual Project */}
                 </div>
                 <div>
-                  <span className="font-semibold text-base-content/60">
+                  {/* <span className="font-semibold text-base-content/60">
                     Completion Time:
                   </span>{" "}
-                  6 months
+                  6 months */}
                 </div>
                 <div>
                   <span className="font-semibold text-base-content/60">
