@@ -93,8 +93,9 @@ const ContactMe = () => {
                 type="submit"
                 className="flex items-center gap-2 mt-2 font-medium text-primary hover:text-primary/80 transition"
               >
-                Send Message <span>↗</span>
+                Send Message <span >↗</span>
               </button>
+
 
               {success === true && (
                 <p className="text-success mt-2">Message sent successfully!</p>
