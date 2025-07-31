@@ -13,7 +13,7 @@ import {
 const navItems = [
   { label: "Home", to: "/" },
   { label: "About me", to: "#about-me" },
-  { label: "Portfolio", to: "#portfolio" },
+  { label: "Projects", to: "#projects" },
   
   { label: "Contact", to: "#contact-me" },
 ];
