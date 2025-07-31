@@ -1,4 +1,3 @@
-
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Phone, Mail, MapPin } from "lucide-react";
@@ -35,7 +34,7 @@ const ContactMe = () => {
     >
       <div className="max-w-4xl mx-auto w-full">
         <p className="text-sm text-primary">• Contact</p>
-        <h1 className="text-3xl font-bold mb-8 text-base-content">Let’s connect</h1>
+        <h1 className="text-4xl font-bold mb-8 text-base-content">Let’s connect</h1>
 
         <div className="flex flex-col md:flex-row gap-12">
           {/* Form */}
@@ -91,11 +90,10 @@ const ContactMe = () => {
 
               <button
                 type="submit"
-                className="  whitespace-pre mt-8 inline-flex items-center gap-2 text-primary hover:underline font-mono transition-colors duration-300"
+                className="whitespace-pre mt-8 inline-flex items-center gap-2 text-primary hover:underline font-mono transition-colors duration-300"
               >
-                 Send Message <span  >↗</span>
+                Send Message <span>↗</span>
               </button>
-
 
               {success === true && (
                 <p className="text-success mt-2">Message sent successfully!</p>
@@ -135,6 +133,24 @@ const ContactMe = () => {
               <div>
                 <p className="text-sm opacity-70">Address</p>
                 <p className="font-mono">Mymensingh, Bangladesh</p>
+              </div>
+            </div>
+
+            {/* ✅ Video Call Section */}
+            <div className="flex items-center gap-4">
+              <div className="p-3 rounded-md border border-base-300 text-primary">
+                <Phone size={20} />
+              </div>
+              <div>
+                <p className="text-sm opacity-70">Video Call</p>
+                <a
+                  href="https://calendly.com/mehedi-hasan11023"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono   hover:underline text-primary/80 transition"
+                >
+                  Book a Call via Calendly 
+                </a>
               </div>
             </div>
           </div>

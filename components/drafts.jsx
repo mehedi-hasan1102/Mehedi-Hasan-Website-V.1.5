@@ -87,7 +87,7 @@
 //   return (
 //     <section className="bg-base-100 py-10 px-4 font-mono max-w-5xl mx-auto">
 //       <h2 className="text-sm text-primary tracking-wide">* Projects</h2>
-//       <h1 className="text-3xl font-bold mb-8 text-base-content">My Recent Works</h1>
+//       <h1 className="text-4xl font-bold mb-8 text-base-content">My Recent Works</h1>
 
 //       <div className="grid md:grid-cols-2 gap-6 border border-base-300 p-6 rounded-lg">
 //         <img

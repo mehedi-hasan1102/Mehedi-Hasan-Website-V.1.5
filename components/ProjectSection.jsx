@@ -19,7 +19,7 @@ const ProjectSection = () => {
   return (
     <section id="projects" className="bg-base-100 pt-24 px-4 font-mono max-w-4xl mx-auto">
       <h2 className="text-sm text-primary tracking-wide">* Projects</h2>
-      <h1 className="text-3xl font-bold mb-8 text-base-content">My Recent Works</h1>
+      <h1 className="text-4xl font-bold mb-8 text-base-content">My Recent Works</h1>
 
       <div className="space-y-10">
         {projects.slice(0, visibleProjects).map((project, index) => (

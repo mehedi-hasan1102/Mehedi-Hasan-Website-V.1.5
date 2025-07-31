@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Download } from "lucide-react";
 import {
@@ -27,7 +28,10 @@ const techIcons = [
 
 const HeroSection = () => {
   return (
-    <section id="home" className="max-w-4xl min-h-[80vh] mx-auto px-6 py-16 pt-24 flex items-center justify-center bg-base-100 transition-colors duration-300">
+    <section
+      id="home"
+      className="max-w-4xl min-h-[80vh] mx-auto px-6 py-16 pt-24 flex items-center justify-center bg-base-100 transition-colors duration-300"
+    >
       <div className="grid md:grid-cols-2 items-center gap-12 w-full">
         {/* Left: Profile Image */}
         <div className="flex justify-center relative">
@@ -53,9 +57,8 @@ const HeroSection = () => {
 
         {/* Right: Content */}
         <div>
-          {/* This line contains Mehedi Hasan + typing effect */}
           <span className="text-sm text-base-content/60 font-mono flex items-center gap-2">
-            &lt;span&gt; Hey, I’m 
+            &lt;span&gt; Hey, I’m
             <span className="text-primary">
               <Typewriter
                 options={{
@@ -71,14 +74,12 @@ const HeroSection = () => {
             &lt;/span&gt;
           </span>
 
-          <h1 className="text-3xl md:text-5xl font-extrabold leading-tight mt-4 text-base-content">
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mt-4 text-base-content">
             Junior <span className="text-primary">{`{Full Stack}`}</span> Web Developer
           </h1>
 
-          
-          <span className="  mt-4 max-w-xl text-sm text-base-content/60 font-mono flex items-center gap-2">
-            &lt;p&gt; With expertise in cutting-edge technologies such as NodeJS, React,  and NextJS... I deliver web solutions that are both innovative and robust.
-            
+          <span className="mt-4 max-w-xl text-sm text-base-content/60 font-mono flex items-center gap-2">
+            &lt;p&gt; With expertise in cutting-edge technologies such as NodeJS, React, and NextJS... I deliver web solutions that are both innovative and robust.
             &lt;/p&gt;
           </span>
 
@@ -86,15 +87,18 @@ const HeroSection = () => {
           <div className="mt-6 flex items-center gap-2">
             <div className="relative overflow-hidden max-w-[260px] md:max-w-[300px] lg:max-w-[360px]">
               <div className="flex items-center gap-4 animate-scroll-horizontal w-max pr-16">
-                {techIcons.concat(techIcons).map(({ icon: Icon, label }, idx) => (
-                  <div
-                    key={idx}
-                    className="w-12 h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition duration-300"
-                    title={label}
-                  >
-                    <Icon className="w-6 h-6 text-primary" />
-                  </div>
-                ))}
+                {techIcons.concat(techIcons).map((tech, idx) => {
+                  const IconComponent = tech.icon;
+                  return (
+                    <div
+                      key={idx}
+                      className="w-12 h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition duration-300"
+                      title={tech.label}
+                    >
+                      <IconComponent className="w-6 h-6 text-primary" />
+                    </div>
+                  );
+                })}
               </div>
             </div>
             <span className="text-sm font-mono text-base-content/60">...and more</span>
