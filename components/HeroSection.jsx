@@ -99,7 +99,7 @@ const HeroSection = () => {
 
           {/* Download CV Button */}
           <a
-            href="/Mehedi_Hasan_CV.pdf"
+            href="https://drive.google.com/uc?export=download&id=1gZMIsl3xbE6bdXfz82WAgOrwMJygx7KB"
             download
             className="mt-8 inline-flex items-center gap-2 text-primary hover:underline font-mono transition-colors duration-300"
           >

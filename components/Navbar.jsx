@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {
   Menu,
   X,
-  Facebook,
+
   Linkedin,
   Github,
   Moon,
@@ -14,15 +14,14 @@ const navItems = [
   { label: "Home", to: "/" },
   { label: "About me", to: "#about-me" },
   { label: "Portfolio", to: "#portfolio" },
-  { label: "Blog", to: "/blog" },
+  
   { label: "Contact", to: "#contact-me" },
 ];
 
 const socialLinks = [
-  { icon: Facebook, url: "#", label: "Facebook" },
-  { icon: X, url: "#", label: "Twitter/X" },
-  { icon: Linkedin, url: "#", label: "LinkedIn" },
-  { icon: Github, url: "#", label: "GitHub" },
+  { icon: Github, url: "https://github.com/mehedi-hasan1102", label: "GitHub" },
+  { icon: X, url: "https://x.com/mehedihasan1102", label: "Twitter/X" },
+  { icon: Linkedin, url: "https://linkedin.com/in/mehedi-hasan1102", label: "LinkedIn" },
 ];
 
 const Navbar = () => {

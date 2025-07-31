@@ -49,13 +49,18 @@ const Footer = () => {
 
           {/* Navigation Links */}
           <div className="flex flex-wrap justify-center gap-4 text-base-content/70 text-xs tracking-wide">
-            {["About me", "Resume", "Services", "Portfolio", "Blog", "Contact"].map((link) => (
+            {[
+              { label: "Home", to: "/" },
+              { label: "About me", to: "#about-me" },
+              { label: "Portfolio", to: "#portfolio" },
+              { label: "Contact", to: "#contact-me" },
+            ].map((item) => (
               <a
-                key={link}
-                href={`#${link.toLowerCase().replace(/\s/g, "-")}`}
+                key={item.label}
+                href={item.to}
                 className="hover:text-primary transition"
               >
-                {link}
+                {item.label}
               </a>
             ))}
           </div>

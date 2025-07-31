@@ -44,16 +44,16 @@ const AboutSections = () => {
             <ul className="space-y-5 text-sm">
               <li className="pl-3 border-l border-primary">
                 <p className="text-base-content font-semibold">
-                  2023–2024: {" "}
+                   {" "}
                   <span className="text-primary">
-                    Advanced Data Analytics with Big Data Tools
+                    Complete Web Development Course
                   </span>
                 </p>
                 <p className="text-base-content/60">
-                  Utilized big data tools for advanced analytics and insights.
+                  Programming Hero
                 </p>
               </li>
-              <li className="pl-3 border-l border-primary">
+              {/* <li className="pl-3 border-l border-primary">
                 <p className="text-base-content font-semibold">
                   2021–2023: {" "}
                   <span className="text-primary">Cloud-Native Application Architectures</span>
@@ -61,8 +61,8 @@ const AboutSections = () => {
                 <p className="text-base-content/60">
                   Studied best practices for designing cloud-native applications.
                 </p>
-              </li>
-              <li className="pl-3 border-l border-primary">
+              </li> */}
+              {/* <li className="pl-3 border-l border-primary">
                 <p className="text-base-content font-semibold">
                   2019–2020: {" "}
                   <span className="text-primary">AI-Driven User Experience Personalization</span>
@@ -70,7 +70,7 @@ const AboutSections = () => {
                 <p className="text-base-content/60">
                   Leveraged AI to personalize user experiences based on behavior.
                 </p>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
