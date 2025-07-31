@@ -75,11 +75,12 @@ const HeroSection = () => {
             Junior <span className="text-primary">{`{Full Stack}`}</span> Web Developer
           </h1>
 
-          <p className="text-base text-base-content/80 mt-4 max-w-xl">
-            I specialize in building high-performance, scalable web and mobile
-            applications using modern frameworks and tools such as React,
-            Node.js, MongoDB, and more.
-          </p>
+          
+          <span className="  mt-4 max-w-xl text-sm text-base-content/60 font-mono flex items-center gap-2">
+            &lt;p&gt;With expertise in cutting-edge technologies such as NodeJS, React,  and NextJS... I deliver web solutions that are both innovative and robust.
+            
+            &lt;/p&gt;
+          </span>
 
           {/* Tech Icons Scroll Section */}
           <div className="mt-6 flex items-center gap-2">
