@@ -9,6 +9,7 @@ const AboutSections = () => {
         <div className="grid md:grid-cols-2 gap-10">
           {/* Education */}
           <div className="border border-primary rounded-md p-6">
+            <p className="text-sm text-primary">• About Me</p>
             <h3 className="flex items-center gap-2 text-xl font-bold mb-6 text-base-content">
               <GraduationCap className="text-primary w-5 h-5" /> Education
             </h3>
@@ -38,6 +39,7 @@ const AboutSections = () => {
 
           {/* Certifications */}
           <div className="border border-primary rounded-md p-6">
+            <p className="text-sm text-primary">• About Me</p>
             <h3 className="flex items-center gap-2 text-xl font-bold mb-6 text-base-content">
               <BookOpenCheck className="text-primary w-5 h-5" /> Certifications & Courses
             </h3>

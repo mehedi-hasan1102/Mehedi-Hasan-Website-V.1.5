@@ -174,7 +174,7 @@ const ContactMe = () => {
       className="min-h-screen bg-base-100 text-base-content py-20 px-6"
     >
       <div className="max-w-5xl mx-auto w-full">
-        
+        <p className="text-sm text-primary">• Contact</p>
    <h1 className="text-3xl font-bold mb-8 text-base-content">Let’s connect</h1>
         <div className="flex flex-col md:flex-row gap-12">
           {/* Form */}

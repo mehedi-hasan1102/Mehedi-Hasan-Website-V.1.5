@@ -35,7 +35,7 @@ const SkillsSection = () => {
     <section id="resume" className="bg-base-100 text-base-content font-mono py-16 px-4">
       <div className="max-w-5xl mx-auto border border-primary rounded-md p-8">
         <div className="mb-6">
-          <p className="text-sm text-primary">• Projects</p>
+          <p className="text-sm text-primary">• About Me</p>
           <h2 className="text-2xl font-bold">My Skills</h2>
         </div>
 
