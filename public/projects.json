@@ -1,66 +1,57 @@
-
 [
-    {
-      "title": "Active Arena",
-      "description": "A production-ready play ground management app featuring real-time synchronization, JWT authentication, and optimized performance.",
-      "features": [
-        "Payment integration with Stripe",
-        "JWT Authentication flow",
-        "Full CRUD operations"
-      ],
-      "techStack": ["React 19", "Stripe", "Firebase"],
-      "liveLink": "https://buildbox-a12.web.app",
-      "frontendRepo": "https://github.com/mehedi-hasan1102/Active-Arena-Client",
-      "backendRepo": "https://github.com/mehedi-hasan1102/Active-Arena-Server",
-      "images": [
-        "https://i.ibb.co/Rkvdr5YS/pexels9773.jpg",
-        "https://i.ibb.co/7d9jJw84/Active-Arena-111.webp",
-        "https://i.ibb.co/xtPXvDhH/pexels-ajaybhargavguduru-863988.jpg"
-      ]
-    },
-    {
-      "title": "Food Garden",
-      "description": "A production-ready food management app featuring real-time synchronization, JWT authentication, and optimized performance.",
-      "features": [
-        "Real-time synchronization with Firebase",
-        "JWT Authentication flow",
-        "Full CRUD operations"
-      ],
-      "techStack": ["React 19", "Tailwind CSS", "Firebase"],
-      "liveLink": "https://food-garden-bd.web.app",
-      "frontendRepo": "https://github.com/mehedi-hasan1102/Food-Garden-Client",
-      "backendRepo": "https://github.com/mehedi-hasan1102/Food-Garden-Server",
-      "images": [
-        "https://i.ibb.co/NnQx5NND/Food-Guardian-06-29-2025-01-13-AM.png",
-        "https://i.ibb.co/7x50g4Vj/meet2.jpg",
-        "https://i.ibb.co/cSqTBKXF/meet5.jpg"
-      ]
-    },
-    {
-      "title": "Plant Care Tracker",
-      "description": "Helps users manage and track plant care routines with reminders and notes.",
-      "features": ["Add/Edit Plants", "Reminders", "Light/Dark Theme"],
-      "techStack": ["MongoDB", "Express", "React", "Node.js"],
-      "liveLink": "https://plant-care-tracker-bd.web.app",
-      "frontendRepo": "https://github.com/mehedi-hasan1102/Plant-Care-Client",
-      "backendRepo": "https://github.com/mehedi-hasan1102/Plant-Care-Server",
-      "images": [
-        "https://i.ibb.co/27ssr5tp/Plant-Care-06-29-2025-12-43-AM.png",
-        "https://i.ibb.co/5Xd0czvc/Houseplant-Primer-A-Guide-to-Basic-Care-and-Durable-Plants.jpg",
-        "https://i.ibb.co/DyWjQ7G/maxresdefault.jpg"
-      ]
-    },
-    {
-      "title": "Event Explorer",
-      "description": "A full-stack event booking platform where users can browse and reserve seats for local events.",
-      "features": ["Authentication", "Booking System", "Firebase Integration"],
-      "techStack": ["React", "Firebase", "Node.js"],
-      "liveLink": "https://event-explorer-bd.netlify.app",
-      "frontendRepo": "https://github.com/mehedi-hasan1102/Event-Explorer",
-      "images": [
-        "https://i.ibb.co/VWcfS0BV/Home-Event-Explorer-06-29-2025-01-07-AM.png",
-        "https.ibb.co/nqDYhzLP/image5.jpg",
-        "https://i.ibb.co/N26HnVz1/image8.jpg"
-      ]
-    }
-  ]
+  {
+    "title": "Active Arena",
+    "description": "A production-ready play ground management app featuring real-time synchronization, JWT authentication, and optimized performance.",
+    "features": [
+      "Payment integration with Stripe",
+      "JWT Authentication flow",
+      "Full CRUD operations"
+    ],
+    "techStack": ["React 19", "Stripe", "Firebase"],
+    "liveLink": "https://buildbox-a12.web.app",
+    "frontendRepo": "https://github.com/mehedi-hasan1102/Active-Arena-Client",
+    "backendRepo": "https://github.com/mehedi-hasan1102/Active-Arena-Server",
+    "images": [
+      "https://i.ibb.co/j9StcCVr/Screenshot-from-2025-07-31-22-59-46.png"
+    ]
+  },
+  {
+    "title": "Food Garden",
+    "description": "A production-ready food management app featuring real-time synchronization, JWT authentication, and optimized performance.",
+    "features": [
+      "Real-time synchronization with Firebase",
+      "JWT Authentication flow",
+      "Full CRUD operations"
+    ],
+    "techStack": ["React 19", "Tailwind CSS", "Firebase"],
+    "liveLink": "https://food-garden-bd.web.app",
+    "frontendRepo": "https://github.com/mehedi-hasan1102/Food-Garden-Client",
+    "backendRepo": "https://github.com/mehedi-hasan1102/Food-Garden-Server",
+    "images": [
+      "https://i.ibb.co/NnQx5NND/Food-Guardian-06-29-2025-01-13-AM.png"
+    ]
+  },
+  {
+    "title": "Plant Care Tracker",
+    "description": "Helps users manage and track plant care routines with reminders and notes.",
+    "features": ["Add/Edit Plants", "Reminders", "Light/Dark Theme"],
+    "techStack": ["MongoDB", "Express", "React", "Node.js"],
+    "liveLink": "https://plant-care-tracker-bd.web.app",
+    "frontendRepo": "https://github.com/mehedi-hasan1102/Plant-Care-Client",
+    "backendRepo": "https://github.com/mehedi-hasan1102/Plant-Care-Server",
+    "images": [
+      "https://i.ibb.co/27ssr5tp/Plant-Care-06-29-2025-12-43-AM.png"
+    ]
+  },
+  {
+    "title": "Event Explorer",
+    "description": "A full-stack event booking platform where users can browse and reserve seats for local events.",
+    "features": ["Authentication", "Booking System", "Firebase Integration"],
+    "techStack": ["React", "Firebase", "Node.js"],
+    "liveLink": "https://event-explorer-bd.netlify.app",
+    "frontendRepo": "https://github.com/mehedi-hasan1102/Event-Explorer",
+    "images": [
+      "https://i.ibb.co/VWcfS0BV/Home-Event-Explorer-06-29-2025-01-07-AM.png"
+    ]
+  }
+]
