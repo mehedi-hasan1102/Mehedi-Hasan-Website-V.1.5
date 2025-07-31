@@ -251,7 +251,7 @@ const ProjectSection = () => {
   const latestProjects = [...projects].slice(-3).reverse(); // latest 3
 
   return (
-    <section id="projects" className="bg-base-100 py-10 px-4 font-mono max-w-5xl mx-auto">
+    <section id="projects" className="bg-base-100 pt-24 px-4 font-mono max-w-5xl mx-auto">
       <h2 className="text-sm text-primary tracking-wide">* Projects</h2>
       <h1 className="text-3xl font-bold mb-8 text-base-content">My Recent Works</h1>
 
@@ -324,9 +324,18 @@ const ProjectSection = () => {
                   </a>
                 )}
               </div>
+              
             </div>
+            
           </div>
+          
         ))}
+        <button
+                type="submit"
+                className="flex items-center gap-2 mt-2 font-medium text-primary hover:text-primary/80 transition"
+              >
+                show more project <span>↗</span>
+              </button>
       </div>
     </section>
   );
