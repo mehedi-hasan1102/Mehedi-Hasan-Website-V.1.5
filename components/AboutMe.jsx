@@ -3,7 +3,10 @@ import { GraduationCap, BookOpenCheck } from "lucide-react";
 
 const AboutSections = () => {
   return (
-    <section id="about-me" className="bg-base-100 text-base-content font-mono pt-24 px-6">
+    <section
+      id="about-me"
+      className="bg-base-100 text-base-content font-mono pt-24 px-6"
+    >
       <div className="max-w-4xl mx-auto space-y-16">
         {/* Education + Research Section */}
         <div className="grid md:grid-cols-2 gap-10">
@@ -16,36 +19,55 @@ const AboutSections = () => {
             <ul className="space-y-5 text-sm">
               <li className="pl-3 border-l border-primary">
                 <p className="text-base-content font-semibold">
-                  <span className="text-primary">National university, Bangladesh</span>
-                </p>
-                <p className="text-base-content/60">Bachelor’s Degree in Physics</p>
-              <p className="text-base-content/60">
-  <span >Expected in 2025:</span>
-</p>
-
-              </li>
-              <li className="pl-3 border-l border-primary">
-                <p className="text-base-content font-semibold">
-                   <span className="text-primary">Mymensingh College, Mymensingh</span>
+                  <span className="text-primary">
+                    National university, Bangladesh
+                  </span>
                 </p>
                 <p className="text-base-content/60">
-                  HSC in Science
+                  Bachelor’s Degree in Physics
                 </p>
-                 <p className="text-base-content/60">
-                  2013–2015:{" "}
+                <p className="text-base-content/60">
+                  <span>Expected in 2025:</span>
                 </p>
               </li>
               <li className="pl-3 border-l border-primary">
                 <p className="text-base-content font-semibold">
-                  <span className="text-primary">Guzirkuna High School, Durgapur</span>
+                  <span className="text-primary">
+                    Mymensingh College, Mymensingh
+                  </span>
+                </p>
+                <p className="text-base-content/60">HSC in Science</p>
+                <p className="text-base-content/60">
+                  2013–2015:{" "}
+                  {/* <a
+                    href="www.google.com"
+                    className="text-primary hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ↗ See Credential
+                  </a> */}
+                </p>
+              </li>
+              <li className="pl-3 border-l border-primary">
+                <p className="text-base-content font-semibold">
+                  <span className="text-primary">
+                    Guzirkuna High School, Durgapur
+                  </span>
                 </p>
                 <p className="text-base-content/60">SSC in Science</p>
 
-                 
-                  <p className="text-base-content/60">
+                <p className="text-base-content/60">
                   2005–2011:{" "}
+                  {/* <a
+                    href="www.google.com"
+                    className="text-primary hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ↗ See Credential
+                  </a> */}
                 </p>
-                
               </li>
             </ul>
           </div>
@@ -54,26 +76,54 @@ const AboutSections = () => {
           <div className="border border-primary rounded-md p-6">
             <p className="text-sm text-primary">• About Me</p>
             <h3 className="flex items-center gap-2 text-xl font-bold mb-6 text-base-content">
-              <BookOpenCheck className="text-primary w-5 h-5" /> Certifications & Courses
+              <BookOpenCheck className="text-primary w-5 h-5" /> Certifications
+              & Courses
             </h3>
             <ul className="space-y-5 text-sm">
               <li className="pl-3 border-l border-primary">
                 <p className="text-base-content font-semibold">
-                  
                   <span className="text-primary">
                     Complete Web Development Course
-                  </span>{" "} 
+                  </span>{" "}
                 </p>
-                <p className="text-base-content/60">
-                  Programming Hero
-                </p>
+                <p className="text-base-content/60">Programming Hero</p>
                 <p className="text-base-content/60">
                   <p className="text-base-content/60">
-                  2025–Present:{" "}
+                    2025–Present:{" "}
+                    {/* <a
+                      href="https://drive.google.com/file/d/1RQi05XEEFQDqhyKQVdXlkfX9ta3kKuIG/view?usp=drive_link"
+                      className="text-primary hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ↗ See Credential
+                    </a> */}
+                  </p>
                 </p>
-                </p>
-
               </li>
+
+               <li className="pl-3 border-l border-primary">
+                <p className="text-base-content font-semibold">
+                  <span className="text-primary">
+                    CV Writing & Interview
+                  </span>{" "}
+                </p>
+                <p className="text-base-content/60">10 Minute School</p>
+                <p className="text-base-content/60">
+                  <p className="text-base-content/60">
+                    2024–2024:{" "}
+                    <a
+                      href="https://drive.google.com/file/d/1RQi05XEEFQDqhyKQVdXlkfX9ta3kKuIG/view?usp=drive_link"
+                      className="text-primary hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ↗ See Credential
+                    </a>
+                  </p>
+                </p>
+              </li>
+
               {/* <li className="pl-3 border-l border-primary">
                 <p className="text-base-content font-semibold">
                   2021–2023: {" "}
