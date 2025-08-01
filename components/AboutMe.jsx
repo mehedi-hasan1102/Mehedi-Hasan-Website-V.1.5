@@ -89,7 +89,7 @@ const AboutSections = () => {
                 <p className="text-base-content/60">Programming Hero</p>
                 <p className="text-base-content/60">
                   <p className="text-base-content/60">
-                    2025–Present:{" "}
+                    2025–2025:{" "}
                     {/* <a
                       href="https://drive.google.com/file/d/1RQi05XEEFQDqhyKQVdXlkfX9ta3kKuIG/view?usp=drive_link"
                       className="text-primary hover:underline"
@@ -101,19 +101,40 @@ const AboutSections = () => {
                   </p>
                 </p>
               </li>
-
                <li className="pl-3 border-l border-primary">
                 <p className="text-base-content font-semibold">
                   <span className="text-primary">
-                    CV Writing & Interview
+                    The Web Developer's Kickstart - A Web Development Bootcamp
                   </span>{" "}
                 </p>
-                <p className="text-base-content/60">10 Minute School</p>
+                <p className="text-base-content/60">Programming Hero</p>
                 <p className="text-base-content/60">
                   <p className="text-base-content/60">
                     2024–2024:{" "}
                     <a
-                      href="https://drive.google.com/file/d/1RQi05XEEFQDqhyKQVdXlkfX9ta3kKuIG/view?usp=drive_link"
+                      href="https://drive.google.com/file/d/1foa5JvZzFY1BksRLs0hkynrTZ9v-0jC9/view"
+                      className="text-primary hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      ↗ See Credential
+                    </a>
+                  </p>
+                </p>
+              </li>
+
+               <li className="pl-3 border-l border-primary">
+                <p className="text-base-content font-semibold">
+                  <span className="text-primary">
+                    Quantum Method Course
+                  </span>{" "}
+                </p>
+                <p className="text-base-content/60">Yoga Foundation</p>
+                <p className="text-base-content/60">
+                  <p className="text-base-content/60">
+                    2018–2018:{" "}
+                    <a
+                      href="https://drive.google.com/file/d/1hUAAXA4n8V-8e9WQ3DtZ0uAfrgbHg8zd/view"
                       className="text-primary hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
