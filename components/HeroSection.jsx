@@ -58,7 +58,7 @@ const HeroSection = () => {
         {/* Right: Content */}
         <div>
           <span className="text-sm text-base-content/60 font-mono flex items-center gap-2">
-            &lt;span&gt; Hey, I’m
+           <span className="text-secondary" > &lt;span&gt; </span>  Hey, I’m
             <span className="text-primary">
               <Typewriter
                 options={{
@@ -70,18 +70,22 @@ const HeroSection = () => {
                   pauseFor: 2000,
                 }}
               />
-            </span>
-            &lt;/span&gt;
+            </span >
+<span className="text-secondary" > &lt;/span&gt;</span>
+           
+          
           </span>
 
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mt-4 text-base-content">
             Junior <span className="text-primary">{`{Full Stack}`}</span> Web Developer
           </h1>
 
-          <span className="mt-4 max-w-xl text-sm text-base-content/60 font-mono flex items-center gap-2">
-            &lt;p&gt; With expertise in cutting-edge technologies such as NodeJS, React, and NextJS... I deliver web solutions that are both innovative and robust.
-            &lt;/p&gt;
-          </span>
+          
+<span className="mt-4 max-w-xl text-sm font-mono text-base-content/60 block">
+  <span className="text-secondary">&lt;p&gt; </span> 
+  With expertise in cutting-edge technologies such as NodeJS, React, and NextJS... I deliver web solutions that are both innovative and robust.
+   <span className="text-secondary"> &lt;/p&gt;</span>
+</span>
 
           {/* Tech Icons Scroll Section */}
           <div className="mt-6 flex items-center gap-2">
