@@ -49,7 +49,7 @@ const HeroSection = () => {
                 className="w-full h-full object-cover bg-base-200"
               />
             </div>
-            <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-primary text-primary-content px-4 py-2 rounded-full font-semibold text-sm shadow-md">
+            <div className=" absolute -bottom-1 left-1/2 -translate-x-1/2 bg-primary text-primary-content px-4 py-2 rounded-full font-semibold text-sm shadow-md">
               &lt;/&gt;
             </div>
           </div>
