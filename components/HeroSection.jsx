@@ -97,15 +97,18 @@ const HeroSection = () => {
             </span>
             <span className="text-secondary">&lt;/span&gt;</span>
           </motion.span>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="text-4xl md:text-5xl font-extrabold leading-tight mt-4 text-base-content"
-          >
-            Junior <span className="text-primary">{`{Full Stack}`}</span> Web Developer
-          </motion.h1>
+<motion.h1
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.3 }}
+  className="text-4xl md:text-5xl font-extrabold leading-tight mt-4 text-gray-900 dark:text-white"
+>
+  Junior{" "}
+  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+    {`{Full Stack}`}
+  </span>{" "}
+  Web Developer
+</motion.h1>
 
           <motion.span
             initial={{ opacity: 0 }}
