@@ -30,7 +30,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="max-w-4xl min-h-[80vh] mx-auto px-6 py-16 pt-24 flex items-center justify-center bg-base-100 transition-colors duration-300"
+      className="max-w-6xl min-h-[80vh] mx-auto px-6 py-16 pt-24 flex items-center justify-center bg-base-100 transition-colors duration-300"
     >
       <div className="grid md:grid-cols-2 items-center gap-12 w-full">
         {/* Left: Profile Image */}
@@ -57,7 +57,25 @@ const HeroSection = () => {
 
         {/* Right: Content */}
         <div>
-          <span className="text-sm text-base-content/60 font-mono flex items-center gap-2">
+          {/* <span className="text-sm text-base-content/60 font-mono flex items-center gap-2">
+           <span className="text-secondary" > &lt;span&gt; </span>  Hey, I’m
+            <span className="text-primary">
+              <Typewriter
+                options={{
+                  strings: ["Mehedi Hasan"],
+                  autoStart: true,
+                  loop: true,
+                  delay: 100,
+                  deleteSpeed: 50,
+                  pauseFor: 2000,
+                }}
+              />
+            </span >
+<span className="text-secondary" > &lt;/span&gt;</span>
+           
+          
+          </span> */}
+<span className="text-sm text-base-content/60 font-mono flex items-center gap-2">
            <span className="text-secondary" > &lt;span&gt; </span>  Hey, I’m
             <span className="text-primary">
               <Typewriter
@@ -75,7 +93,6 @@ const HeroSection = () => {
            
           
           </span>
-
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mt-4 text-base-content">
             Junior <span className="text-primary">{`{Full Stack}`}</span> Web Developer
           </h1>

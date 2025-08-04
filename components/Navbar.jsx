@@ -65,7 +65,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="max-w-4xl fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] md:w-[90%]">
+    <header className="max-w-6xl fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] md:w-[90%]">
       <div className="flex items-center justify-between bg-base-100/90 text-base-content px-6 py-3 rounded-xl shadow-lg backdrop-blur-md border border-base-300">
         {/* Logo */}
         <div className="flex items-center gap-2">

@@ -7,7 +7,7 @@ const AboutSections = () => {
       id="about-me"
       className="bg-base-100 text-base-content font-mono pt-24 px-6"
     >
-      <div className="max-w-4xl mx-auto space-y-16">
+      <div className="max-w-6xl mx-auto space-y-16">
         {/* Education + Research Section */}
         <div className="grid md:grid-cols-2 gap-10">
           {/* Education */}
