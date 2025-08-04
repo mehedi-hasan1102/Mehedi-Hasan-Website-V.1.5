@@ -137,7 +137,7 @@ const ContactMe = () => {
             </div>
 
             {/* ✅ Video Call Section */}
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <div className="p-3 rounded-md border border-base-300 text-primary">
                 <Phone size={20} />
               </div>
@@ -152,7 +152,25 @@ const ContactMe = () => {
                   Book a Call via Calendly  <span>↗</span>
                 </a>
               </div>
-            </div>
+            </div> */}
+            {/* ✅ Video Call Section (Cal.com) */}
+<div className="flex items-center gap-4">
+  <div className="p-3 rounded-md border border-base-300 text-primary">
+    <Phone size={20} />
+  </div>
+  <div>
+    <p className="text-sm opacity-70">Video Call</p>
+    <a
+      href="https://cal.com/mehedi-hasan1102"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-mono hover:underline text-primary/80 transition"
+    >
+      Book a Call via Cal.com <span>↗</span>
+    </a>
+  </div>
+</div>
+
           </div>
         </div>
       </div>
