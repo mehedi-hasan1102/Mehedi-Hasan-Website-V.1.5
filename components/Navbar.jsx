@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Menu,
+  LucideFacebook,
   X,
   Linkedin,
   Github,
@@ -17,6 +18,7 @@ const navItems = [
 ];
 
 const socialLinks = [
+  { icon: LucideFacebook, url: "https://facebook.com/mehedi.hasan1102", label: "Facebook" },
   { icon: Github, url: "https://github.com/mehedi-hasan1102", label: "GitHub" },
   { icon: X, url: "https://x.com/mehedihasan1102", label: "Twitter/X" },
   { icon: Linkedin, url: "https://linkedin.com/in/mehedi-hasan1102", label: "LinkedIn" },

@@ -154,19 +154,36 @@ const ContactMe = () => {
               </div>
             </div> */}
             {/* ✅ Video Call Section (Cal.com) */}
-<div className="flex items-center gap-4">
+{/* <div className="flex items-center gap-4">
   <div className="p-3 rounded-md border border-base-300 text-primary">
     <Phone size={20} />
   </div>
   <div>
-    <p className="text-sm opacity-70">Video Call</p>
+    <p className="text-sm opacity-70">Video Meeting</p>
     <a
       href="https://cal.com/mehedi-hasan1102"
       target="_blank"
       rel="noopener noreferrer"
       className="font-mono hover:underline text-primary/80 transition"
     >
-      Book a Call via Cal.com <span>↗</span>
+      Schedule a Meeting via Cal.com <span>↗</span>
+    </a>
+  </div>
+</div> */}
+{/* chat */}
+<div className="flex items-center gap-4">
+  <div className="p-3 rounded-md border border-base-300 text-primary">
+    <Phone size={20} />
+  </div>
+  <div>
+    <p className="text-sm opacity-70">Instant Chat</p>
+    <a
+      href="https://wa.me/8801747874773"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="font-mono hover:underline text-primary/80 transition"
+    >
+      Chat with Me on WhatsApp <span>↗</span>
     </a>
   </div>
 </div>

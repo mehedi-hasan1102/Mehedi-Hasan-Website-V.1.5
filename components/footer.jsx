@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaXTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaXTwitter, FaLinkedin , FaFacebook} from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -18,6 +18,15 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex space-x-4 text-xl">
+            <a
+              href="https://facebook.com/mehedi.hasan1102"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition"
+              aria-label="Facebook"
+            >
+              <FaFacebook />
+            </a>
             <a
               href="https://github.com/mehedi-hasan1102"
               target="_blank"
