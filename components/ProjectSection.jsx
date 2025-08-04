@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { ArrowUpRight, Github } from "lucide-react";
+import { motion } from "framer-motion";
 
 const ProjectSection = () => {
   const [projects, setProjects] = useState([]);

@@ -17,6 +17,7 @@ import SkillsSection from '../components/SkillsSection';
 
 import Layout from '../components/Layout';
 import HeroSection from '../components/HeroSection';
+import Footer from '../components/Footer';
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
             <SkillsSection />
             <ProjectSection />
             <ContactMe />
-           
+            <Footer />
           </>
         ) 
       }

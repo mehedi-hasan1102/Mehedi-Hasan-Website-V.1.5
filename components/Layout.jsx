@@ -1,16 +1,16 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion";
 
-import TechBackground from "./TechBackground";
-import Footer from "./Footer";
+// import TechBackground from "./TechBackground";
+// import Footer from "./Footer";
 
 const Layout = () => {
   return (
     <>
       {/* Tech-themed background */}
-      <TechBackground />
+      {/* <TechBackground /> */}
 
       {/* Main content container with proper stacking */}
       <div className="relative z-10 flex flex-col min-h-screen">
@@ -28,7 +28,7 @@ const Layout = () => {
         </motion.main>
 
         {/* Footer with contact links */}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
