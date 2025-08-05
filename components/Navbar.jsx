@@ -258,7 +258,7 @@ const Navbar = () => {
       // <header className="fixed top-4 left-0 right-0 z-50">
         <header className="top-4 left-0 right-0 z-50 py-4">
 
-        <div className="w-full max-w-6xl px-4 sm:px-6 md:px-8 mx-auto">
+        <div className="w-full max-w-6xl px-4 sm:px-6 md:px-8 mx-auto font-mono">
     {/* your navbar content here */}
    
       <motion.div

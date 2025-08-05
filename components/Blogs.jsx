@@ -7,7 +7,7 @@ const Blog = () => {
       <Helmet>
         <title>Mehedi Hasan - Blog Coming Soon</title>
       </Helmet>
-      <div className="hero min-h-screen bg-base-200">
+      <div className="font-mono hero min-h-screen bg-base-200">
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">📝 Blog Coming Soon</h1>

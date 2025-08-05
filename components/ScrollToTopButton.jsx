@@ -23,7 +23,7 @@ const ScrollToTopButton = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: isVisible ? 1 : 0 }}
       transition={{ duration: 0.3 }}
-      className="fixed bottom-6 right-6 z-50 p-3 rounded-xl
+      className="font-mono fixed bottom-6 right-6 z-50 p-3 rounded-xl
                  bg-base-200 text-base-content 
                  shadow-lg border border-primary/30 
                  hover:border-primary transition-all"
