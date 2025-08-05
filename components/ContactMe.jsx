@@ -586,7 +586,7 @@ const ContactMe = () => {
             variants={fadeIn}
             transition={{ delay: 0.2 }}
             viewport={{ once: true, amount: 0.2 }}
-            className="w-full lg:w-1/2 flex flex-col gap-6"
+            className="w-full lg:w-1/2 flex flex-col gap-6 "
           >
             {[
               {
@@ -604,6 +604,9 @@ const ContactMe = () => {
                 label: "Address",
                 value: "Mymensingh, Bangladesh",
               },
+
+
+
               {
                 icon: <MessageSquare size={20} />,
                 label: "Instant Chat",
@@ -613,7 +616,7 @@ const ContactMe = () => {
                     href="https://wa.me/8801747874773"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline text-primary/80 transition font-mono"
+                    className=" hover:underline text-primary/80 transition font-mono"
                   >
                     Chat with Me on WhatsApp <span>↗</span>
                   </motion.a>
@@ -623,9 +626,10 @@ const ContactMe = () => {
               <motion.div
                 whileHover={{ x: 5 }}
                 key={idx}
-                className="flex items-start gap-4"
+                // className="flex items-start gap-4  " without divider
+                className="flex items-start gap-4 pl-4 border-l-2 border-primary/50 hover:border-primary transition-colors duration-300 "
               >
-                <div className="p-3 rounded-md border border-base-300 text-primary">
+                <div className=" p-3 rounded-md border border-base-300 text-primary">
                   {item.icon}
                 </div>
                 <div>
@@ -637,6 +641,8 @@ const ContactMe = () => {
           </motion.div>
         </div>
       </div>
+
+      
     </motion.section>
   );
 };
