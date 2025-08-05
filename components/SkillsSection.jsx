@@ -52,14 +52,14 @@ const SkillsSection = () => {
       <div 
       
       // className="border border-primary/30 rounded-xl p-8"
-       className=" border border-primary/30 rounded-xl p-6 bg-base-100/50 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
+       className=" border border-primary/30 rounded-xl p-6 bg-base-200 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
       >
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
           viewport={{ once: true }}
-          className="mb-6"
+          className="mb-6 "
         >
         
           <p className=" text-sm text-primary mb-2">• Technical Proficiency</p>
@@ -68,17 +68,17 @@ const SkillsSection = () => {
 
         <div className="grid md:grid-cols-2 gap-10 items-start">
           {/* Scrolling Icons */}
-          <div className="space-y-4">
+          <div className="space-y-4 ">
             {/* Row 1 scrolls right */}
-            <div className="overflow-hidden w-[288px] mx-auto">
-              <div className="flex gap-4 animate-scroll-right w-max">
+            <div className="overflow-hidden w-[288px] mx-auto ">
+              <div className="flex gap-4 animate-scroll-right w-max ">
                 {techIconsRow1.concat(techIconsRow1).map(({ icon, label }, idx) => {
                   const Icon = icon;
                   return (
                     <div
                       key={idx}
                       whileHover={{ scale: 1.1 }}
-                      className="w-12 h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition"
+                      className="bg-base-100 w-12 h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition"
                       title={label}
                     >
                       <Icon className="w-6 h-6 text-primary" />
@@ -97,7 +97,7 @@ const SkillsSection = () => {
                     <div
                       key={idx}
                       whileHover={{ scale: 1.1 }}
-                      className="w-12 h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition"
+                      className="bg-base-100 w-12 h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition"
                       title={label}
                     >
                       <Icon className="w-6 h-6 text-primary" />

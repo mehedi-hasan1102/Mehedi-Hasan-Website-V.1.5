@@ -53,7 +53,7 @@ const ServiceSection = () => {
       viewport={{ once: true }}
       className="bg-base-100 max-w-6xl mx-auto text-base-content font-mono pt-24 py-4 px-4 min-h-screen"
     >
-      <div className="border border-primary/30 rounded-xl p-6 bg-base-100/50 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
+      <div className="bg-base-200 border border-primary/30 rounded-xl p-6  backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -65,15 +65,15 @@ const ServiceSection = () => {
           <h2 className="text-2xl font-bold">My Services</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 ">
           {services.map((service, idx) => (
             <motion.div
               key={idx}
               whileHover={{ y: -5 }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="border border-base-300 rounded-md p-4 hover:border-primary transition"
+              className="bg-base-100 border border-base-300 rounded-md p-4 hover:border-primary transition"
             >
-              <div className="flex items-center gap-3 mb-3">
+              <div className="flex items-center gap-3 mb-3 ">
                 <div className="p-2 border border-primary rounded-md">
                   {service.icon}
                 </div>

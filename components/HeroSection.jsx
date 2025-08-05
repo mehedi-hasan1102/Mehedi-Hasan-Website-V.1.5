@@ -34,9 +34,9 @@ const HeroSection = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen bg-base-100 max-w-6xl mx-auto px-6 py-16 pt-24 flex items-center justify-center transition-colors duration-300"
+      className=" min-h-screen bg-base-100 max-w-6xl mx-auto px-4 py-16 pt-24 flex items-center justify-center transition-colors duration-300"
     >
-      <div className="grid md:grid-cols-2 items-center gap-12 w-full">
+      <div className="grid md:grid-cols-2 items-center gap-12 w-full bg-base-200 border border-primary/30 rounded-xl p-8 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
         {/* Left: Profile Image with Animation */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -61,7 +61,7 @@ const HeroSection = () => {
                 transition={{ duration: 0.3 }}
                 src="https://i.ibb.co/S4VvHSng/b.png"
                 alt="Mehedi Hasan"
-                className="w-full h-full object-cover bg-base-200"
+                className="w-full h-full object-cover bg-base-100"
               />
             </div>
             <motion.div
@@ -138,10 +138,10 @@ const HeroSection = () => {
                     <div
                       key={idx}
                       whileHover={{ scale: 1.1, y: -5 }}
-                      className="w-12 h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition duration-300"
+                      className="bg-base-100 w-12 h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition duration-300"
                       title={tech.label}
                     >
-                      <IconComponent className="w-6 h-6 text-primary" />
+                      <IconComponent className="w-6 h-6 text-primary " />
                     </div>
                   );
                 })}

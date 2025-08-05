@@ -16,14 +16,14 @@ const AboutSections = () => {
     >
       <div className=" space-y-16">
         {/* Education + Certifications Section */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 ">
           {/* Education */}
           <motion.div 
             initial="hidden"
             whileInView="visible"
             variants={fadeIn}
             viewport={{ once: true, margin: "-100px" }}
-            className="border border-primary/30 rounded-xl p-6 bg-base-100/50 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
+            className="bg-base-200 border border-primary/30 rounded-xl p-6  backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
           >
             <p className="text-sm text-primary mb-2">• Overview</p>
             <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
@@ -79,7 +79,7 @@ const AboutSections = () => {
             whileInView="visible"
             variants={fadeIn}
             viewport={{ once: true, margin: "-100px" }}
-            className="border border-primary/30 rounded-xl p-6 bg-base-100/50 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
+            className=" bg-base-200 border border-primary/30 rounded-xl p-6  backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
           >
             <p className="text-sm text-primary mb-2">• Overview</p>
             <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">

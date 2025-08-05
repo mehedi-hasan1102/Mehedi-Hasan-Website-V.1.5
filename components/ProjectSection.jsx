@@ -23,19 +23,19 @@ const ProjectSection = () => {
   };
 
   return (
-    <section id="projects" className="bg-base-100 pt-24 px-6 font-mono max-w-6xl mx-auto">
+    <section id="projects" className=" bg-base-100 pt-24 px-6 font-mono max-w-6xl mx-auto">
       <motion.div
         initial="hidden"
         whileInView="visible"
         variants={fadeIn}
         viewport={{ once: true, margin: "-50px" }}
-        className="mb-12"
+        className="mb-12 "
       >
         <p className="text-sm text-primary mb-2">• Featured Projects</p>
         <h1 className="text-4xl font-bold text-base-content">My Recent Works</h1>
       </motion.div>
 
-      <div className="space-y-8">
+      <div className="space-y-8 ">
         {projects.slice(0, visibleProjects).map((project, index) => (
           <motion.div
             key={index}
@@ -44,9 +44,9 @@ const ProjectSection = () => {
             variants={fadeIn}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className=" border border-primary/30 rounded-xl p-6 bg-base-100/50 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300  hover:shadow-lg "
+            className="bg-base-200 border border-primary/30 rounded-xl p-6  backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300  hover:shadow-lg "
           >
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 ">
               <motion.div whileHover={{ scale: 1.02 }} className="overflow-hidden rounded-lg">
                 <img
                   src={project.images[0]}
