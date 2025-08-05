@@ -618,7 +618,7 @@ const ContactMe = () => {
                     rel="noopener noreferrer"
                     className=" hover:underline text-primary/80 transition font-mono"
                   >
-                    Chat with Me on WhatsApp <span>↗</span>
+                    WhatsApp <span>↗</span>
                   </motion.a>
                 ),
               },
@@ -632,10 +632,15 @@ const ContactMe = () => {
                 <div className=" p-3 rounded-md border border-base-300 text-primary">
                   {item.icon}
                 </div>
-                <div>
+                {/* <div>
                   <p className="text-sm opacity-70">{item.label}</p>
                   <p className="font-mono break-words">{item.value}</p>
-                </div>
+                </div> */}
+                <div className="min-w-0">
+  <p className="text-sm opacity-70">{item.label}</p>
+  <p className="font-mono break-words break-all text-wrap">{item.value}</p>
+</div>
+
               </motion.div>
             ))}
           </motion.div>
