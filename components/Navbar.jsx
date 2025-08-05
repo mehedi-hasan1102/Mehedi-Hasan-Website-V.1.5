@@ -26,14 +26,14 @@ const socialLinks = [
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "corporate");
+  const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "lemonade");
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "corporate" : "dark";
+    const newTheme = theme === "abyss" ? "lemonade" : "abyss";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
@@ -111,7 +111,7 @@ const Navbar = () => {
             className="p-2 rounded-full border border-base-300 hover:bg-base-200/30"
             aria-label="Toggle Theme"
           >
-            {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+            {theme === "abyss" ? <Sun size={16} /> : <Moon size={16} />}
           </motion.button>
         </div>
 
@@ -158,7 +158,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.1 }}
                 className="p-2 rounded-full border border-base-300 hover:bg-base-200/30"
               >
-                {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+                {theme === "abyss" ? <Sun size={16} /> : <Moon size={16} />}
               </motion.button>
             </div>
           </motion.div>

@@ -42,14 +42,14 @@ const HeroSection = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="flex justify-center relative"
+          className="flex justify-center relative "
         >
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="w-64 h-72 md:w-72 md:h-80 relative"
+            className="w-64 h-72 md:w-72 md:h-80 relative "
           >
             <div
-              className="w-full h-full overflow-hidden"
+              className="w-full h-full overflow-hidden "
               style={{
                 clipPath:
                   "polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)",
@@ -61,7 +61,7 @@ const HeroSection = () => {
                 transition={{ duration: 0.3 }}
                 src="https://i.ibb.co/S4VvHSng/b.png"
                 alt="Mehedi Hasan"
-                className="w-full h-full object-cover bg-base-100"
+                className="w-full h-full object-cover bg-base-100 "
               />
             </div>
             <motion.div
@@ -71,6 +71,7 @@ const HeroSection = () => {
               &lt;/&gt;
             </motion.div>
           </motion.div>
+          
         </motion.div>
 
         {/* Right: Content */}
