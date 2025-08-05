@@ -10,15 +10,15 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-base-100 text-base-content font-mono text-sm max-w-6xl mx-auto">
-      <div className="max-w-6xl mx-auto pb-4">
+    <footer className="bg-base-100  rounded-lg px-3 py-2  max-w-6xl mx-auto pb-4   hover:shadow-primary/10 transition-shadow duration-300  text-base-content font-mono text-sm ">
+      <div className="pb-4">
         {/* Top Border */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           variants={fadeIn}
           viewport={{ once: true }}
-          className="border-t border-base-300 w-full mb-6"
+          className="border-t w-full mb-6 border-primary/30"
         />
 
         <motion.div
@@ -32,7 +32,7 @@ const Footer = () => {
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="flex items-center space-x-1 text-lg font-medium"
+            className="flex items-center space-x-1 text-lg font-medium "
           >
             <span className="text-primary text-xl">&lt;/&gt;</span>
             <span className="font-semibold">Mehedi</span>
