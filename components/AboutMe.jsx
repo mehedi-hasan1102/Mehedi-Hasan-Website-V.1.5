@@ -12,7 +12,7 @@ const AboutSections = () => {
   return (
     <section
       id="about"
-      className="bg-base-100 text-base-content font-mono pt-24 max-w-6xl mx-auto p-4"
+      className="bg-base-100 text-base-content font-mono max-w-7xl mx-auto p-4 px-4 sm:px-6 md:px-8 "
     >
       <div className=" space-y-16">
         {/* Education + Certifications Section */}

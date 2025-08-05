@@ -1,107 +1,113 @@
 import React from "react";
-import { FaGithub, FaXTwitter, FaLinkedin, FaFacebook } from "react-icons/fa6";
-// eslint-disable-next-line no-unused-vars
+import { Github, Twitter, Linkedin, Facebook } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Footer = () => {
-  const fadeIn = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
-
   return (
-    <footer className="bg-base-100  rounded-lg px-3 py-2  max-w-6xl mx-auto pb-4   hover:shadow-primary/10 transition-shadow duration-300  text-base-content font-mono text-sm ">
-      <div className="pb-4">
-        {/* Top Border */}
+    <motion.footer
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mt-8"
+    >
+      <div className=" rounded-t-xl
+ pb-4  backdrop-blur-sm hover:shadow-primary/10 transition-shadow duration-300 font-mono text-sm text-base-content">
+        {/* Divider */}
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          variants={fadeIn}
-          viewport={{ once: true }}
-          className="border-t w-full mb-6 border-primary/30"
+          initial={{ width: 0 }}
+          whileInView={{ width: "100%" }}
+          transition={{ duration: 0.5 }}
+          className="h-px bg-primary/30 mb-6"
         />
 
+        {/* Branding */}
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          variants={fadeIn}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="flex flex-col items-center text-center space-y-4"
+          className="flex flex-col items-center text-center gap-2 mb-4"
         >
-          {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex items-center space-x-1 text-lg font-medium "
-          >
+          <div className="flex items-center gap-1 text-lg font-medium">
             <span className="text-primary text-xl">&lt;/&gt;</span>
             <span className="font-semibold">Mehedi</span>
             <span className="text-base-content/60">Hasan</span>
-          </motion.div>
+          </div>
 
           {/* Social Icons */}
-          <div className="flex space-x-4 text-xl">
+          <div className="flex gap-4 mt-2 text-base-content/80">
             {[
               {
-                icon: FaFacebook,
+                icon: Facebook,
                 href: "https://facebook.com/mehedi.hasan1102",
                 label: "Facebook",
               },
               {
-                icon: FaGithub,
+                icon: Github,
                 href: "https://github.com/mehedi-hasan1102",
                 label: "GitHub",
               },
               {
-                icon: FaXTwitter,
+                icon: Twitter,
                 href: "https://x.com/mehedihasan1102",
                 label: "Twitter",
               },
               {
-                icon: FaLinkedin,
+                icon: Linkedin,
                 href: "https://www.linkedin.com/in/mehedi-hasan1102/",
                 label: "LinkedIn",
               },
-            ].map((social, index) => (
+            ].map((social, idx) => (
               <motion.a
-                key={index}
+                key={idx}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary transition"
                 aria-label={social.label}
-                whileHover={{ y: -3, scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
+                whileHover={{ y: -2, scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                <social.icon />
+                <social.icon size={18} />
               </motion.a>
             ))}
           </div>
-
-          {/* Navigation Links */}
-          <motion.div className="flex flex-wrap justify-center gap-4 text-base-content/70 text-xs tracking-wide">
-            {[
-              { label: "Home", to: "/" },
-              { label: "About", to: "#about" },
-              { label: "Services", to: "#services" },
-              { label: "Skills", to: "#skills" },
-              { label: "Projects", to: "#projects" },
-              { label: "Contact", to: "#contact" },
-            ].map((item, index) => (
-              <motion.a
-                key={item.label}
-                href={item.to}
-                className="hover:text-primary transition"
-                whileHover={{ y: -2 }}
-                transition={{ delay: index * 0.05 }}
-              >
-                {item.label}
-              </motion.a>
-            ))}
-          </motion.div>
         </motion.div>
+
+        {/* Navigation Links */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.15 }}
+          className="flex flex-wrap justify-center gap-4 text-xs tracking-wide text-base-content/70"
+        >
+          {[
+            { label: "Home", to: "/" },
+            { label: "About", to: "#about" },
+            { label: "Services", to: "#services" },
+            { label: "Skills", to: "#skills" },
+            { label: "Projects", to: "#projects" },
+            { label: "Contact", to: "#contact" },
+          ].map((item, index) => (
+            <motion.a
+              key={item.label}
+              href={item.to}
+              className="hover:text-primary transition"
+              whileHover={{ y: -1 }}
+            >
+              {item.label}
+            </motion.a>
+          ))}
+        </motion.div>
+
+        
       </div>
-    </footer>
+      {/* Copyright */}
+        <p className="text-center text-xs text-base-content/50 mb-4">
+          &copy; {new Date().getFullYear()} Mehedi Hasan. All rights reserved.
+        </p>
+     
+    </motion.footer>
   );
 };
 
