@@ -23,7 +23,7 @@
 //   };
 
 //   return (
-//     <section id="projects" className="border border-primary/30 rounded-xl bg-base-200  font-mono   text-base-content  min-h-screen max-w-7xl mx-auto py-4 px-4 sm:px-6 md:px-8">
+//     <section id="projects" className="border border-primary/30 rounded-xl bg-base-200  font-mono   text-base-content  min-h-screen max-w-6xl mx-auto py-4 px-4 sm:px-6 md:px-8">
 //       <motion.div
 //         initial="hidden"
 //         whileInView="visible"
@@ -184,7 +184,7 @@ const ProjectSection = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="bg-base-100 text-base-content font-mono max-w-7xl mx-auto py-4 px-4 sm:px-6 md:px-8"
+      className="bg-base-100 text-base-content font-mono max-w-6xl mx-auto py-4 px-4 sm:px-6 md:px-8"
     >
       <div className="bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
         <motion.div

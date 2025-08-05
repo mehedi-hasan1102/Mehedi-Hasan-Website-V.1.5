@@ -35,7 +35,7 @@ const HeroSection = () => {
     //   initial={{ opacity: 0 }}
     //   animate={{ opacity: 1 }}
     //   transition={{ duration: 0.5 }}
-    //   className="min-h-screen max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-16 pt-24 flex items-center justify-center"
+    //   className="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16 pt-24 flex items-center justify-center"
     // >
 
     <motion.section
@@ -43,7 +43,7 @@ const HeroSection = () => {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 0.5 }}
-  className="w-full max-w-7xl px-4 sm:px-6 md:px-8 mx-auto  flex items-center justify-center py-4"
+  className="w-full max-w-6xl px-4 sm:px-6 md:px-8 mx-auto  flex items-center justify-center py-4"
 >
 
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 w-full bg-base-200 border border-primary/30 rounded-xl p-6 sm:p-10 shadow-lg">

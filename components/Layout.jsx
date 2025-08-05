@@ -5,12 +5,14 @@ import { motion } from "framer-motion";
 
 // import TechBackground from "./TechBackground";
 // import Footer from "./Footer";
+import ScrollToTopButton from './ScrollToTopButton';
 
 const Layout = () => {
   return (
     <>
       {/* Tech-themed background */}
       {/* <TechBackground /> */}
+      <ScrollToTopButton />
 
       {/* Main content container with proper stacking */}
       <div className="relative z-10 flex flex-col min-h-screen">
