@@ -40,19 +40,19 @@ const techIconsRow2 = [
 const SkillsSection = () => {
   return (
     <motion.section 
-      id="resume"
+      id="skills"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="bg-base-100 max-w-6xl mx-auto text-base-content font-mono py-4 px-4"
+      className="  pt-24 bg-base-100 max-w-6xl mx-auto text-base-content font-mono py-4 px-4"
     
     >
       
       <div 
       
       // className="border border-primary/30 rounded-xl p-8"
-       className="border border-primary/30 rounded-xl p-6 bg-base-100/50 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
+       className=" border border-primary/30 rounded-xl p-6 bg-base-100/50 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
       >
         <motion.div
           initial={{ opacity: 0, y: 10 }}

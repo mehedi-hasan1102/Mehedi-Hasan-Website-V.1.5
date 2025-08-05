@@ -44,7 +44,7 @@ const ProjectSection = () => {
             variants={fadeIn}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="border border-base-300/50 rounded-xl p-6 bg-base-100/50 backdrop-blur-sm hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
+            className=" border border-primary/30 rounded-xl p-6 bg-base-100/50 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300  hover:shadow-lg "
           >
             <div className="grid md:grid-cols-2 gap-8">
               <motion.div whileHover={{ scale: 1.02 }} className="overflow-hidden rounded-lg">
