@@ -1,5 +1,6 @@
 import React from "react";
 import { GraduationCap, BookOpenCheck, ArrowUpRight } from "lucide-react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const AboutSections = () => {
@@ -11,7 +12,7 @@ const AboutSections = () => {
   return (
     <section
       id="about-me"
-      className="bg-base-100 text-base-content font-mono pt-24 max-w-6xl mx-auto"
+      className="bg-base-100 text-base-content font-mono pt-24 max-w-6xl mx-auto p-4"
     >
       <div className=" space-y-16">
         {/* Education + Certifications Section */}

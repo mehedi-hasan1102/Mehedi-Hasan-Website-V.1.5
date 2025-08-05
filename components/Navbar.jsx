@@ -220,12 +220,12 @@ const Navbar = () => {
   );
 
   return (
-    <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] md:w-[90%] max-w-6xl">
+    <header className="p-4  fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] md:w-[90%] max-w-6xl">
       {/* Main Navbar */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="flex items-center justify-between bg-base-100/80 text-base-content px-6 py-3 rounded-xl shadow-lg backdrop-blur-lg border border-base-300/50"
+        className=" border border-primary/30 flex items-center justify-between bg-base-100/80 text-base-content px-6 py-3 rounded-xl shadow-lg backdrop-blur-lg "
       >
         {/* Logo */}
         <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
