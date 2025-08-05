@@ -25,7 +25,7 @@ const AboutSections = () => {
             viewport={{ once: true, margin: "-100px" }}
             className="border border-primary/30 rounded-xl p-6 bg-base-100/50 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
           >
-            <p className="text-sm text-primary mb-2">• About Me</p>
+            <p className="text-sm text-primary mb-2">• Overview</p>
             <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
               <GraduationCap className="text-primary w-5 h-5" /> 
               <span>Education</span>
@@ -81,7 +81,7 @@ const AboutSections = () => {
             viewport={{ once: true, margin: "-100px" }}
             className="border border-primary/30 rounded-xl p-6 bg-base-100/50 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
           >
-            <p className="text-sm text-primary mb-2">• About Me</p>
+            <p className="text-sm text-primary mb-2">• Overview</p>
             <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
               <BookOpenCheck className="text-primary w-5 h-5" /> 
               <span>Certifications & Courses</span>
