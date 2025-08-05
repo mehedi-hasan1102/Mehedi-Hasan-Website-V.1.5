@@ -45,7 +45,7 @@ const SkillsSection = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className=" bg-base-100  text-base-content font-mono max-w-6xl mx-auto p-4 px-4 sm:px-6 md:px-8"
+      className="   text-base-content font-mono max-w-6xl mx-auto p-4 px-4 sm:px-6 md:px-8"
     
     >
       

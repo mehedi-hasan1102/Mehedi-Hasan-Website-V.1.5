@@ -6,12 +6,17 @@ import { motion } from "framer-motion";
 // import TechBackground from "./TechBackground";
 // import Footer from "./Footer";
 import ScrollToTopButton from './ScrollToTopButton';
+import LightRays from './LightRays';
 
 const Layout = () => {
   return (
     <>
+   
       {/* Tech-themed background */}
       {/* <TechBackground /> */}
+      <div className="fixed top-0 left-0 w-full h-full z-[-1]">
+        <LightRays />
+      </div>
       <ScrollToTopButton />
 
       {/* Main content container with proper stacking */}
@@ -26,6 +31,9 @@ const Layout = () => {
           transition={{ duration: 0.5 }}
           className="flex-1"
         >
+
+        
+
           <Outlet />
         </motion.main>
 

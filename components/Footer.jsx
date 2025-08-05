@@ -99,13 +99,13 @@ const Footer = () => {
             </motion.a>
           ))}
         </motion.div>
-
+<p className="text-center text-xs text-base-content/50 m-4">
+          &copy; {new Date().getFullYear()} Mehedi Hasan. All rights reserved.
+        </p>
         
       </div>
       {/* Copyright */}
-        <p className="text-center text-xs text-base-content/50 mb-4">
-          &copy; {new Date().getFullYear()} Mehedi Hasan. All rights reserved.
-        </p>
+        
      
     </motion.footer>
   );
