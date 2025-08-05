@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import {
@@ -133,14 +134,14 @@ const HeroSection = () => {
                 {techIcons.concat(techIcons).map((tech, idx) => {
                   const IconComponent = tech.icon;
                   return (
-                    <motion.div
+                    <div
                       key={idx}
                       whileHover={{ scale: 1.1, y: -5 }}
                       className="w-12 h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition duration-300"
                       title={tech.label}
                     >
                       <IconComponent className="w-6 h-6 text-primary" />
-                    </motion.div>
+                    </div>
                   );
                 })}
               </div>
@@ -149,21 +150,42 @@ const HeroSection = () => {
           </motion.div>
 
           {/* Download CV Button */}
-          <motion.a
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.6 }}
-            href="https://drive.google.com/uc?export=download&id=1gZMIsl3xbE6bdXfz82WAgOrwMJygx7KB"
-            download
-            className="mt-8 inline-flex items-center gap-2 text-primary hover:underline font-mono transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <Download size={18} />
-            [ Download CV ]
-          </motion.a>
+         
+<motion.a
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.6, duration: 0.7, ease: "easeOut" }}
+  whileHover={{
+    scale: 1.05,
+    rotate: -0.5,
+    transition: { type: "spring", stiffness: 300 },
+  }}
+  whileTap={{
+    scale: 0.97,
+    rotate: 0.5,
+  }}
+  href="https://drive.google.com/uc?export=download&id=1gZMIsl3xbE6bdXfz82WAgOrwMJygx7KB"
+  download
+  className="group mt-8 inline-flex items-center gap-2 text-primary hover:underline font-mono transition-all duration-300"
+>
+  <Download
+    size={18}
+    className="transition-transform duration-300 group-hover:-translate-y-[2px]"
+  />
+  [ Download CV ]
+</motion.a>
+
+
+
+
         </motion.div>
+
+
+
+
       </div>
+
+      
 
       {/* Scroll Animation */}
       <style>
