@@ -31,7 +31,7 @@ const ProjectSection = () => {
         viewport={{ once: true, margin: "-50px" }}
         className="mb-12"
       >
-        <p className="text-sm text-primary">• Projects</p>
+        <p className="text-sm text-primary mb-2">• Featured Projects</p>
         <h1 className="text-4xl font-bold text-base-content">My Recent Works</h1>
       </motion.div>
 

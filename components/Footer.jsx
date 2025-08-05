@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaXTwitter, FaLinkedin, FaFacebook } from "react-icons/fa6";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -81,9 +82,9 @@ const Footer = () => {
           <motion.div className="flex flex-wrap justify-center gap-4 text-base-content/70 text-xs tracking-wide">
             {[
               { label: "Home", to: "/" },
-              { label: "About me", to: "#about-me" },
+              { label: "About", to: "#about" },
               { label: "Projects", to: "#projects" },
-              { label: "Contact", to: "#contact-me" },
+              { label: "Contact", to: "#contact" },
             ].map((item, index) => (
               <motion.a
                 key={item.label}

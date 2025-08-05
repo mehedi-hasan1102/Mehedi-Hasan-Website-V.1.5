@@ -11,7 +11,7 @@ const AboutSections = () => {
 
   return (
     <section
-      id="about-me"
+      id="about"
       className="bg-base-100 text-base-content font-mono pt-24 max-w-6xl mx-auto p-4"
     >
       <div className=" space-y-16">

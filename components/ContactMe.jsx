@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Phone, Mail, MapPin, MessageSquare } from "lucide-react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const ContactMe = () => {
@@ -35,8 +36,8 @@ const ContactMe = () => {
 
   return (
     <section
-      id="contact-me"
-      className="min-h-screen bg-base-100 text-base-content pt-24 max-w-6xl mx-auto "
+      id="contact"
+      className=" p-4 min-h-screen bg-base-100 text-base-content pt-24 max-w-6xl mx-auto "
     >
       <div className="max-w-6xl mx-auto w-full ">
         <motion.div
@@ -45,7 +46,7 @@ const ContactMe = () => {
           variants={fadeIn}
           viewport={{ once: true }}
         >
-          <p className="text-sm text-primary">• Contact</p>
+          <p className="text-sm text-primary mb-2">• Get in Touch</p>
           <h1 className="text-4xl font-bold mb-8 text-base-content">Let's connect</h1>
         </motion.div>
 

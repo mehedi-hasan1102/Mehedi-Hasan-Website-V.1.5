@@ -12,9 +12,9 @@
 
 // const navItems = [
 //   { label: "Home", to: "#home" },
-//   { label: "About me", to: "#about-me" },
+//   { label: "About me", to: "#about" },
 //   { label: "Projects", to: "#projects" },
-//   { label: "Contact", to: "#contact-me" },
+//   { label: "Contact", to: "#contact" },
 // ];
 
 // const socialLinks = [
@@ -163,9 +163,9 @@ const Presence = AnimatePresence;
 
 const navItems = [
   { label: "Home", to: "#home" },
-  { label: "About", to: "#about-me" },
+  { label: "About", to: "#about" },
   { label: "Projects", to: "#projects" },
-  { label: "Contact", to: "#contact-me" },
+  { label: "Contact", to: "#contact" },
 ];
 
 const socialLinks = [
