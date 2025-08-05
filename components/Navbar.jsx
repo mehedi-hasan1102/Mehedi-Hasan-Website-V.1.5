@@ -256,7 +256,7 @@ const Navbar = () => {
   return (
     // <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] md:w-[90%] max-w-7xl">
       // <header className="fixed top-4 left-0 right-0 z-50">
-        <header className="top-4 left-0 right-0 z-50 p-4">
+        <header className="top-4 left-0 right-0 z-50 py-4">
 
         <div className="w-full max-w-7xl px-4 sm:px-6 md:px-8 mx-auto">
     {/* your navbar content here */}
