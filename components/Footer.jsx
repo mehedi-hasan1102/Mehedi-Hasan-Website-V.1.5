@@ -9,10 +9,10 @@ const Footer = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 mt-8"
+      className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 mt-8 "
     >
       <div className=" rounded-t-xl
- pb-4  backdrop-blur-sm hover:shadow-primary/10 transition-shadow duration-300 font-mono text-sm text-base-content">
+ pb-4  backdrop-blur-sm hover:shadow-primary/10 transition-shadow duration-300 font-mono text-sm text-base-content ">
         {/* Divider */}
         <motion.div
           initial={{ width: 0 }}

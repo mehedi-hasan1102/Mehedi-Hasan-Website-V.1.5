@@ -43,10 +43,10 @@ const HeroSection = () => {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ duration: 0.5 }}
-  className="font-mono w-full max-w-6xl px-4 sm:px-6 md:px-8 mx-auto  flex items-center justify-center py-4"
+  className="font-mono w-full max-w-6xl px-4 sm:px-6 md:px-8 mx-auto  flex items-center justify-center py-4 "
 >
 
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 w-full bg-base-200 border border-primary/30 rounded-xl p-6 sm:p-10 shadow-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 w-full bg-base-200 border border-primary/30 rounded-xl p-6 sm:p-10 shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
         
         {/* Left Image */}
         <motion.div
