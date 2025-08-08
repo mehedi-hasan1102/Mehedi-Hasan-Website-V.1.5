@@ -20,6 +20,7 @@ import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
 import ServiceSection from '../components/ServiceSection';
 import GitHubActivitySection from '../components/GitHubActivitySection';
+import MultiRepoGitJournal from '../components/MultiRepoGitJournal';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
             <AboutMe />
             <SkillsSection />
             < GitHubActivitySection />
+           < MultiRepoGitJournal />
            < ServiceSection />
             <ProjectSection />
             <ContactMe />
