@@ -19,6 +19,7 @@ import Layout from '../components/Layout';
 import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
 import ServiceSection from '../components/ServiceSection';
+import GitHubActivitySection from '../components/GitHubActivitySection';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
             <HeroSection />
             <AboutMe />
             <SkillsSection />
+            < GitHubActivitySection />
            < ServiceSection />
             <ProjectSection />
             <ContactMe />
