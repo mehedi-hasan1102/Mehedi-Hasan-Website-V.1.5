@@ -16,16 +16,28 @@ import {
 } from "react-icons/si";
 import Typewriter from "typewriter-effect";
 
+// const techIcons = [
+//   { icon: SiReact, label: "React" },
+//   { icon: SiNextdotjs, label: "Next.js" },
+//   { icon: SiNodedotjs, label: "Node.js" },
+//   { icon: SiExpress, label: "Express.js" },
+//   { icon: SiMongodb, label: "MongoDB" },
+//   { icon: SiTailwindcss, label: "Tailwind CSS" },
+//   { icon: SiFirebase, label: "Firebase" },
+//   { icon: SiJavascript, label: "JavaScript" },
+//   { icon: SiTypescript, label: "TypeScript" },
+// ];
+
 const techIcons = [
-  { icon: SiReact, label: "React" },
-  { icon: SiNextdotjs, label: "Next.js" },
-  { icon: SiNodedotjs, label: "Node.js" },
-  { icon: SiExpress, label: "Express.js" },
-  { icon: SiMongodb, label: "MongoDB" },
-  { icon: SiTailwindcss, label: "Tailwind CSS" },
-  { icon: SiFirebase, label: "Firebase" },
-  { icon: SiJavascript, label: "JavaScript" },
-  { icon: SiTypescript, label: "TypeScript" },
+  { icon: SiReact, label: "React", color: "#61DAFB" },
+  { icon: SiNextdotjs, label: "Next.js", color: "#000000" },
+  { icon: SiNodedotjs, label: "Node.js", color: "#339933" },
+  { icon: SiExpress, label: "Express.js", color: "#000000" },
+  { icon: SiMongodb, label: "MongoDB", color: "#47A248" },
+  { icon: SiTailwindcss, label: "Tailwind CSS", color: "#38B2AC" },
+  { icon: SiFirebase, label: "Firebase", color: "#FFCA28" },
+  { icon: SiJavascript, label: "JavaScript", color: "#F7DF1E" },
+  { icon: SiTypescript, label: "TypeScript", color: "#3178C6" },
 ];
 
 const HeroSection = () => {
@@ -39,15 +51,15 @@ const HeroSection = () => {
     // >
 
     <motion.section
-  id="home"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 0.5 }}
-  className="font-mono w-full max-w-6xl px-4 sm:px-6 md:px-8 mx-auto  flex items-center justify-center py-4 "
->
+      id="home"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="font-mono w-full max-w-6xl px-4 sm:px-6 md:px-8 mx-auto  flex items-center justify-center py-4 "
+    >
 
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 w-full bg-base-200 border border-primary/30 rounded-xl p-6 sm:p-10 shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
-        
+
         {/* Left Image */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -74,12 +86,26 @@ const HeroSection = () => {
                 className="w-full h-full object-cover bg-base-100"
               />
             </div>
-            <motion.div
+            {/* <motion.div
               whileHover={{ scale: 1.1 }}
               className="absolute -bottom-1 left-1/2 -translate-x-1/2 bg-primary text-primary-content px-4 py-2 rounded-full text-xs sm:text-sm font-semibold shadow-md"
             >
               &lt;/&gt;
-            </motion.div>
+            </motion.div> */}
+<motion.div
+  whileHover={{ scale: 1.1 }}
+  className="absolute -bottom-3 left-1/2   -translate-x-1/2 bg-primary text-primary-content text-xs sm:text-sm font-semibold shadow-md flex items-center justify-center"
+  style={{
+    clipPath: "polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)",
+    width: "50px",
+    height: "50px",
+    padding: "0", 
+  }}
+>
+  &lt;/&gt;
+</motion.div>
+
+            
           </motion.div>
         </motion.div>
 
@@ -148,12 +174,20 @@ const HeroSection = () => {
                 {techIcons.concat(techIcons).map((tech, idx) => {
                   const IconComponent = tech.icon;
                   return (
+                    // <div
+                    //   key={idx}
+                    //   className="bg-base-100 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition duration-300"
+                    //   title={tech.label}
+                    // >
+                    //   <IconComponent className="w-5 h-5" />
+                    // </div>
                     <div
                       key={idx}
+                      whileHover={{ scale: 1.1 }}
                       className="bg-base-100 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition duration-300"
                       title={tech.label}
                     >
-                      <IconComponent className="w-5 h-5 text-primary" />
+                      <IconComponent style={{ color: tech.color, width: 24, height: 24 }} />
                     </div>
                   );
                 })}
@@ -163,6 +197,8 @@ const HeroSection = () => {
               ...and more
             </span>
           </motion.div>
+
+
 
           {/* Download Button */}
           <motion.a
