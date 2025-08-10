@@ -1,6 +1,9 @@
+
+
 import React, { useEffect, useState } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { Briefcase, ArrowUpRight } from "lucide-react";
 
 const MultiRepoGitJournal = ({ username = "mehedi-hasan1102" }) => {
   const [repos, setRepos] = useState([]);
@@ -13,7 +16,6 @@ const MultiRepoGitJournal = ({ username = "mehedi-hasan1102" }) => {
         const resRepos = await fetch(`https://api.github.com/users/${username}/repos`);
         if (!resRepos.ok) throw new Error("Failed to fetch repositories");
         const reposData = await resRepos.json();
-        // Sort repos by updated date (newest first)
         const sortedRepos = reposData.sort(
           (a, b) => new Date(b.updated_at) - new Date(a.updated_at)
         );
@@ -36,8 +38,7 @@ const MultiRepoGitJournal = ({ username = "mehedi-hasan1102" }) => {
     fetchReposAndCommits();
   }, [username]);
 
-  if (error)
-    return <p className="text-red-500 text-center mt-6">Error: {error}</p>;
+  if (error) return null; // <---- Hide entire component on error
 
   return (
     <motion.section
@@ -48,9 +49,7 @@ const MultiRepoGitJournal = ({ username = "mehedi-hasan1102" }) => {
       viewport={{ once: true }}
       className="text-base-content font-mono max-w-6xl mx-auto p-4 px-4 sm:px-6 md:px-8"
     >
-      <div
-        className="border border-primary/30 rounded-xl p-6 bg-base-200 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
-      >
+      <div className="border border-primary/30 rounded-xl p-6 bg-base-200 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -59,17 +58,13 @@ const MultiRepoGitJournal = ({ username = "mehedi-hasan1102" }) => {
           className="mb-6"
         >
           <p className="text-sm text-primary mb-2">• Git Journaling</p>
-          <h2 className="text-2xl font-bold">
-            Recent Commits from My Repositories
-          </h2>
+          <h2 className="text-2xl font-bold">Recent Commits from My Repositories</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-10">
           {repos.slice(0, 2).map((repo) => (
             <div key={repo.id} className="space-y-3">
-              <h3 className="text-lg font-semibold border-l-4 border-primary pl-3">
-                {repo.name}
-              </h3>
+              <h3 className="text-lg font-semibold border-l-4 border-primary pl-3">{repo.name}</h3>
               <ul className="text-sm space-y-2 tracking-wide max-h-52 overflow-y-auto pr-2">
                 {(commits[repo.name] || []).map((commit) => (
                   <motion.li
@@ -82,8 +77,7 @@ const MultiRepoGitJournal = ({ username = "mehedi-hasan1102" }) => {
                     <strong>{commit.commit.message.split("\n")[0]}</strong>
                     <br />
                     <small className="text-primary/80">
-                      {new Date(commit.commit.author.date).toLocaleString()} by{" "}
-                      {commit.commit.author.name}
+                      {new Date(commit.commit.author.date).toLocaleString()} by {commit.commit.author.name}
                     </small>
                   </motion.li>
                 ))}

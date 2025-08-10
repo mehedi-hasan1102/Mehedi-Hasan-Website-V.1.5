@@ -1,10 +1,26 @@
 
-import React from "react";
-// eslint-disable-next-line no-unused-vars
+
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import GitHubCalendar from "react-github-calendar";
 
 const GitHubActivitySection = () => {
+  const [error, setError] = useState(null);
+  const username = "mehedi-hasan1102";
+
+  // Optional: simple API call to validate username before rendering calendar
+  useEffect(() => {
+    fetch(`https://api.github.com/users/${username}`)
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to fetch GitHub user");
+        return res.json();
+      })
+      .then(() => setError(null))
+      .catch((err) => setError(err.message));
+  }, [username]);
+
+  if (error) return null; // Hide entire component on error
+
   return (
     <motion.section
       id="github-activity"
@@ -14,9 +30,7 @@ const GitHubActivitySection = () => {
       viewport={{ once: true }}
       className="text-base-content font-mono max-w-6xl mx-auto p-4 px-4 sm:px-6 md:px-8"
     >
-      <div
-        className="border border-primary/30 rounded-xl p-6 bg-base-200 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
-      >
+      <div className="border border-primary/30 rounded-xl p-6 bg-base-200 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -28,11 +42,6 @@ const GitHubActivitySection = () => {
           <h2 className="text-2xl font-bold">My GitHub Calendar</h2>
         </motion.div>
 
-        {/* Animated underline */}
-        {/* <div className="relative mb-12">
-          <div className="absolute h-0.5 w-20 bg-gradient-to-r from-transparent via-primary to-transparent animate-[pulse_3s_ease-in-out_infinite]"></div>
-        </div> */}
-
         <motion.div
           className="flex justify-center items-center"
           initial={{ scale: 0.95, opacity: 0 }}
@@ -41,7 +50,7 @@ const GitHubActivitySection = () => {
           viewport={{ once: true }}
         >
           <GitHubCalendar
-            username="mehedi-hasan1102"
+            username={username}
             colorScheme="light"
             blockSize={14}
             blockMargin={4}
