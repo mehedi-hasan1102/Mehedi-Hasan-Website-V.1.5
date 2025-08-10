@@ -1,4 +1,6 @@
+
 import React from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import {
   SiMongodb,
@@ -36,6 +38,15 @@ const techIconsRow2 = [
 ];
 
 const SkillsSection = () => {
+  const skillItems = [
+  "Front-End Development: HTML, CSS, JavaScript, React",
+  "Back-End Development: Node.js, Express.js",
+  "Databases: MongoDB",
+  "Tools & Platforms: Git, Firebase, Linux, Postman",
+  "API Development: RESTful APIs",
+  "Soft Skills: Teamwork, Effective Communication",
+];
+
   return (
     <motion.section
       id="skills"
@@ -55,7 +66,7 @@ const SkillsSection = () => {
           viewport={{ once: true }}
           className="mb-6"
         >
-          <p className="text-sm text-primary mb-2">• Technical Proficiency</p>
+          <p className="text-sm text-primary mb-2">• Technical & Soft Skills</p>
           <h2 className="text-2xl font-bold">My Skills</h2>
         </motion.div>
 
@@ -70,7 +81,6 @@ const SkillsSection = () => {
                   return (
                     <div
                       key={idx}
-                      whileHover={{ scale: 1.1 }}
                       className="bg-base-100 w-12 h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition"
                       title={label}
                     >
@@ -89,7 +99,6 @@ const SkillsSection = () => {
                   return (
                     <div
                       key={idx}
-                      whileHover={{ scale: 1.1 }}
                       className="bg-base-100 w-12 h-12 flex items-center justify-center border border-base-300 rounded-md p-2 hover:border-primary transition"
                       title={label}
                     >
@@ -109,13 +118,7 @@ const SkillsSection = () => {
             viewport={{ once: true }}
             className="text-sm space-y-3 tracking-wide"
           >
-            {[
-              "Front-End: HTML, CSS, JavaScript, React",
-              "Back-End: Node.js, Express",
-              "Databases: MongoDB",
-              "Tools & Platforms: Git, Firebase",
-              "Others: RESTful APIs",
-            ].map((item, index) => (
+            {skillItems.map((item, index) => (
               <motion.li
                 key={index}
                 whileHover={{ x: 5 }}
