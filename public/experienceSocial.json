@@ -1,0 +1,28 @@
+{
+  "experience": [
+    {
+      "title": "Self-taught Developer",
+      "time": "Independent Learning | 2024 - Present",
+      "description": "Started programming in 2024 through self-study. Focused on building projects using React, Node.js, and JavaScript. Continuously learning and improving through hands-on experience and online courses."
+    },
+    {
+      "title": "Personal Projects",
+      "time": "Various Web Development Projects | 2024 - Present",
+      "description": "Developed multiple web applications including e-commerce sites and task management tools using the MERN stack."
+    }
+  ],
+  "socialWork": [
+    {
+      "title": "Motivator",
+      "time": "Quantum Foundation | 2018 - Present",
+      "description": "Serving as a motivator to inspire and support individuals through various community programs and workshops.",
+      "profileLink": "https://profilev6.quantummethod.org.bd/member/1800609/8ad48dd917a14eca416544?fbclid=IwY2xjawMFy6xleHRuA2FlbQIxMABicmlkETFNbkRRS1NSUUhDRHkyMWM2AR6sXM8GGYvUd86wu_wQSWFofqJFT-UT8DZZlARL6s3z1PH3gwDkb9S_tNPp0w_aem_1aKSjGmRP9Vd8a54BMTd0w"
+    },
+    {
+      "title": "Blood Donor",
+      "time": "Voluntary Service | 2015 - Present",
+      "description": "Participated in multiple blood donation drives contributing to saving lives and supporting medical needs in the community.",
+      "profileLink": "https://blood.quantummethod.org.bd/en/donor-profile/OPML68437?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExTW5EUUtTUlFIQ0R5MjFjNgEeaLpeYt6IilorVgV_B_pmhxUy8GTozCfFFLu7PXB2NhpiWsZpZPjoFCPNvaw_aem_HW_g547rPBTfQRjX8F7MgQ"
+    }
+  ]
+}

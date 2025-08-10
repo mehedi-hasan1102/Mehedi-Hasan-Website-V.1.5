@@ -1,0 +1,90 @@
+{
+  "education": [
+    {
+      "institution": "National University, Bangladesh",
+      "degree": "Bachelor's Degree in Physics",
+      "details": "Expected in 2025",
+      "credentialLink": null
+    },
+    {
+      "institution": "Mymensingh College, Mymensingh",
+      "degree": "HSC in Science",
+      "details": "2015",
+      "credentialLink": "https://drive.google.com/file/d/1odWyEcE87wHxXiaP-xjRpYCFKhOsqHub/view?usp=sharing"
+    },
+    {
+      "institution": "Guzirkuna High School, Durgapur",
+      "degree": "SSC in Science",
+      "details": "2005–2011",
+      "credentialLink": "https://drive.google.com/file/d/17KWpzQK3xVyv7fYceiIGjMwrjttFtdaD/view?usp=sharing"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Complete Web Development Course",
+      "issuer": "Programming Hero",
+      "year": "2025",
+      "credentialLink": null
+    },
+    {
+      "title": "The Web Developer's Kickstart",
+      "issuer": "Programming Hero",
+      "year": "2024",
+      "credentialLink": "https://drive.google.com/file/d/1foa5JvZzFY1BksRLs0hkynrTZ9v-0jC9/view"
+    },
+    {
+      "title": "Mustering Resume Building session",
+      "issuer": "Programming Hero",
+      "year": "2024",
+      "credentialLink": "https://drive.google.com/file/d/1KbC3JnBC-y-wpKKUb7cRfIQQ0wOi3jYV/view?usp=sharing"
+    },
+    {
+      "title": "Web Development (LARAVEL)",
+      "issuer": "BANGLADESH HI_TECH PARK AUTHORITY",
+      "year": "2019",
+      "credentialLink": "https://drive.google.com/file/d/1foa5JvZzFY1BksRLs0hkynrTZ9v-0jC9/view"
+    },
+    {
+      "title": "VIDEO EDITING AND 2D 3D ANIMATION",
+      "issuer": "BANGLADESH HI_TECH PARK AUTHORITY",
+      "year": "2019",
+      "credentialLink": "https://drive.google.com/file/d/1QsiMKXKNZjGqo2itL5seaCA5AGBWjQfp/view?usp=sharing"
+    },
+    {
+      "title": "APTIS Forward thinking English testing",
+      "issuer": "BRITISH COUNCIL",
+      "year": "2019",
+      "credentialLink": "https://drive.google.com/file/d/1TJoHDXsm-6OxWE1DOFsxyM-QJuIZh938/view?usp=sharing"
+    },
+    {
+      "title": "CV Writing & Interview",
+      "issuer": "10 Minute School",
+      "year": "2024",
+      "credentialLink": "https://drive.google.com/file/d/14CKGM1CbzcYJhaOTmDovZ331W9UE5gTN/view?usp=sharing"
+    },
+    {
+      "title": "COMMUNICATION HACKS",
+      "issuer": "10 Minute School",
+      "year": "2025",
+      "credentialLink": "https://drive.google.com/file/d/1cf5tLmK_vTQ1z6KHBcotEB4-GWz-fbhc/view?usp=sharing"
+    },
+    {
+      "title": "CORPORATE ETIQUETTE",
+      "issuer": "10 Minute School",
+      "year": "2025",
+      "credentialLink": "https://drive.google.com/file/d/1uzk4VoqCF0-l0jXTlojGOnVfvSvMA84r/view?usp=sharing"
+    },
+    {
+      "title": "Voluntary Blood Donation Program",
+      "issuer": "Quantum Foundation",
+      "year": "2022",
+      "credentialLink": "https://drive.google.com/file/d/1di6ooU-LHbkljqtJL-ZqioI2q07Mw4hq/view?usp=sharing"
+    },
+    {
+      "title": "Quantum Method Course",
+      "issuer": "Yoga Foundation",
+      "year": "2018",
+      "credentialLink": "https://drive.google.com/file/d/1hUAAXA4n8V-8e9WQ3DtZ0uAfrgbHg8zd/view"
+    }
+  ]
+}

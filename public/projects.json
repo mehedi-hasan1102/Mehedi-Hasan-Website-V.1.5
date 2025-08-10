@@ -1,3 +1,5 @@
+
+
 [
   {
     "title": "Active Arena",
@@ -13,7 +15,9 @@
     "backendRepo": "https://github.com/mehedi-hasan1102/Active-Arena-Server",
     "images": [
       "https://i.ibb.co/j9StcCVr/Screenshot-from-2025-07-31-22-59-46.png"
-    ]
+    ],
+    "challenges": "Implementing secure payment integration and real-time synchronization.",
+    "futurePlans": "Add multi-player support and analytics dashboard."
   },
   {
     "title": "Food Garden",
@@ -29,7 +33,9 @@
     "backendRepo": "https://github.com/mehedi-hasan1102/Food-Garden-Server",
     "images": [
       "https://i.ibb.co/NnQx5NND/Food-Guardian-06-29-2025-01-13-AM.png"
-    ]
+    ],
+    "challenges": "Handling real-time data sync and optimizing performance under heavy load.",
+    "futurePlans": "Integrate AI-based food recommendations and expand recipe database."
   },
   {
     "title": "Plant Care Tracker",
@@ -41,7 +47,9 @@
     "backendRepo": "https://github.com/mehedi-hasan1102/Plant-Care-Server",
     "images": [
       "https://i.ibb.co/27ssr5tp/Plant-Care-06-29-2025-12-43-AM.png"
-    ]
+    ],
+    "challenges": "Implementing reliable reminders and syncing data between client and server.",
+    "futurePlans": "Add AI-powered plant disease detection and personalized care tips."
   },
   {
     "title": "Event Explorer",
@@ -52,7 +60,9 @@
     "frontendRepo": "https://github.com/mehedi-hasan1102/Event-Explorer",
     "images": [
       "https://i.ibb.co/VWcfS0BV/Home-Event-Explorer-06-29-2025-01-07-AM.png"
-    ]
+    ],
+    "challenges": "Managing real-time booking availability and user authentication.",
+    "futurePlans": "Add event rating system and push notifications."
   },
   {
     "title": "Phudu-Medical-Apoinment-App",
@@ -63,17 +73,21 @@
     "frontendRepo": "https://github.com/mehedi-hasan1102/Phudu-Medical-Apoinment-App",
     "images": [
       "https://i.ibb.co/F4KKvjDL/Screenshot-from-2025-08-01-06-06-31.png"
-    ]
+    ],
+    "challenges": "Creating smooth animated UI and handling booking concurrency.",
+    "futurePlans": "Integrate doctor availability calendar and SMS reminders."
   },
   {
     "title": "Auction-Gallery",
-    "description": "A modern React-based application scaffolded with Vite and styled using Tailwind CSS and DaisyUI. ",
+    "description": "A modern React-based application scaffolded with Vite and styled using Tailwind CSS and DaisyUI.",
     "features": ["Bid System"],
     "techStack": ["React", "Tailwind CSS", "DaisyUI"],
     "liveLink": "https://auctiongallerybd.netlify.app",
     "frontendRepo": "https://github.com/mehedi-hasan1102/Auction-Gallery",
     "images": [
       "https://i.ibb.co/20qsX9hq/Screenshot-from-2025-08-01-06-02-40.png"
-    ]
+    ],
+    "challenges": "Implementing real-time bid updates and secure user authentication.",
+    "futurePlans": "Add push notifications and advanced bidding strategies."
   }
 ]

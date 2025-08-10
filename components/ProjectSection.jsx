@@ -1,171 +1,13 @@
-// import React, { useEffect, useState } from "react";
-// import { ArrowUpRight, Github } from "lucide-react";
-// // eslint-disable-next-line no-unused-vars
-// import { motion } from "framer-motion";
-
-// const ProjectSection = () => {
-//   const [projects, setProjects] = useState([]);
-//   const [visibleProjects, setVisibleProjects] = useState(3);
-
-//   useEffect(() => {
-//     fetch("/projects.json")
-//       .then((res) => res.json())
-//       .then((data) => setProjects(data));
-//   }, []);
-
-//   const showMoreProjects = () => {
-//     setVisibleProjects((prev) => prev + 2);
-//   };
-
-//   const fadeIn = {
-//     hidden: { opacity: 0, y: 20 },
-//     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
-//   };
-
-//   return (
-//     <section id="projects" className="border border-primary/30 rounded-xl bg-base-200  font-mono   text-base-content  min-h-screen max-w-6xl mx-auto py-4 px-4 sm:px-6 md:px-8">
-//       <motion.div
-//         initial="hidden"
-//         whileInView="visible"
-//         variants={fadeIn}
-//         viewport={{ once: true, margin: "-50px" }}
-//         className="mb-12 "
-//       >
-//         <p className="text-sm text-primary mb-2">• Featured Projects</p>
-//         <h1 className="text-4xl font-bold text-base-content">My Recent Works</h1>
-//       </motion.div>
-
-//       <div className="space-y-8 ">
-//         {projects.slice(0, visibleProjects).map((project, index) => (
-//           <motion.div
-//             key={index}
-//             initial="hidden"
-//             whileInView="visible"
-//             variants={fadeIn}
-//             viewport={{ once: true }}
-//             transition={{ delay: index * 0.1 }}
-//             className="bg-base-100 border border-primary/30 rounded-xl p-6  backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300  hover:shadow-lg "
-//           >
-//             <div className="grid md:grid-cols-2 gap-8 ">
-//               <motion.div whileHover={{ scale: 1.02 }} className="overflow-hidden rounded-lg">
-//                 <img
-//                   src={project.images[0]}
-//                   alt={project.title}
-//                   className="w-full h-full object-cover rounded-lg shadow-md"
-//                 />
-//               </motion.div>
-
-//               <div className="flex flex-col justify-between">
-//                 <div>
-//                   <h3 className="text-xl text-primary font-semibold mb-3">
-//                     {project.title}
-//                   </h3>
-//                   <p className="text-base text-base-content/80 mb-6">
-//                     {project.description}
-//                   </p>
-
-
-// <div className="mb-6">
-//   <hr className="my-4 h-px border-0 bg-base-300/30" />
-//   <div className="flex flex-wrap items-center gap-x-2">
-//     <span className="text-sm text-base-content/60">Technologies:</span>
-//     {project.techStack.map((tech, i) => (
-//       <motion.span
-//         key={i}
-//         initial={{ opacity: 0 }}
-//         animate={{ opacity: 1 }}
-//         transition={{ delay: i * 0.05 }}
-//         className="text-xs text-base-content/80"
-//       >
-//         {tech}{i < project.techStack.length - 1 ? ',' : ''}
-//       </motion.span>
-//     ))}
-//   </div>
-//   <hr className="my-4 h-px border-0 bg-base-300/30" />
-// </div>
-//                 </div>
-
-//                 <div className="flex flex-wrap gap-4 text-sm">
-//                   <motion.a
-//                     whileHover={{ x: 3 }}
-//                     href={project.liveLink}
-//                     className="flex items-center gap-1 text-primary hover:underline"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                   >
-//                     <ArrowUpRight size={16} /> Live Demo
-//                   </motion.a>
-//                   <motion.a
-//                     whileHover={{ x: 3 }}
-//                     href={project.frontendRepo}
-//                     className="flex items-center gap-1 text-base-content hover:underline"
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                   >
-//                     <Github size={16} /> Frontend
-//                   </motion.a>
-//                   {project.backendRepo && (
-//                     <motion.a
-//                       whileHover={{ x: 3 }}
-//                       href={project.backendRepo}
-//                       className="flex items-center gap-1 text-base-content hover:underline"
-//                       target="_blank"
-//                       rel="noopener noreferrer"
-//                     >
-//                       <Github size={16} /> Backend
-//                     </motion.a>
-//                   )}
-//                 </div>
-//               </div>
-//             </div>
-//           </motion.div>
-//         ))}
-
-//         {visibleProjects < projects.length && (
-          
-//           <motion.div
-//   initial={{ opacity: 0, y: 10 }}
-//   whileInView={{ opacity: 1, y: 0 }}
-//   transition={{ duration: 0.4 }}
-//   viewport={{ once: true }}
-//   className="flex justify-start mt-8"
-// >
-//   <motion.button
-//     onClick={showMoreProjects}
-//     className="inline-flex items-center gap-2 text-primary hover:underline font-mono"
-//     whileHover={{ 
-//       scale: 1.05,
-//       transition: { duration: 0.2 }
-//     }}
-//     whileTap={{ 
-//       scale: 0.95,
-//       transition: { duration: 0.1 }
-//     }}
-//   >
-//     <motion.span
-//       animate={{ rotate: [0, 10, -5, 0] }}
-//       transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 2 }}
-//     >
-//       +
-//     </motion.span>
-//     Show More Project
-//   </motion.button>
-// </motion.div>
-//         )}
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default ProjectSection;
-
 import React, { useEffect, useState } from "react";
-import { ArrowUpRight, Github } from "lucide-react";
+import { Eye, ArrowUpRight, Github } from "lucide-react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const ProjectSection = () => {
   const [projects, setProjects] = useState([]);
   const [visibleProjects, setVisibleProjects] = useState(3);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     fetch("/projects.json")
@@ -177,142 +19,283 @@ const ProjectSection = () => {
     setVisibleProjects((prev) => prev + 2);
   };
 
+  const openModal = (project) => {
+    setSelectedProject(project);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setSelectedProject(null);
+  };
+
   return (
-    <motion.section
-      id="projects"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      viewport={{ once: true }}
-      className=" text-base-content font-mono max-w-6xl mx-auto py-4 px-4 sm:px-6 md:px-8"
-    >
-      <div className="bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          viewport={{ once: true }}
-          className="mb-6"
-        >
-          <p className="text-sm text-primary mb-2">• Featured Projects</p>
-          <h2 className="text-2xl font-bold">My Recent Works</h2>
-        </motion.div>
-
-        <div className="space-y-6">
-          {projects.slice(0, visibleProjects).map((project, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ y: -5 }}
-              transition={{ type: "spring", stiffness: 200 }}
-              className="bg-base-100 border border-base-300 rounded-md p-4 hover:border-primary transition"
-            >
-              <div className="grid md:grid-cols-2 gap-6 items-start">
-                <motion.div whileHover={{ scale: 1.02 }} className="overflow-hidden rounded-lg">
-                  <img
-                    src={project.images[0]}
-                    alt={project.title}
-                    className="w-full h-full object-cover rounded-lg shadow"
-                  />
-                </motion.div>
-
-                <div className="flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-lg font-semibold text-primary mb-3">
-                      {project.title}
-                    </h3>
-                    <p className="text-sm leading-relaxed text-base-content/80 mb-4">
-                      {project.description}
-                    </p>
-
-                    <div className="mb-4">
-                      <hr className="my-3 h-px border-0 bg-base-300/30" />
-                      <div className="flex flex-wrap items-center gap-x-2">
-                        <span className="text-sm text-base-content/60">Technologies:</span>
-                        {project.techStack.map((tech, i) => (
-                          <motion.span
-                            key={i}
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: i * 0.05 }}
-                            className="text-xs text-base-content/80"
-                          >
-                            {tech}{i < project.techStack.length - 1 ? ',' : ''}
-                          </motion.span>
-                        ))}
-                      </div>
-                      <hr className="my-3 h-px border-0 bg-base-300/30" />
-                    </div>
-                  </div>
-
-                  <div className="flex flex-wrap gap-4 text-sm">
-                    <motion.a
-                      whileHover={{ x: 3 }}
-                      href={project.liveLink}
-                      className="flex items-center gap-1 text-primary hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ArrowUpRight size={16} /> Live Demo
-                    </motion.a>
-                    <motion.a
-                      whileHover={{ x: 3 }}
-                      href={project.frontendRepo}
-                      className="flex items-center gap-1 text-base-content hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github size={16} /> Frontend
-                    </motion.a>
-                    {project.backendRepo && (
-                      <motion.a
-                        whileHover={{ x: 3 }}
-                        href={project.backendRepo}
-                        className="flex items-center gap-1 text-base-content hover:underline"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github size={16} /> Backend
-                      </motion.a>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {visibleProjects < projects.length && (
+    <>
+      <motion.section
+        id="projects"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="text-base-content font-mono max-w-6xl mx-auto py-4 px-4 sm:px-6 md:px-8"
+      >
+        <div className="bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
+            transition={{ delay: 0.1 }}
             viewport={{ once: true }}
-            className="flex justify-start mt-8"
+            className="mb-6"
           >
-            <motion.button
-              onClick={showMoreProjects}
-              className="inline-flex items-center gap-2 text-primary hover:underline font-mono"
-              whileHover={{
-                scale: 1.05,
-                transition: { duration: 0.2 },
-              }}
-              whileTap={{
-                scale: 0.95,
-                transition: { duration: 0.1 },
-              }}
-            >
-              <motion.span
-                animate={{ rotate: [0, 10, -5, 0] }}
-                transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 2 }}
-              >
-                +
-              </motion.span>
-              Show More Projects
-            </motion.button>
+            <p className="text-sm text-primary mb-2">• Featured Projects</p>
+            <h2 className="text-2xl font-bold">My Recent Works</h2>
           </motion.div>
-        )}
-      </div>
-    </motion.section>
+
+          <div className="space-y-6">
+            {projects.slice(0, visibleProjects).map((project, index) => (
+              <motion.div
+                key={index}
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 200 }}
+                className="bg-base-100 border border-base-300 rounded-md p-4 hover:border-primary transition"
+              >
+                <div className="grid md:grid-cols-2 gap-6 items-start">
+                  <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    className="overflow-hidden rounded-lg"
+                  >
+                    <img
+                      src={project.images[0]}
+                      alt={project.title}
+                      className="w-full h-full object-cover rounded-lg shadow"
+                    />
+                  </motion.div>
+
+                  <div className="flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-lg font-semibold text-primary mb-3">
+                        {project.title}
+                      </h3>
+                      <p className="text-sm leading-relaxed text-base-content/80 mb-4">
+                        {project.description}
+                      </p>
+
+                      <div className="mb-4">
+                        <hr className="my-3 h-px border-0 bg-base-300/30" />
+                        <div className="flex flex-wrap items-center gap-x-2">
+                          <span className="text-sm text-base-content/60">
+                            Technologies:
+                          </span>
+                          {project.techStack.map((tech, i) => (
+                            <motion.span
+                              key={i}
+                              initial={{ opacity: 0 }}
+                              animate={{ opacity: 1 }}
+                              transition={{ delay: i * 0.05 }}
+                              className="text-xs text-base-content/80"
+                            >
+                              {tech}
+                              {i < project.techStack.length - 1 ? "," : ""}
+                            </motion.span>
+                          ))}
+                        </div>
+                        <hr className="my-3 h-px border-0 bg-base-300/30" />
+                      </div>
+                    </div>
+
+                    <div className="flex flex-wrap gap-4 text-sm">
+                      <motion.a
+                        whileHover={{ x: 3 }}
+                        href={project.liveLink}
+                        className="flex items-center gap-1 text-primary hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ArrowUpRight size={16} /> Live Demo
+                      </motion.a>
+                      <motion.a
+                        whileHover={{ x: 3 }}
+                        href={project.frontendRepo}
+                        className="flex items-center gap-1 text-primary hover:underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github size={16} /> Frontend
+                      </motion.a>
+
+                      {project.backendRepo && (
+                        <motion.a
+                          whileHover={{ x: 3 }}
+                          href={project.backendRepo}
+                          className="flex items-center gap-1 text-primary hover:underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github size={16} /> Backend
+                        </motion.a>
+                      )}
+
+                      {/* View Details Button */}
+                      <motion.button
+                        whileHover={{ x: 3 }}
+                        onClick={() => openModal(project)}
+                        className="flex items-center gap-1 text-primary hover:underline"
+                      >
+                        <Eye size={18} className="flex-shrink-0" />
+                        <span>View Details</span>
+                      </motion.button>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {visibleProjects < projects.length && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+              viewport={{ once: true }}
+              className="flex justify-start mt-8"
+            >
+              <motion.button
+                onClick={showMoreProjects}
+                className="inline-flex items-center gap-2 text-primary hover:underline font-mono"
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+                whileTap={{
+                  scale: 0.95,
+                  transition: { duration: 0.1 },
+                }}
+              >
+                <motion.span
+                  animate={{ rotate: [0, 10, -5, 0] }}
+                  transition={{ duration: 0.5, repeat: Infinity, repeatDelay: 2 }}
+                >
+                  +
+                </motion.span>
+                Show More Projects
+              </motion.button>
+            </motion.div>
+          )}
+        </div>
+      </motion.section>
+
+      {/* Modal */}
+      {showModal && selectedProject && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="font-mono fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+        >
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.9, opacity: 0 }}
+            className="bg-base-200 border border-primary/30 rounded-xl p-6 shadow-lg max-w-lg w-full relative overflow-y-auto max-h-[90vh]"
+          >
+            {/* Close Button */}
+            <button
+              onClick={closeModal}
+              className="absolute top-3 right-3 text-base-content/60 hover:text-primary text-xl font-bold"
+              aria-label="Close modal"
+            >
+              ✕
+            </button>
+
+            {/* Title */}
+            <h2 className="text-xl font-bold text-primary mb-3">
+              {selectedProject.title}
+            </h2>
+
+            {/* Project Image */}
+            {selectedProject.images && selectedProject.images.length > 0 && (
+              <img
+                src={selectedProject.images[0]}
+                alt={selectedProject.title}
+                className="w-full h-48 object-cover rounded-md mb-4 shadow"
+              />
+            )}
+
+            {/* Tech Stack */}
+            <div className="mb-4">
+              <span className="font-semibold text-sm">Tech Stack:</span>
+              <div className="flex flex-wrap gap-2 mt-1">
+                {selectedProject.techStack.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="px-2 py-1 text-xs border border-base-300 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Description */}
+            <p className="text-sm mb-4">{selectedProject.description}</p>
+
+            {/* Links */}
+            <div className="flex flex-wrap gap-4 mb-4">
+              <motion.a
+                whileHover={{ x: 3 }}
+                href={selectedProject.liveLink}
+                className="flex items-center gap-1 text-primary hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ArrowUpRight size={16} /> Live Demo
+              </motion.a>
+              <motion.a
+                whileHover={{ x: 3 }}
+                href={selectedProject.frontendRepo}
+                className="flex items-center gap-1 text-primary hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github size={16} /> Frontend
+              </motion.a>
+
+              {selectedProject.backendRepo && (
+                <motion.a
+                  whileHover={{ x: 3 }}
+                  href={selectedProject.backendRepo}
+                  className="flex items-center gap-1 text-primary hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github size={16} /> Backend
+                </motion.a>
+              )}
+            </div>
+
+            {/* Challenges */}
+            {selectedProject.challenges && (
+              <div className="mb-4">
+                <span className="font-semibold text-sm">Challenges Faced:</span>
+                <p className="text-xs text-base-content/80 mt-1">
+                  {selectedProject.challenges}
+                </p>
+              </div>
+            )}
+
+            {/* Future Plans */}
+            {selectedProject.futurePlans && (
+              <div>
+                <span className="font-semibold text-sm">Future Plans:</span>
+                <p className="text-xs text-base-content/80 mt-1">
+                  {selectedProject.futurePlans}
+                </p>
+              </div>
+            )}
+          </motion.div>
+        </motion.div>
+      )}
+    </>
   );
 };
 
