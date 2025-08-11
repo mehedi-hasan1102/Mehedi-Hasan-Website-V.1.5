@@ -1,0 +1,54 @@
+import React from "react";
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
+import { Ruler, Monitor, Code, Clock } from "lucide-react";
+
+const stats = [
+  { icon: <Ruler className="w-10 h-10 text-primary" />, number: "2+", label: "Years Experience" },
+  { icon: <Monitor className="w-10 h-10 text-primary" />, number: "35+", label: "Projects Completed" },
+  { icon: <Code className="w-10 h-10 text-primary" />, number: "1+", label: "Tech Stack" },
+  { icon: <Clock className="w-10 h-10 text-primary" />, number: "500+", label: "Hours Learning" },
+];
+
+const StatsSection = () => {
+  return (
+    <motion.section
+      id="stats"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="max-w-6xl mx-auto p-6 px-4 sm:px-6 md:px-8"
+    >
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 bg-base-200 border border-primary/30 rounded-xl p-8 shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
+      >
+        {stats.map((stat, idx) => {
+          // Extract number and suffix (+)
+          const match = stat.number.match(/^(\d+)(.*)$/);
+          const endNum = match ? parseInt(match[1], 10) : 0;
+          const suffix = match ? match[2] : "";
+
+          return (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: idx * 0.15, type: "spring", stiffness: 100 }}
+              viewport={{ once: true }}
+              className="flex flex-col items-center text-center"
+            >
+              {stat.icon}
+              <h3 className="text-5xl font-extrabold text-primary mt-3">
+                <CountUp start={0} end={endNum} duration={2.5} />{suffix}
+              </h3>
+              <p className="text-base-content/70 mt-1 font-mono tracking-wide">{stat.label}</p>
+            </motion.div>
+          );
+        })}
+      </div>
+    </motion.section>
+  );
+};
+
+export default StatsSection;

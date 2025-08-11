@@ -14,10 +14,10 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  { label: "About me", to: "#home" },
-  { label: "Resumi", to: "#about" },
+  { label: "About me", to: "#about" },
+  { label: "resume", to: "#resume" },
   { label: "Services", to: "#services" },
-  { label: "Portfoliyo", to: "#projects" },
+  { label: "Portfoliyo", to: "#portfolio" },
   // { label: "Skills", to: "#skills" },
   //  { label: "Blogs", to: "#skills" },
   { label: "Contact", to: "#contact" },

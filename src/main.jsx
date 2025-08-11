@@ -24,6 +24,7 @@ import MultiRepoGitJournal from '../components/MultiRepoGitJournal';
 
 import ExperienceAndSocialWork from '../components/ExperienceAndSocialWork';
 // import Blog from '../components/Blogs';
+import StatsSection from '../components/StatsSection';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,7 @@ const router = createBrowserRouter([
         element: (
           <>
             <HeroSection />
+           < StatsSection />
             <AboutMe />
             <ExperienceAndSocialWork />
             <SkillsSection />

@@ -180,7 +180,7 @@ const AboutSections = () => {
 
   return (
     <motion.section
-      id="about"
+      id="resume"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
