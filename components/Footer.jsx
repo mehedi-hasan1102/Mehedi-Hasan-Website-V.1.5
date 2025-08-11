@@ -82,12 +82,15 @@ const Footer = () => {
           className="flex flex-wrap justify-center gap-4 text-xs tracking-wide text-base-content/70"
         >
           {[
-            { label: "Home", to: "/" },
-            { label: "About", to: "#about" },
-            { label: "Services", to: "#services" },
-            { label: "Skills", to: "#skills" },
-            { label: "Projects", to: "#projects" },
-            { label: "Contact", to: "#contact" },
+            
+
+            { label: "About me", to: "#home" },
+  { label: "Resumi", to: "#about" },
+  { label: "Services", to: "#services" },
+  { label: "Portfoliyo", to: "#projects" },
+  // { label: "Skills", to: "#skills" },
+  //  { label: "Blogs", to: "#skills" },
+  { label: "Contact", to: "#contact" },
           ].map((item, index) => (
             <motion.a
               key={item.label}

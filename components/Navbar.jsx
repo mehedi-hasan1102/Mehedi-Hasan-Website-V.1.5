@@ -14,11 +14,12 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  { label: "Home", to: "#home" },
-  { label: "About", to: "#about" },
+  { label: "About me", to: "#home" },
+  { label: "Resumi", to: "#about" },
   { label: "Services", to: "#services" },
-  { label: "Skills", to: "#skills" },
-  { label: "Projects", to: "#projects" },
+  { label: "Portfoliyo", to: "#projects" },
+  // { label: "Skills", to: "#skills" },
+  //  { label: "Blogs", to: "#skills" },
   { label: "Contact", to: "#contact" },
 ];
 
