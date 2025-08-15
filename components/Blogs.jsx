@@ -118,7 +118,7 @@ const BlogSection = () => {
       className="text-base-content font-sans max-w-6xl mx-auto py-8 px-4 sm:px-6 md:px-8"
     >
       {/* Blog Cards */}
-      <div className="rounded-2xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
+      <div className="rounded-2xl p-6 backdrop-blur-sm shadow-lg  transition-shadow duration-300">
         <div className="mb-8 text-center max-w-6xl">
           <p className="text-sm text-primary mb-2">• Insights & Tutorials</p>
           <h2 className="text-3xl font-bold tracking-tight">Latest Blogs</h2>
