@@ -59,7 +59,7 @@ const ServiceSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
           viewport={{ once: true }}
-          className="mb-6"
+          className="mb-6 text-center"
         >
           <p className="text-sm text-primary mb-2">• What I Do</p>
           <h2 className="text-2xl font-bold">My Services</h2>
