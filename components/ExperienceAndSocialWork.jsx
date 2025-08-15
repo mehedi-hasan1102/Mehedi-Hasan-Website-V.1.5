@@ -30,7 +30,8 @@ const ExperienceAndSocialWork = () => {
 
   return (
     <section
-      id="experience"
+      // id="experience"
+      id="resume"
       className="text-base-content font-mono max-w-6xl mx-auto p-4 px-4 sm:px-6 md:px-8"
     >
       <div className="space-y-16">

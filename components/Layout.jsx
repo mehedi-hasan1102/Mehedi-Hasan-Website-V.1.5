@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 // import Footer from "./Footer";
 import ScrollToTopButton from './ScrollToTopButton';
 import LightRays from './LightRays';
+// import Sidebar from './Sidebar';
 
 const Layout = () => {
   return (
@@ -18,6 +19,7 @@ const Layout = () => {
         <LightRays />
       </div>
       <ScrollToTopButton />
+      {/* <Sidebar/> */}
 
       {/* Main content container with proper stacking */}
       <div className="relative z-10 flex flex-col min-h-screen">

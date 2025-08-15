@@ -12,6 +12,7 @@ import {
   Sun,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Sidebar from "./Sidebar";
 
 const navItems = [
   { label: "About me", to: "#about" },
@@ -86,6 +87,7 @@ const Navbar = () => {
         animate={{ opacity: 1, y: 0 }}
         className="border border-primary/30 flex items-center justify-between bg-base-200 text-base-content px-4 md:px-6 py-3 rounded-xl shadow-lg backdrop-blur-md shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
       >
+       
         {/* Logo */}
         <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2 whitespace-nowrap">
           <span className="text-primary text-xl sm:text-2xl font-mono">&lt;/&gt;</span>
