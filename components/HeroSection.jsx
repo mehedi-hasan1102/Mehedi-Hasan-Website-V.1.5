@@ -156,10 +156,10 @@ const HeroSection = () => {
             transition={{ delay: 0.4 }}
             className="mt-4 text-sm sm:text-base font-mono text-base-content/60 break-words"
           >
-            <span className="text-secondary">&lt;p&gt;</span>
+            <span className="text-secondary">&lt;p&gt; </span>
             With expertise in technologies like NodeJS, React, and NextJS... I
             deliver web solutions that are both innovative and robust.
-            <span className="text-secondary">&lt;/p&gt;</span>
+            <span className="text-secondary"> &lt;/p&gt;</span>
           </motion.p>
 
           {/* Tech Icons */}

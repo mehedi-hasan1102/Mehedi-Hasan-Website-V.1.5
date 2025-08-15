@@ -89,10 +89,11 @@ const Navbar = () => {
         {/* Logo */}
         <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2 whitespace-nowrap">
           <span className="text-primary text-xl sm:text-2xl font-mono">&lt;/&gt;</span>
-          <span className="font-bold text-sm sm:text-lg">
-            Mehedi <span className="text-base-content/60">Hasan</span>
+          <span className="font-bold text-sm sm:text-lg ">
+            Mehedi <span className="text-base-content/60 ">Hasan</span>
           </span>
         </motion.div>
+        
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-2 flex-1 justify-center flex-wrap">
