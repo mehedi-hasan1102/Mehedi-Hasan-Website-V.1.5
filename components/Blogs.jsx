@@ -102,11 +102,8 @@ const BlogSection = () => {
 
   // Prevent background scroll when modal is open
   useEffect(() => {
-    if (selectedBlog) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+    if (selectedBlog) document.body.style.overflow = "hidden";
+    else document.body.style.overflow = "auto";
   }, [selectedBlog]);
 
   const closeModal = () => setSelectedBlog(null);
@@ -174,13 +171,13 @@ const BlogSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-[9999] p-4"
+            className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[9999] p-4"
           >
             <motion.div
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
-              className="bg-base-200 border border-primary/30 rounded-2xl shadow-2xl max-w-7xl w-full relative overflow-hidden flex flex-col md:flex-row max-h-[95vh]"
+              className="bg-base-200 border border-primary/30 rounded-2xl shadow-2xl w-full max-w-7xl relative overflow-hidden flex flex-col md:flex-row max-h-[95vh]"
             >
               {/* Blog Image */}
               <div className="md:w-1/2 w-full h-64 md:h-auto overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none">
@@ -202,7 +199,7 @@ const BlogSection = () => {
                   <X size={24} />
                 </button>
 
-                <div className="overflow-y-auto pr-2 max-h-[90vh] space-y-4 custom-scrollbar">
+                <div className="overflow-y-auto pr-2 max-h-[90vh] space-y-4">
                   <p className="text-xs text-primary uppercase tracking-wide">
                     {selectedBlog.date} • {selectedBlog.readTime} • {selectedBlog.category}
                   </p>
@@ -218,43 +215,41 @@ const BlogSection = () => {
                   </div>
 
                   {/* Social Share Buttons */}
-                  {/* <div className="mt-6 flex flex-wrap gap-4 items-center">
-                    <p className="text-sm font-semibold text-base-content/70 mr-2">Share:</p>
+                  {/* {selectedBlog.link && (
+                    <div className="mt-6 flex flex-wrap gap-4 items-center">
+                      <span className="text-sm font-semibold text-base-content/70 mr-2">Share:</span>
 
-                   
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(selectedBlog.link)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-full shadow hover:scale-110 transition-transform"
-                      aria-label="Share on Facebook"
-                    >
-                      <Facebook size={18} />
-                    </a>
+                      <a
+                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(selectedBlog.link)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-full shadow hover:scale-110 transition-transform"
+                        aria-label="Share on Facebook"
+                      >
+                        <Facebook size={18} />
+                      </a>
 
-                   
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(selectedBlog.link)}&text=${encodeURIComponent(selectedBlog.title)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center w-10 h-10 bg-[#1DA1F2] text-white rounded-full shadow hover:scale-110 transition-transform"
-                      aria-label="Share on X/Twitter"
-                    >
-                      <Twitter size={18} />
-                    </a>
+                      <a
+                        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(selectedBlog.link)}&text=${encodeURIComponent(selectedBlog.title)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center w-10 h-10 bg-[#1DA1F2] text-white rounded-full shadow hover:scale-110 transition-transform"
+                        aria-label="Share on Twitter/X"
+                      >
+                        <Twitter size={18} />
+                      </a>
 
-                    
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(selectedBlog.link)}&title=${encodeURIComponent(selectedBlog.title)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center w-10 h-10 bg-blue-700 text-white rounded-full shadow hover:scale-110 transition-transform"
-                      aria-label="Share on LinkedIn"
-                    >
-                      <Linkedin size={18} />
-                    </a>
-                  </div> */}
-
+                      <a
+                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(selectedBlog.link)}&title=${encodeURIComponent(selectedBlog.title)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center w-10 h-10 bg-blue-700 text-white rounded-full shadow hover:scale-110 transition-transform"
+                        aria-label="Share on LinkedIn"
+                      >
+                        <Linkedin size={18} />
+                      </a>
+                    </div>
+                  )} */}
                 </div>
               </div>
             </motion.div>
