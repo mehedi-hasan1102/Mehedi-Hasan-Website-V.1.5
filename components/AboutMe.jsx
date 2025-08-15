@@ -79,7 +79,7 @@ const AboutSections = () => {
                   title={edu.degree}
                 >
                   <p className="text-base-content font-semibold">
-                    <span className="text-primary px-1 rounded">
+                    <span className=" px-1 rounded">
                       {edu.institution}
                     </span>
                   </p>
@@ -122,7 +122,7 @@ const AboutSections = () => {
                   title={cert.title}
                 >
                   <p className="text-base-content font-semibold">
-                    <span className="text-primary  px-1 rounded">{cert.title}</span>
+                    <span className=" px-1 rounded">{cert.title}</span>
                   </p>
                   <p className="text-base-content/70 mt-1">
                     {cert.issuer} | {cert.year}
