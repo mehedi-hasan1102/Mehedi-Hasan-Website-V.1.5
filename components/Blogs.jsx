@@ -1,91 +1,6 @@
-// import React, { useEffect, useState } from "react";
-// import { motion } from "framer-motion";
-// import { ArrowUpRight } from "lucide-react";
 
-// const BlogSection = () => {
-//   const [blogs, setBlogs] = useState([]);
-
-//   useEffect(() => {
-//     fetch("/blogs.json")
-//       .then((res) => res.json())
-//       .then((data) => setBlogs(data))
-//       .catch((err) => console.error("Error loading blogs:", err));
-//   }, []);
-
-//   return (
-//     <motion.section
-//       id="blogs"
-//       initial={{ opacity: 0 }}
-//       whileInView={{ opacity: 1 }}
-//       transition={{ duration: 0.5 }}
-//       viewport={{ once: true }}
-
-//       className="  text-base-content font-mono  max-w-6xl mx-auto py-4 px-4 sm:px-6 md:px-8"
-//     >
-
-//       <div className="bg-base-200 border border-primary/30 rounded-xl p-6  backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
-//         <motion.div
-//           initial={{ opacity: 0, y: 10 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           transition={{ delay: 0.1 }}
-//           viewport={{ once: true }}
-//           className="mb-6 text-left max-w-xl"
-//         >
-//           <p className="text-sm text-primary mb-2">• Insights & Tutorials</p>
-//           <h2 className="text-2xl font-bold">Latest Blogs</h2>
-//         </motion.div>
-
-//         <div className="grid md:grid-cols-3 gap-6">
-//           {blogs.map((blog) => (
-//             <motion.div
-//               key={blog.id}
-//               whileHover={{ y: -5 }}
-//               transition={{ type: "spring", stiffness: 200 }}
-//               className="bg-base-100 border border-base-300 rounded-md p-4 hover:border-primary transition"
-//             >
-//               {/* Image with hover effects */}
-//               <div className="relative group p-2 border border-primary rounded-md mb-3 overflow-hidden">
-//                 <img
-//                   src={blog.image}
-//                   alt={blog.title}
-//                   className="w-full h-40 object-cover rounded-md transition-transform duration-300 group-hover:scale-105"
-//                   loading="lazy"
-//                 />
-
-//                 {/* Category Tag */}
-//                 <span className="absolute bottom-3 left-3 bg-black/80 text-white text-xs px-3 py-1 rounded-md">
-//                   {blog.category}
-//                 </span>
-
-//                 {/* Centered Floating Arrow Button */}
-//                 <a
-//                   href={blog.link}
-//                   className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-75 group-hover:scale-100"
-//                 >
-//                   <span className="bg-primary text-primary-content p-3 rounded-full shadow-md hover:shadow-lg">
-//                     <ArrowUpRight size={20} />
-//                   </span>
-//                 </a>
-//               </div>
-
-//               {/* Text Info */}
-//               <p className="text-xs text-base-content/50 mb-1">
-//                 {blog.date} • {blog.readTime}
-//               </p>
-//               <h3 className="text-lg font-semibold mb-2">{blog.title}</h3>
-//               {/* <p className="text-sm leading-relaxed text-base-content/70">
-//                 {blog.description}
-//               </p> */}
-//             </motion.div>
-//           ))}
-//         </div>
-//       </div>
-//     </motion.section>
-//   );
-// };
-
-// export default BlogSection;
 import React, { useEffect, useState } from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, X, Facebook, Linkedin, Twitter } from "lucide-react";
 
@@ -120,8 +35,9 @@ const BlogSection = () => {
       {/* Blog Cards */}
       <div className="rounded-2xl p-6 backdrop-blur-sm shadow-lg  transition-shadow duration-300">
         <div className="mb-8 text-center max-w-6xl">
-          <p className="text-sm text-primary mb-2">• Insights & Tutorials</p>
-          <h2 className="text-3xl font-bold tracking-tight">Latest Blogs</h2>
+          <p className="text-sm text-primary mb-2 font-mono ">• Insights & Tutorials</p>
+          <h2 className="text-2xl font-mono font-bold tracking-tight">Latest tips, stories, <span className="text-base-content/60">and guides 
+          </span></h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

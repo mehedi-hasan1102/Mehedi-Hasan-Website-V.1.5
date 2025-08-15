@@ -44,10 +44,10 @@ const ExperienceAndSocialWork = () => {
             viewport={{ once: true, margin: "-100px" }}
             className="bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
           >
-            <p className="text-sm text-primary mb-2">• Professional Journey</p>
+            <p className="text-sm text-primary mb-2">• Career Path</p>
             <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
               <Briefcase className="text-primary w-5 h-5" />
-              <span>Experience</span>
+              <span>Work Experience</span>
             </h3>
 
             <ul className="space-y-6">
@@ -77,10 +77,10 @@ const ExperienceAndSocialWork = () => {
             viewport={{ once: true, margin: "-100px" }}
             className="bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
           >
-            <p className="text-sm text-primary mb-2">• Community Engagement</p>
+            <p className="text-sm text-primary mb-2">• Social Impact</p>
             <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
               <Users className="text-primary w-5 h-5" />
-              <span>Social Work</span>
+              <span>Community Work</span>
             </h3>
 
             <ul className="space-y-6">

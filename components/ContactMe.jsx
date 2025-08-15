@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Phone, Mail, MapPin, MessageSquare } from "lucide-react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const ContactMe = () => {
@@ -52,7 +53,8 @@ const ContactMe = () => {
           className="mb-6"
         >
           <p className="text-sm text-primary mb-2">• Get in Touch</p>
-          <h2 className="text-2xl font-bold text-base-content">Let's connect</h2>
+          <h2 className="text-2xl font-mono font-bold text-base-content">Let’s create  <span className="text-base-content/60">together ! 
+          </span></h2>
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-12">

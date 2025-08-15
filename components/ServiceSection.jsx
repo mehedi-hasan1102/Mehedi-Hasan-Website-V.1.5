@@ -1,7 +1,7 @@
 import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { Code2, Server, Wrench } from "lucide-react";
+import { Code2, Server, Wrench, Cpu, Gauge ,Lock   } from "lucide-react";
 
 const services = [
   {
@@ -23,19 +23,19 @@ const services = [
       "Delivering complete web apps with seamless integration of front-end and back-end technologies.",
   },
   {
-    icon: <Wrench className="w-6 h-6 text-primary" />,
+    icon: <Cpu className="w-6 h-6 text-primary" />,
     title: "REST API Integration",
     description:
       "Creating and integrating robust REST APIs to connect services and ensure efficient data flow across your application.",
   },
   {
-    icon: <Code2 className="w-6 h-6 text-primary" />,
+    icon: <Gauge className="w-6 h-6 text-primary" />,
     title: "Performance Optimization",
     description:
       "Improving application speed and responsiveness through lazy loading, code splitting, and optimized rendering techniques.",
   },
   {
-    icon: <Server className="w-6 h-6 text-primary" />,
+    icon: <Lock className="w-6 h-6 text-primary" />,
     title: "Authentication & Security",
     description:
       "Implementing secure authentication systems using JWT, OAuth, and Firebase Auth to protect users and data.",
@@ -61,8 +61,11 @@ const ServiceSection = () => {
           viewport={{ once: true }}
           className="mb-6 text-center"
         >
-          <p className="text-sm text-primary mb-2">• What I Do</p>
-          <h2 className="text-2xl font-bold">My Services</h2>
+          <p className="text-sm text-primary mb-2">• Cooperation</p>
+          <h2 className="text-2xl font-bold">Designing solutions 
+            
+             <span className="text-base-content/60"> customized
+to meet your requirements</span> </h2>
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6 ">
@@ -80,9 +83,29 @@ const ServiceSection = () => {
                 <h3 className="text-lg font-semibold">{service.title}</h3>
               </div>
               <p className="text-sm leading-relaxed">{service.description}</p>
+              
             </motion.div>
+            
+            
           ))}
         </div>
+
+        <div className="mt-8 text-center">
+  <p className="text-sm mb-2">
+    Excited to take on new projects and collaborate.
+    Let's chat about your ideas.{" "}
+    <a 
+      href="#contact" 
+      className="text-primary hover:underline cursor-pointer "
+      onClick={(e) => {
+        e.preventDefault();
+        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+      }}
+    >
+      Reach out!
+    </a>
+  </p>
+</div>
       </div>
     </motion.section>
   );

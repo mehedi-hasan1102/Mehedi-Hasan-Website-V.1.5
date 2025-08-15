@@ -1,6 +1,7 @@
 
 
 import React from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import {
@@ -16,17 +17,6 @@ import {
 } from "react-icons/si";
 import Typewriter from "typewriter-effect";
 
-// const techIcons = [
-//   { icon: SiReact, label: "React" },
-//   { icon: SiNextdotjs, label: "Next.js" },
-//   { icon: SiNodedotjs, label: "Node.js" },
-//   { icon: SiExpress, label: "Express.js" },
-//   { icon: SiMongodb, label: "MongoDB" },
-//   { icon: SiTailwindcss, label: "Tailwind CSS" },
-//   { icon: SiFirebase, label: "Firebase" },
-//   { icon: SiJavascript, label: "JavaScript" },
-//   { icon: SiTypescript, label: "TypeScript" },
-// ];
 
 const techIcons = [
   { icon: SiReact, label: "React", color: "#61DAFB" },
@@ -42,14 +32,7 @@ const techIcons = [
 
 const HeroSection = () => {
   return (
-    // <motion.section
-    //   id="home"
-    //   initial={{ opacity: 0 }}
-    //   animate={{ opacity: 1 }}
-    //   transition={{ duration: 0.5 }}
-    //   className="min-h-screen max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-16 pt-24 flex items-center justify-center"
-    // >
-
+   
     <motion.section
       id="about"
       initial={{ opacity: 0 }}

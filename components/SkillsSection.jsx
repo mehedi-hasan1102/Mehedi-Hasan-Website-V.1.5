@@ -66,8 +66,9 @@ const SkillsSection = () => {
           viewport={{ once: true }}
           className="mb-6 text-center"
         >
-          <p className="text-sm text-primary mb-2">• Technical & Soft Skills</p>
-          <h2 className="text-2xl font-bold">My Skills</h2>
+          <p className="text-sm text-primary mb-2">• My Skills</p>
+          <h2 className="text-2xl font-bold">Tools, tech,  <span className="text-base-content/60"> and soft skills 
+</span></h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-10 items-start">

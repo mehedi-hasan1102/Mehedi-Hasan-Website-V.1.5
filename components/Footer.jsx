@@ -1,5 +1,6 @@
 import React from "react";
 import { Github, Twitter, Linkedin, Facebook } from "lucide-react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -92,6 +93,7 @@ const Footer = () => {
   //  { label: "Blogs", to: "#skills" },
   { label: "Blogs", to: "#blogs" },
   { label: "Contact", to: "#contact" },
+          // eslint-disable-next-line no-unused-vars
           ].map((item, index) => (
             <motion.a
               key={item.label}
