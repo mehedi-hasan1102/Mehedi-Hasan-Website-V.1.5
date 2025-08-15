@@ -23,7 +23,7 @@ import GitHubActivitySection from '../components/GitHubActivitySection';
 import MultiRepoGitJournal from '../components/MultiRepoGitJournal';
 
 import ExperienceAndSocialWork from '../components/ExperienceAndSocialWork';
-// import Blog from '../components/Blogs';
+import Blog from '../components/Blogs';
 import StatsSection from '../components/StatsSection';
 
 const router = createBrowserRouter([
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
            < ServiceSection />
             
             <ProjectSection />
-           {/* < Blog /> */}
+           < Blog />
             <ContactMe />
             <Footer />
           </>

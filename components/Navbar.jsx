@@ -19,7 +19,7 @@ const navItems = [
   { label: "Services", to: "#services" },
   { label: "Portfoliyo", to: "#portfolio" },
   // { label: "Skills", to: "#skills" },
-  //  { label: "Blogs", to: "#skills" },
+   { label: "Blogs", to: "#blogs" },
   { label: "Contact", to: "#contact" },
 ];
 

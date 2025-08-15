@@ -90,6 +90,7 @@ const Footer = () => {
   { label: "Portfoliyo", to: "#portfolio" },
   // { label: "Skills", to: "#skills" },
   //  { label: "Blogs", to: "#skills" },
+  { label: "Blogs", to: "#blogs" },
   { label: "Contact", to: "#contact" },
           ].map((item, index) => (
             <motion.a

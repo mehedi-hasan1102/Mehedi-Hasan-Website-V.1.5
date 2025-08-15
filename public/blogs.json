@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "image": "https://miro.medium.com/v2/resize:fit:1200/0*YxaAcUGlXxnKd7C0.png",
+    "date": "August 15, 2025",
+    "readTime": "3 min read",
+    "title": "What is MongoDB and Why Use It?",
+    "description": "MongoDB is a NoSQL database that stores data in JSON-like documents, offering flexibility, scalability, and excellent integration with JavaScript/Node.js.",
+    "fullContent": "MongoDB is a popular NoSQL database that allows developers to store data in flexible JSON-like documents. This approach makes it ideal for applications that require rapid development and evolving data structures. Key features include horizontal scalability, high availability, and seamless integration with Node.js and other JavaScript frameworks. MongoDB also provides robust querying capabilities, indexing options, and aggregation pipelines, making it suitable for both small projects and large-scale enterprise applications. Understanding MongoDB’s schema-less design and flexible queries can greatly improve the speed and efficiency of your web applications.",
+    "link": "#",
+    "category": "Database"
+  },
+  {
+    "id": 2,
+    "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*Y-pBU3vuNq3CKCGcm67DiQ.png",
+    "date": "August 15, 2025",
+    "readTime": "4 min read",
+    "title": "How a Payment System Works in a Web App",
+    "description": "Learn the essential steps of payment gateway integration in e-commerce and booking platforms — from form submission to live transactions.",
+    "fullContent": "Integrating a payment system in a web application involves several steps: securely collecting payment details, communicating with the payment gateway, handling responses, and confirming transactions. Security is critical; developers must ensure PCI compliance, encrypt sensitive data, and protect against fraud. Popular gateways include Stripe, PayPal, and Razorpay, which provide APIs and SDKs for seamless integration. Understanding the end-to-end flow, from front-end form submission to back-end verification, ensures smooth transactions for users and minimizes errors or chargebacks for businesses. Proper error handling, logging, and testing are also essential for a reliable payment experience.",
+    "link": "#",
+    "category": "FinTech"
+  },
+  {
+    "id": 3,
+    "image": "https://poetsandquants.com/wp-content/uploads/sites/5/2020/10/entrepreneurship.png",
+    "date": "August 15, 2025",
+    "readTime": "5 min read",
+    "title": "From Idea at 16 to Half a Million Taka: The Bo Jesap Story",
+    "description": "How British teenager Bo Jesap created 'Special Names,' helping over 2 million children get meaningful English names, earning over £48,000 in the process.",
+    "fullContent": "Bo Jesap, a British teenager, visited China and helped a couple choose an English name for their child. This simple act sparked the idea of creating a platform to assist Chinese parents in choosing meaningful, culturally appropriate, and internationally accepted English names for their children. The result is Special Names, a website that suggests names based on personality traits. Users pay 80 pence per selection, and names can be shared on WeChat. To date, the platform has helped name over 2 million children, earning Bo Jesap more than £48,000 (over half a million Bangladeshi Taka). The main lesson: wherever there’s a problem, there’s an opportunity. Innovation isn’t just technology—it’s a creative solution to a need. Even a small idea can achieve international success if applied correctly, proving that for entrepreneurs, thought is the real capital, not age, tradition, or funding.",
+    "link": "#",
+    "category": "Entrepreneurship"
+  }
+]
