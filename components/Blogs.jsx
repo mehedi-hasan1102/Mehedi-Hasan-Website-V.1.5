@@ -111,7 +111,7 @@ const BlogSection = () => {
             onClick={closeModal}
             className="absolute top-4 right-4   rounded-full p-1 text-base-content/60 hover:text-primary text-2xl font-bold  font-mono 
                  shadow-lg border border-primary/30 
-                 hover:border-primary transition-all"
+                 hover:border-primary transition-all bg-red-700"
             aria-label="Close modal"
           >
             <X size={24} />
