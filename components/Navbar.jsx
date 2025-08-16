@@ -58,6 +58,8 @@ const Navbar = () => {
         <Link
           to={item.to}
           className="text-sm sm:text-base block hover:text-primary px-3 py-2 rounded-lg hover:bg-base-200/50 transition"
+          
+
           onClick={() => setMenuOpen(false)}
         >
           {item.label}
@@ -65,7 +67,8 @@ const Navbar = () => {
       ) : (
         <a
           href={item.to}
-          className="text-sm sm:text-base block hover:text-primary px-3 py-2 rounded-lg hover:bg-base-200/50 transition "
+          // className="text-sm sm:text-base block hover:text-primary px-3 py-2 rounded-lg hover:bg-base-200/50 transition "
+          className="text-xs sm:text-sm block hover:text-primary px-2 py-1 rounded-md hover:bg-base-200/50 transition"
           onClick={() => setMenuOpen(false)}
         >
           {item.label}
