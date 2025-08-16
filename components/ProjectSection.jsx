@@ -511,7 +511,7 @@ const ProjectSection = () => {
             onClick={closeModal}
             className="absolute top-4 right-4   rounded-full p-1  hover:text-primary text-2xl font-bold  font-mono 
                  shadow-lg border border-primary/30 
-                 hover:border-primary transition-all bg-red-800"
+                 hover:border-primary transition-all bg-red-800 text-white"
             aria-label="Close modal"
           >
             <X size={24} />
