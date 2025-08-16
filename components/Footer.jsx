@@ -88,9 +88,8 @@ const Footer = () => {
             { label: "About me", to: "#about" },
   { label: "Resume", to: "#resume" },
   { label: "Services", to: "#services" },
-  { label: "Portfoliyo", to: "#portfolio" },
-  // { label: "Skills", to: "#skills" },
-  //  { label: "Blogs", to: "#skills" },
+  { label: "Portfolio", to: "#portfolio" },
+ 
   { label: "Blogs", to: "#blogs" },
   { label: "Contact", to: "#contact" },
           // eslint-disable-next-line no-unused-vars

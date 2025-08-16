@@ -12,14 +12,14 @@ import {
   Sun,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Sidebar from "./Sidebar";
+
 
 const navItems = [
   { label: "About me", to: "#about" },
   { label: "Resume", to: "#resume" },
   { label: "Services", to: "#services" },
-  { label: "Portfoliyo", to: "#portfolio" },
-  // { label: "Skills", to: "#skills" },
+  { label: "Portfolio", to: "#portfolio" },
+  
    { label: "Blogs", to: "#blogs" },
   { label: "Contact", to: "#contact" },
 ];
@@ -65,7 +65,7 @@ const Navbar = () => {
       ) : (
         <a
           href={item.to}
-          className="text-sm sm:text-base block hover:text-primary px-3 py-2 rounded-lg hover:bg-base-200/50 transition"
+          className="text-sm sm:text-base block hover:text-primary px-3 py-2 rounded-lg hover:bg-base-200/50 transition "
           onClick={() => setMenuOpen(false)}
         >
           {item.label}
