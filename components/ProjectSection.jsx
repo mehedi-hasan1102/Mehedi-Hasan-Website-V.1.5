@@ -309,7 +309,7 @@
 // grid lay out 
 
 import React, { useEffect, useState } from "react";
-import { Eye, ArrowUpRight, Github } from "lucide-react";
+import {X, Eye, ArrowUpRight, Github } from "lucide-react";
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -505,13 +505,16 @@ const ProjectSection = () => {
 
         {/* Project Content */}
         <div className="md:w-1/2 w-full p-6 sm:p-8 flex flex-col relative overflow-hidden">
+         
           {/* Close Button */}
-          <button
+           <button
             onClick={closeModal}
-            className="absolute top-4 right-4 text-base-content/60 hover:text-primary text-2xl font-bold"
+            className="absolute top-4 right-4   rounded-full p-1 text-base-content/60 hover:text-primary text-2xl font-bold  font-mono 
+                 shadow-lg border border-primary/30 
+                 hover:border-primary transition-all"
             aria-label="Close modal"
           >
-            ✕
+            <X size={24} />
           </button>
 
           <div className="overflow-y-auto pr-2 max-h-[90vh] space-y-4">
