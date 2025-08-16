@@ -484,7 +484,7 @@ const ProjectSection = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[9999] p-4"
+      className="font-mono   fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[9999] p-4"
     >
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
@@ -534,7 +534,7 @@ const ProjectSection = () => {
             </div>
 
             {/* Description */}
-            <p className="text-sm sm:text-base text-base-content/80 leading-relaxed mt-2">
+            <p className=" text-sm sm:text-base text-base-content/80 leading-relaxed mt-2">
               {selectedProject.description}
             </p>
 

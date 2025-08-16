@@ -30,7 +30,7 @@ const BlogSection = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="text-base-content font-sans max-w-6xl mx-auto py-8 px-4 sm:px-6 md:px-8"
+      className="text-base-content font-mono max-w-6xl mx-auto py-8 px-4 sm:px-6 md:px-8"
     >
       {/* Blog Cards */}
       <div className="rounded-2xl p-6 backdrop-blur-sm shadow-lg  transition-shadow duration-300">
@@ -87,7 +87,7 @@ const BlogSection = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[9999] p-4"
+      className="font-mono fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[9999] p-4"
     >
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
