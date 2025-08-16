@@ -479,117 +479,119 @@ const ProjectSection = () => {
 
       {/* Modal */}
       <AnimatePresence>
-        {showModal && selectedProject && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="font-mono fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4"
-          >
-            <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-base-200 border border-primary/30 rounded-xl p-6 shadow-lg max-w-lg w-full relative overflow-y-auto max-h-[90vh]"
-            >
-              {/* Close Button */}
-              <button
-                onClick={closeModal}
-                className="absolute top-3 right-3 text-base-content/60 hover:text-primary text-xl font-bold"
-                aria-label="Close modal"
-              >
-                ✕
-              </button>
-
-              {/* Title */}
-              <h2 className="text-xl font-bold text-primary mb-3">
-                {selectedProject.title}
-              </h2>
-
-              {/* Project Image */}
-              {selectedProject.images && selectedProject.images.length > 0 && (
-                <img
-                  src={selectedProject.images[0]}
-                  alt={selectedProject.title}
-                  className="w-full h-48 object-cover rounded-md mb-4 shadow"
-                />
-              )}
-
-              {/* Tech Stack */}
-              <div className="mb-4">
-                <span className="font-semibold text-sm">Tech Stack:</span>
-                <div className="flex flex-wrap gap-2 mt-1">
-                  {selectedProject.techStack.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="px-2 py-1 text-xs border border-base-300 rounded"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Description */}
-              <p className="text-sm mb-4">{selectedProject.description}</p>
-
-              {/* Links */}
-              <div className="flex flex-wrap gap-4 mb-4">
-                <motion.a
-                  whileHover={{ x: 3 }}
-                  href={selectedProject.liveLink}
-                  className="flex items-center gap-1 text-primary hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <ArrowUpRight size={16} /> Live Demo
-                </motion.a>
-                <motion.a
-                  whileHover={{ x: 3 }}
-                  href={selectedProject.frontendRepo}
-                  className="flex items-center gap-1 text-primary hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github size={16} /> Frontend
-                </motion.a>
-
-                {selectedProject.backendRepo && (
-                  <motion.a
-                    whileHover={{ x: 3 }}
-                    href={selectedProject.backendRepo}
-                    className="flex items-center gap-1 text-primary hover:underline"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github size={16} /> Backend
-                  </motion.a>
-                )}
-              </div>
-
-              {/* Challenges */}
-              {selectedProject.challenges && (
-                <div className="mb-4">
-                  <span className="font-semibold text-sm">Challenges Faced:</span>
-                  <p className="text-xs text-base-content/80 mt-1">
-                    {selectedProject.challenges}
-                  </p>
-                </div>
-              )}
-
-              {/* Future Plans */}
-              {selectedProject.futurePlans && (
-                <div>
-                  <span className="font-semibold text-sm">Future Plans:</span>
-                  <p className="text-xs text-base-content/80 mt-1">
-                    {selectedProject.futurePlans}
-                  </p>
-                </div>
-              )}
-            </motion.div>
-          </motion.div>
+  {showModal && selectedProject && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[9999] p-4"
+    >
+      <motion.div
+        initial={{ scale: 0.95, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.95, opacity: 0 }}
+        className="bg-base-200 border border-primary/30 rounded-2xl shadow-2xl w-full max-w-7xl relative overflow-hidden flex flex-col md:flex-row max-h-[95vh]"
+      >
+        {/* Project Image */}
+        {selectedProject.images && selectedProject.images.length > 0 && (
+          <div className="md:w-1/2 w-full h-64 md:h-auto overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none">
+            <img
+              src={selectedProject.images[0]}
+              alt={selectedProject.title}
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+          </div>
         )}
-      </AnimatePresence>
+
+        {/* Project Content */}
+        <div className="md:w-1/2 w-full p-8 flex flex-col relative">
+          {/* Close Button */}
+          <button
+            onClick={closeModal}
+            className="absolute top-4 right-4 text-base-content/60 hover:text-primary text-2xl font-bold"
+            aria-label="Close modal"
+          >
+            ✕
+          </button>
+
+          <div className="overflow-y-auto pr-2 max-h-[90vh] space-y-4">
+            {/* Project Title */}
+            <h2 className="text-3xl font-bold text-primary">{selectedProject.title}</h2>
+
+            {/* Tech Stack */}
+            <div className="flex flex-wrap gap-2 mt-1">
+              {selectedProject.techStack.map((tech, i) => (
+                <span
+                  key={i}
+                  className="px-3 py-1 text-xs sm:text-sm border border-base-300 rounded"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* Description */}
+            <p className="text-base text-base-content/80 leading-relaxed mt-2">
+              {selectedProject.description}
+            </p>
+
+            {/* Links */}
+            <div className="flex flex-wrap gap-4 mt-4">
+              <motion.a
+                whileHover={{ x: 3 }}
+                href={selectedProject.liveLink}
+                className="flex items-center gap-1 text-primary hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ArrowUpRight size={18} /> Live Demo
+              </motion.a>
+
+              <motion.a
+                whileHover={{ x: 3 }}
+                href={selectedProject.frontendRepo}
+                className="flex items-center gap-1 text-primary hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github size={18} /> Frontend
+              </motion.a>
+
+              {selectedProject.backendRepo && (
+                <motion.a
+                  whileHover={{ x: 3 }}
+                  href={selectedProject.backendRepo}
+                  className="flex items-center gap-1 text-primary hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github size={18} /> Backend
+                </motion.a>
+              )}
+            </div>
+
+            {/* Challenges */}
+            {selectedProject.challenges && (
+              <div>
+                <span className="font-semibold text-sm">Challenges:</span>
+                <p className="text-sm text-base-content/80 mt-1">{selectedProject.challenges}</p>
+              </div>
+            )}
+
+            {/* Future Plans */}
+            {selectedProject.futurePlans && (
+              <div>
+                <span className="font-semibold text-sm">Future Plans:</span>
+                <p className="text-sm text-base-content/80 mt-1">{selectedProject.futurePlans}</p>
+              </div>
+            )}
+          </div>
+        </div>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </>
   );
 };
