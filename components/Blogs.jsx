@@ -127,7 +127,7 @@ const BlogSection = () => {
             <h2 className="text-2xl sm:text-3xl font-bold text-primary">{selectedBlog.title}</h2>
 
             {/* Blog Content */}
-            <div className="text-sm sm:text-base text-base-content/80 leading-relaxed space-y-4">
+            <div className="text-sm sm:text-base text-base-content/80 leading-relaxed space-y-4 font-sans">
               {selectedBlog.fullContent
                 ? selectedBlog.fullContent.split("\n\n").map((block, i) => (
                     <p key={i} className="whitespace-pre-line">{block}</p>
