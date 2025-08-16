@@ -478,7 +478,7 @@ const ProjectSection = () => {
       </motion.section>
 
       {/* Modal */}
-      <AnimatePresence>
+     <AnimatePresence>
   {showModal && selectedProject && (
     <motion.div
       initial={{ opacity: 0 }}
@@ -490,11 +490,11 @@ const ProjectSection = () => {
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.95, opacity: 0 }}
-        className="bg-base-200 border border-primary/30 rounded-2xl shadow-2xl w-full max-w-7xl relative overflow-hidden flex flex-col md:flex-row max-h-[95vh]"
+        className="bg-base-200 border border-primary/30 rounded-2xl shadow-2xl w-full max-w-5xl relative overflow-hidden flex flex-col md:flex-row max-h-[95vh]"
       >
         {/* Project Image */}
         {selectedProject.images && selectedProject.images.length > 0 && (
-          <div className="md:w-1/2 w-full h-64 md:h-auto overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none">
+          <div className="md:w-1/2 w-full h-48 sm:h-64 md:h-auto overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none flex-shrink-0">
             <img
               src={selectedProject.images[0]}
               alt={selectedProject.title}
@@ -504,7 +504,7 @@ const ProjectSection = () => {
         )}
 
         {/* Project Content */}
-        <div className="md:w-1/2 w-full p-8 flex flex-col relative">
+        <div className="md:w-1/2 w-full p-6 sm:p-8 flex flex-col relative overflow-hidden">
           {/* Close Button */}
           <button
             onClick={closeModal}
@@ -516,14 +516,14 @@ const ProjectSection = () => {
 
           <div className="overflow-y-auto pr-2 max-h-[90vh] space-y-4">
             {/* Project Title */}
-            <h2 className="text-3xl font-bold text-primary">{selectedProject.title}</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-primary">{selectedProject.title}</h2>
 
             {/* Tech Stack */}
             <div className="flex flex-wrap gap-2 mt-1">
               {selectedProject.techStack.map((tech, i) => (
                 <span
                   key={i}
-                  className="px-3 py-1 text-xs sm:text-sm border border-base-300 rounded"
+                  className="px-2 sm:px-3 py-1 text-xs sm:text-sm border border-base-300 rounded"
                 >
                   {tech}
                 </span>
@@ -531,7 +531,7 @@ const ProjectSection = () => {
             </div>
 
             {/* Description */}
-            <p className="text-base text-base-content/80 leading-relaxed mt-2">
+            <p className="text-sm sm:text-base text-base-content/80 leading-relaxed mt-2">
               {selectedProject.description}
             </p>
 
@@ -591,6 +591,7 @@ const ProjectSection = () => {
     </motion.div>
   )}
 </AnimatePresence>
+
 
     </>
   );

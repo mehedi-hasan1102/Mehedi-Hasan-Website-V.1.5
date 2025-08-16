@@ -82,96 +82,69 @@ const BlogSection = () => {
 
       {/* Full Blog Modal */}
       <AnimatePresence>
-        {selectedBlog && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[9999] p-4"
+  {selectedBlog && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[9999] p-4"
+    >
+      <motion.div
+        initial={{ scale: 0.95, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.95, opacity: 0 }}
+        className="bg-base-200 border border-primary/30 rounded-2xl shadow-2xl w-full max-w-5xl relative overflow-hidden flex flex-col md:flex-row max-h-[95vh]"
+      >
+        {/* Blog Image */}
+        <div className="md:w-1/2 w-full h-48 sm:h-64 md:h-auto overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none flex-shrink-0">
+          <img
+            src={selectedBlog.image}
+            alt={selectedBlog.title}
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          />
+        </div>
+
+        {/* Blog Content */}
+        <div className="md:w-1/2 w-full p-6 sm:p-8 flex flex-col relative overflow-hidden">
+          {/* Close Button */}
+          <button
+            onClick={closeModal}
+            className="absolute top-4 right-4 text-base-content/60 hover:text-primary text-2xl font-bold"
+            aria-label="Close modal"
           >
-            <motion.div
-              initial={{ scale: 0.95, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.95, opacity: 0 }}
-              className="bg-base-200 border border-primary/30 rounded-2xl shadow-2xl w-full max-w-7xl relative overflow-hidden flex flex-col md:flex-row max-h-[95vh]"
-            >
-              {/* Blog Image */}
-              <div className="md:w-1/2 w-full h-64 md:h-auto overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none">
-                <img
-                  src={selectedBlog.image}
-                  alt={selectedBlog.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </div>
+            <X size={24} />
+          </button>
 
-              {/* Blog Content */}
-              <div className="md:w-1/2 w-full p-8 flex flex-col relative">
-                {/* Close Button */}
-                <button
-                  onClick={closeModal}
-                  className="absolute top-4 right-4 text-base-content/60 hover:text-primary text-2xl font-bold"
-                  aria-label="Close modal"
-                >
-                  <X size={24} />
-                </button>
+          <div className="overflow-y-auto pr-2 max-h-[90vh] space-y-4">
+            {/* Blog Meta */}
+            <p className="text-xs text-primary uppercase tracking-wide">
+              {selectedBlog.date} • {selectedBlog.readTime} • {selectedBlog.category}
+            </p>
 
-                <div className="overflow-y-auto pr-2 max-h-[90vh] space-y-4">
-                  <p className="text-xs text-primary uppercase tracking-wide">
-                    {selectedBlog.date} • {selectedBlog.readTime} • {selectedBlog.category}
-                  </p>
-                  <h2 className="text-3xl font-bold text-primary">{selectedBlog.title}</h2>
+            {/* Blog Title */}
+            <h2 className="text-2xl sm:text-3xl font-bold text-primary">{selectedBlog.title}</h2>
 
-                  <div className="text-base text-base-content/80 leading-relaxed space-y-4">
-                    {selectedBlog.fullContent
-                      ? selectedBlog.fullContent.split("\n\n").map((block, i) => (
-                          <p key={i} className="whitespace-pre-line">{block}</p>
-                        ))
-                      : <p>{selectedBlog.description}</p>
-                    }
-                  </div>
+            {/* Blog Content */}
+            <div className="text-sm sm:text-base text-base-content/80 leading-relaxed space-y-4">
+              {selectedBlog.fullContent
+                ? selectedBlog.fullContent.split("\n\n").map((block, i) => (
+                    <p key={i} className="whitespace-pre-line">{block}</p>
+                  ))
+                : <p>{selectedBlog.description}</p>
+              }
+            </div>
 
-                  {/* Social Share Buttons */}
-                  {/* {selectedBlog.link && (
-                    <div className="mt-6 flex flex-wrap gap-4 items-center">
-                      <span className="text-sm font-semibold text-base-content/70 mr-2">Share:</span>
+            {/* Optional: Social Share Buttons */}
 
-                      <a
-                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(selectedBlog.link)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-full shadow hover:scale-110 transition-transform"
-                        aria-label="Share on Facebook"
-                      >
-                        <Facebook size={18} />
-                      </a>
+            
+            {/* Uncomment if needed */}
+          </div>
+        </div>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
 
-                      <a
-                        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(selectedBlog.link)}&text=${encodeURIComponent(selectedBlog.title)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center w-10 h-10 bg-[#1DA1F2] text-white rounded-full shadow hover:scale-110 transition-transform"
-                        aria-label="Share on Twitter/X"
-                      >
-                        <Twitter size={18} />
-                      </a>
-
-                      <a
-                        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(selectedBlog.link)}&title=${encodeURIComponent(selectedBlog.title)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center w-10 h-10 bg-blue-700 text-white rounded-full shadow hover:scale-110 transition-transform"
-                        aria-label="Share on LinkedIn"
-                      >
-                        <Linkedin size={18} />
-                      </a>
-                    </div>
-                  )} */}
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </motion.section>
   );
 };
