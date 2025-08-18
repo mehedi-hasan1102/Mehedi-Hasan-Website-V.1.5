@@ -136,10 +136,59 @@ const BlogSection = () => {
               }
             </div>
 
-            {/* Optional: Social Share Buttons */}
 
-            
-            {/* Uncomment if needed */}
+            {/* Social Share Buttons & View Original Post */}
+            <div className="mt-6 pt-4 border-t border-base-300 flex flex-wrap items-center justify-between gap-4">
+              <motion.a
+                whileHover={{ scale: 1.05, rotate: -0.5 }}
+                whileTap={{ scale: 0.97, rotate: 0.5 }}
+                href={selectedBlog.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 text-primary hover:underline font-mono text-sm transition-all duration-300"
+              >
+                <ArrowUpRight
+                  size={18}
+                  className="transition-transform duration-300 group-hover:-translate-y-[2px]"
+                />
+                [ View Original Post ]
+              </motion.a>
+              <div className="flex items-center gap-4">
+                <p className="text-sm font-semibold text-base-content/80">Share:</p>
+                <div className="flex gap-2">
+                  <a
+                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(selectedBlog.link)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-base-300 hover:bg-primary hover:text-primary-content transition-colors"
+                    aria-label="Share on Facebook"
+                  >
+                    <Facebook size={18} />
+                  </a>
+                  <a
+                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(selectedBlog.link)}&text=${encodeURIComponent(selectedBlog.title)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-base-300 hover:bg-primary hover:text-primary-content transition-colors"
+                    aria-label="Share on Twitter"
+                  >
+                    <Twitter size={18} />
+                  </a>
+                  <a
+                    href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(selectedBlog.link)}&title=${encodeURIComponent(selectedBlog.title)}&summary=${encodeURIComponent(selectedBlog.description)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-base-300 hover:bg-primary hover:text-primary-content transition-colors"
+                    aria-label="Share on LinkedIn"
+                  >
+                    <Linkedin size={18} />
+                  </a>
+                </div>
+              </div>
+
+              
+            </div>
+
           </div>
         </div>
       </motion.div>
