@@ -308,6 +308,8 @@
 
 // grid lay out 
 
+
+import { BorderBeam } from "@stianlarsen/border-beam";
 import React, { useEffect, useState } from "react";
 import {X, Eye, ArrowUpRight, Github } from "lucide-react";
 // eslint-disable-next-line no-unused-vars
@@ -345,14 +347,22 @@ const ProjectSection = () => {
         viewport={{ once: true }}
         className="text-base-content font-mono  mx-auto py-4 px-4 sm:px-6 md:px-8 max-w-6xl "
       >
-        <div className="bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
+        <div className="relative w-full  overflow-hidden bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
+         <BorderBeam
+          size={800}
+          duration={8}
+          borderWidth={1}
+          colorFrom="#22c55e" // Tailwind green-500
+          colorTo="#16a34a"   // Tailwind green-600
+        />
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
-            className="mb-6 text-center mx-auto"
+            className="mb-6 text-center mx-auto "
           >
+            
             <p className="text-sm text-primary mb-2">• My Recent Works</p>
             <h2 className="text-2xl font-bold">Interactive projects demonstrating <span className="text-base-content/60"> real-world solutions
  </span></h2>

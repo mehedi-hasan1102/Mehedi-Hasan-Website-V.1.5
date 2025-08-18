@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { Briefcase, Users, ArrowUpRight } from "lucide-react";
+import { BorderBeam } from "@stianlarsen/border-beam";
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -42,8 +43,15 @@ const ExperienceAndSocialWork = () => {
             whileInView="visible"
             variants={fadeIn}
             viewport={{ once: true, margin: "-100px" }}
-            className="bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
+            className="relative w-full  overflow-hidden bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
           >
+            <BorderBeam
+          size={400}
+          duration={8}
+          borderWidth={1}
+          colorFrom="#22c55e" // Tailwind green-500
+          colorTo="#16a34a"   // Tailwind green-600
+        />
             <p className="text-sm text-primary mb-2">• Career Path</p>
             <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
               <Briefcase className="text-primary w-5 h-5" />
@@ -75,8 +83,14 @@ const ExperienceAndSocialWork = () => {
             whileInView="visible"
             variants={fadeIn}
             viewport={{ once: true, margin: "-100px" }}
-            className="bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
-          >
+            className="relative w-full  overflow-hidden bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
+          ><BorderBeam
+          size={400}
+          duration={8}
+          borderWidth={1}
+          colorFrom="#22c55e" // Tailwind green-500
+          colorTo="#16a34a"   // Tailwind green-600
+        />
             <p className="text-sm text-primary mb-2">• Social Impact</p>
             <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
               <Users className="text-primary w-5 h-5" />

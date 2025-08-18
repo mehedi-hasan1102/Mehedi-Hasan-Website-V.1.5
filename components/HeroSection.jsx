@@ -16,7 +16,7 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 import Typewriter from "typewriter-effect";
-
+import { BorderBeam } from "@stianlarsen/border-beam";
 
 const techIcons = [
   { icon: SiReact, label: "React", color: "#61DAFB" },
@@ -41,8 +41,14 @@ const HeroSection = () => {
       className="font-mono w-full max-w-6xl px-4 sm:px-6 md:px-8 mx-auto  flex items-center justify-center py-4 "
     >
 
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 w-full bg-base-200 border border-primary/30 rounded-xl p-6 sm:p-10 shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
-
+      <div className="relative w-full rounded-xl overflow-hidden grid grid-cols-1 md:grid-cols-2 items-center gap-10 w-full bg-base-200 border border-primary/30 rounded-xl p-6 sm:p-10 shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
+<BorderBeam
+          size={800}
+          duration={8}
+          borderWidth={1}
+          colorFrom="#22c55e" // Tailwind green-500
+          colorTo="#16a34a"   // Tailwind green-600
+        />
         {/* Left Image */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}

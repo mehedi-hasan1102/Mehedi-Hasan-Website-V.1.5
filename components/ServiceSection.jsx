@@ -2,6 +2,7 @@ import React from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { Code2, Server, Wrench, Cpu, Gauge ,Lock   } from "lucide-react";
+import { BorderBeam } from "@stianlarsen/border-beam";
 
 const services = [
   {
@@ -53,7 +54,16 @@ const ServiceSection = () => {
       viewport={{ once: true }}
       className="  text-base-content font-mono  max-w-6xl mx-auto py-4 px-4 sm:px-6 md:px-8"
     >
-      <div className="bg-base-200 border border-primary/30 rounded-xl p-6  backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
+      <div className="relative w-full rounded-xl overflow-hidden bg-base-200 border border-primary/30  p-6  backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300">
+        
+        <BorderBeam
+          size={800}
+          duration={8}
+          borderWidth={1}
+          colorFrom="#22c55e" // Tailwind green-500
+          colorTo="#16a34a"   // Tailwind green-600
+        />
+ 
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}

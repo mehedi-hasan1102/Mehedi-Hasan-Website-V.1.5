@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { GraduationCap, BookOpenCheck, ArrowUpRight } from "lucide-react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { BorderBeam } from "@stianlarsen/border-beam";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 10 },
@@ -61,8 +62,16 @@ const AboutSections = () => {
           {/* Education Section */}
           <motion.div
             variants={fadeInUp}
-            className="bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
+            className="relative w-full  overflow-hidden bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
           >
+<BorderBeam
+          size={400}
+          duration={8}
+          borderWidth={1}
+          colorFrom="#22c55e" // Tailwind green-500
+          colorTo="#16a34a"   // Tailwind green-600
+        />
+
             <p className="text-sm text-primary mb-2">• Education Path</p>
             <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
               <GraduationCap className="text-primary w-5 h-5" />
@@ -104,8 +113,15 @@ const AboutSections = () => {
           {/* Certifications Section */}
           <motion.div
             variants={fadeInUp}
-            className="bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
+            className="relative w-full  overflow-hidden bg-base-200 border border-primary/30 rounded-xl p-6 backdrop-blur-sm shadow-lg hover:shadow-primary/10 transition-shadow duration-300"
           >
+            <BorderBeam
+          size={400}
+          duration={8}
+          borderWidth={1}
+          colorFrom="#22c55e" // Tailwind green-500
+          colorTo="#16a34a"   // Tailwind green-600
+        />
             <p className="text-sm text-primary mb-2">• Skill Credentials</p>
             <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
               <BookOpenCheck className="text-primary w-5 h-5" />
