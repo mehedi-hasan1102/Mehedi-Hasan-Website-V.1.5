@@ -14,11 +14,13 @@
     "frontendRepo": "https://github.com/mehedi-hasan1102/Active-Arena-Client",
     "backendRepo": "https://github.com/mehedi-hasan1102/Active-Arena-Server",
     "images": [
-      "https://i.ibb.co/j9StcCVr/Screenshot-from-2025-07-31-22-59-46.png"
+      "https://i.ibb.co.com/vCdTpxMP/aa.png"
     ],
     "challenges": "Implementing secure payment integration and real-time synchronization.",
     "futurePlans": "Add multi-player support and analytics dashboard."
   },
+  
+
   {
     "title": "Food Garden",
     "description": "A production-ready food management app featuring real-time synchronization, JWT authentication, and optimized performance.",
@@ -32,7 +34,7 @@
     "frontendRepo": "https://github.com/mehedi-hasan1102/Food-Garden-Client",
     "backendRepo": "https://github.com/mehedi-hasan1102/Food-Garden-Server",
     "images": [
-      "https://i.ibb.co/NnQx5NND/Food-Guardian-06-29-2025-01-13-AM.png"
+      "https://i.ibb.co.com/4ZC0f9J0/fg.png"
     ],
     "challenges": "Handling real-time data sync and optimizing performance under heavy load.",
     "futurePlans": "Integrate AI-based food recommendations and expand recipe database."
@@ -46,7 +48,7 @@
     "frontendRepo": "https://github.com/mehedi-hasan1102/Plant-Care-Client",
     "backendRepo": "https://github.com/mehedi-hasan1102/Plant-Care-Server",
     "images": [
-      "https://i.ibb.co/27ssr5tp/Plant-Care-06-29-2025-12-43-AM.png"
+      "https://i.ibb.co.com/d06y7R1P/pc.png"
     ],
     "challenges": "Implementing reliable reminders and syncing data between client and server.",
     "futurePlans": "Add AI-powered plant disease detection and personalized care tips."
@@ -72,7 +74,7 @@
     "liveLink": "https://phudu-medical.netlify.app/",
     "frontendRepo": "https://github.com/mehedi-hasan1102/Phudu-Medical-Apoinment-App",
     "images": [
-      "https://i.ibb.co/F4KKvjDL/Screenshot-from-2025-08-01-06-06-31.png"
+      "https://i.ibb.co.com/Y7LVqKWq/pm.png"
     ],
     "challenges": "Creating smooth animated UI and handling booking concurrency.",
     "futurePlans": "Integrate doctor availability calendar and SMS reminders."
