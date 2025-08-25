@@ -364,7 +364,7 @@ const ProjectSection = () => {
           >
             
             <p className="text-sm text-primary mb-2">• My Recent Works</p>
-            <h2 className="text-2xl font-bold">Interactive projects demonstrating <span className="text-base-content/60"> real-world solutions
+            <h2 className="text-2xl ">Interactive projects demonstrating <span className="text-base-content/60"> real-world solutions
  </span></h2>
           </motion.div>
 

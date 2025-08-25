@@ -72,7 +72,7 @@ const ServiceSection = () => {
           className="mb-6 text-center"
         >
           <p className="text-sm text-primary mb-2">• Cooperation</p>
-          <h2 className="text-2xl font-bold">Designing solutions 
+          <h2 className="text-2xl ">Designing solutions 
             
              <span className="text-base-content/60"> customized
 to meet your requirements</span> </h2>

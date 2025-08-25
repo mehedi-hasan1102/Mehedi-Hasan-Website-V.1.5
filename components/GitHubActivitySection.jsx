@@ -72,7 +72,7 @@ const GitHubActivitySection = () => {
           className="mb-6 text-center"
         >
           <p className="text-sm text-primary mb-2">• Code Life</p>
-          <h2 className="text-2xl font-bold">Contributions, commits,<span className="text-base-content/60"> and growth
+          <h2 className="text-2xl ">Contributions, commits,<span className="text-base-content/60"> and growth
           </span> </h2>
         </motion.div>
 

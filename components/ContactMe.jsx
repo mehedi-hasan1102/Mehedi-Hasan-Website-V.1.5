@@ -53,7 +53,7 @@ const ContactMe = () => {
           className="mb-6"
         >
           <p className="text-sm text-primary mb-2">• Get in Touch</p>
-          <h2 className="text-2xl font-mono font-bold text-base-content">Let’s create  <span className="text-base-content/60">together ! 
+          <h2 className="text-2xl font-mono  text-base-content">Let’s create  <span className="text-base-content/60">together ! 
           </span></h2>
         </motion.div>
 

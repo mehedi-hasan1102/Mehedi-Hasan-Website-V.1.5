@@ -73,7 +73,7 @@ const AboutSections = () => {
         />
 
             <p className="text-sm text-primary mb-2">• Education Path</p>
-            <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
+            <h3 className="flex items-center gap-3 text-xl  mb-6 text-base-content">
               <GraduationCap className="text-primary w-5 h-5" />
               <span>Academic Achievements</span>
             </h3>
@@ -123,7 +123,7 @@ const AboutSections = () => {
           colorTo="#16a34a"   // Tailwind green-600
         />
             <p className="text-sm text-primary mb-2">• Skill Credentials</p>
-            <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
+            <h3 className="flex items-center gap-3 text-xl  mb-6 text-base-content">
               <BookOpenCheck className="text-primary w-5 h-5" />
               <span>Verified Learning</span>
             </h3>

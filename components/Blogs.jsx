@@ -36,7 +36,7 @@ const BlogSection = () => {
       <div className="rounded-2xl p-6 backdrop-blur-sm shadow-lg  transition-shadow duration-300">
         <div className="mb-8 text-center max-w-6xl">
           <p className="text-sm text-primary mb-2 font-mono ">• Insights & Tutorials</p>
-          <h2 className="text-2xl font-mono font-bold tracking-tight">Latest tips, stories, <span className="text-base-content/60">and guides 
+          <h2 className="text-2xl font-mono  tracking-tight">Latest tips, stories, <span className="text-base-content/60">and guides 
           </span></h2>
         </div>
 

@@ -53,7 +53,7 @@ const ExperienceAndSocialWork = () => {
           colorTo="#16a34a"   // Tailwind green-600
         />
             <p className="text-sm text-primary mb-2">• Career Path</p>
-            <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
+            <h3 className="flex items-center gap-3 text-xl  mb-6 text-base-content">
               <Briefcase className="text-primary w-5 h-5" />
               <span>Work Experience</span>
             </h3>
@@ -92,7 +92,7 @@ const ExperienceAndSocialWork = () => {
           colorTo="#16a34a"   // Tailwind green-600
         />
             <p className="text-sm text-primary mb-2">• Social Impact</p>
-            <h3 className="flex items-center gap-3 text-xl font-bold mb-6 text-base-content">
+            <h3 className="flex items-center gap-3 text-xl  mb-6 text-base-content">
               <Users className="text-primary w-5 h-5" />
               <span>Community Work</span>
             </h3>

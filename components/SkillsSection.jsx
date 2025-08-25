@@ -241,7 +241,7 @@ const SkillsSection = () => {
           className="mb-6 text-center"
         >
           <p className="text-sm text-primary mb-2">• My Skills</p>
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-2xl ">
             Tools, tech, <span className="text-base-content/60"> and soft skills</span>
           </h2>
         </motion.div>
