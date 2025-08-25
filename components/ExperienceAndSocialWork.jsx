@@ -65,7 +65,7 @@ const ExperienceAndSocialWork = () => {
                   whileHover={{ x: 5 }}
                   className="pl-4 border-l-2 border-primary/50 hover:border-primary transition-colors duration-300"
                 >
-                  <p className="text-base-content font-semibold text-lg">
+                  <p className="text-primary text-lg">
                     {item.title}
                   </p>
                   <p className="text-base-content/70 mt-1 font-medium">{item.time}</p>
@@ -104,7 +104,7 @@ const ExperienceAndSocialWork = () => {
                   whileHover={{ x: 5 }}
                   className="pl-4 border-l-2 border-primary/50 hover:border-primary transition-colors duration-300"
                 >
-                  <p className="text-base-content font-semibold text-lg">{item.title}</p>
+                  <p className=" text-primary text-lg">{item.title}</p>
                   <p className="text-base-content/70 mt-1 font-medium">{item.time}</p>
                   <p className="text-base-content/60 text-sm mt-2 leading-relaxed">
                     {item.description}

@@ -87,7 +87,7 @@ const AboutSections = () => {
                   className="pl-4 border-l-2 border-primary/50 hover:border-primary transition-colors duration-300"
                   title={edu.degree}
                 >
-                  <p className="text-base-content font-semibold">
+                  <p className="text-primary">
                     <span className=" px-1 rounded">
                       {edu.institution}
                     </span>
@@ -137,7 +137,7 @@ const AboutSections = () => {
                   className="pl-4 border-l-2 border-primary/50 hover:border-primary transition-colors duration-300"
                   title={cert.title}
                 >
-                  <p className="text-base-content font-semibold">
+                  <p className="text-primary">
                     <span className=" px-1 rounded">{cert.title}</span>
                   </p>
                   <p className="text-base-content/70 mt-1">
