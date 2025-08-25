@@ -44,7 +44,7 @@ const StatsSection = () => {
               className="flex flex-col items-center text-center"
             >
               {stat.icon}
-              <h3 className="text-5xl font-extrabold text-primary mt-3">
+              <h3 className="text-5xl  text-primary mt-3">
                 <CountUp
                   key={triggerCounts[idx] || 0}
                   start={0}
