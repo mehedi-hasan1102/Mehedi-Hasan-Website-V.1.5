@@ -294,16 +294,16 @@ const SkillsSection = () => {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-sm space-y-3 tracking-wide"
+            className="text-sm space-y-3 tracking-wide "
           >
             {skillItems.map((item, index) => (
               <motion.li
                 key={index}
                 whileHover={{ x: 5 }}
-                className="pl-4 border-l-2 border-primary/50 hover:border-primary transition-colors duration-300"
+                className="pl-4 text-base-content/60 border-l-2 border-primary/50 hover:border-primary transition-colors duration-300 "
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <strong>{item.split(":")[0]}:</strong>
+                <span className="text-base-content">{item.split(":")[0]}:</span>
                 {item.split(":")[1]}
               </motion.li>
             ))}

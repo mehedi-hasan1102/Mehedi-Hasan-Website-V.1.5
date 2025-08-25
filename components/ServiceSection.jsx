@@ -92,7 +92,7 @@ to meet your requirements</span> </h2>
                 </div>
                 <h3 className="text-lg ">{service.title}</h3>
               </div>
-              <p className="text-sm leading-relaxed">{service.description}</p>
+              <p className="text-sm leading-relaxed text-base-content/60">{service.description}</p>
               
             </motion.div>
             
