@@ -90,7 +90,7 @@ to meet your requirements</span> </h2>
                 <div className="p-2 border border-primary rounded-md">
                   {service.icon}
                 </div>
-                <h3 className="text-lg font-semibold">{service.title}</h3>
+                <h3 className="text-lg ">{service.title}</h3>
               </div>
               <p className="text-sm leading-relaxed">{service.description}</p>
               
