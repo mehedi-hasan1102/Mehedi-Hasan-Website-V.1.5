@@ -71,7 +71,7 @@ const BlogSection = () => {
               <p className="text-xs text-base-content/50 mb-1">
                 {blog.date} • {blog.readTime}
               </p>
-              <h3 className="text-lg font-semibold mb-2">{blog.title}</h3>
+              <h3 className="text-lg  mb-2">{blog.title}</h3>
               <p className="text-sm leading-relaxed text-base-content/70">
                 {blog.description}
               </p>
