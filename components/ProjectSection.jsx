@@ -390,7 +390,7 @@ const ProjectSection = () => {
                 </motion.div>
 
                 {/* Project Info */}
-                <h3 className="text-lg font-semibold text-primary mb-2">
+                <h3 className="text-lg font-semibold  mb-2">
                   {project.title}
                 </h3>
                 {/* <p className="text-sm text-base-content/80 mb-4">
