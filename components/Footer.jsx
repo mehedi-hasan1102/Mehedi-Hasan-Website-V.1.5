@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Twitter, Linkedin, Facebook } from "lucide-react";
+import { Github, Twitter, Linkedin, Facebook, Youtube } from "lucide-react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
@@ -55,8 +55,13 @@ const Footer = () => {
               },
               {
                 icon: Linkedin,
-                href: "https://www.linkedin.com/in/mehedi-hasan1102/",
+                href: "https://www.linkedin.com/in/mehedi-hasan1102",
                 label: "LinkedIn",
+              },
+              {
+                icon: Youtube,
+                href: "https://www.youtube.com/@MehediHasan11023",
+                label: "YouTube",
               },
             ].map((social, idx) => (
               <motion.a
