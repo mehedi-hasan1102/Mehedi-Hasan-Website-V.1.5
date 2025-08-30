@@ -4,13 +4,14 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Menu,
-  LucideFacebook,
+  Code,
   X,
   Linkedin,
   Github,
   Moon,
   Sun,
 } from "lucide-react";
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 
 
@@ -25,10 +26,12 @@ const navItems = [
 ];
 
 const socialLinks = [
-  { icon: LucideFacebook, url: "https://facebook.com/mehedi.hasan1102", label: "Facebook" },
+  
   { icon: Github, url: "https://github.com/mehedi-hasan1102", label: "GitHub" },
-  { icon: X, url: "https://x.com/mehedihasan1102", label: "Twitter/X" },
   { icon: Linkedin, url: "https://linkedin.com/in/mehedi-hasan1102", label: "LinkedIn" },
+  { icon: Code, url: "https://dev.to/mehedihasan1102", label: "Dev.to" },
+  { icon: X, url: "https://x.com/mehedihasan1102", label: "Twitter/X" },
+  
 ];
 
 const Navbar = () => {

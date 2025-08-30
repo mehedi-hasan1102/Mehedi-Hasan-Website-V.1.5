@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Twitter, Linkedin, Facebook, Youtube } from "lucide-react";
+import { Github, X, Linkedin, Facebook, Code, Youtube } from "lucide-react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
@@ -38,25 +38,32 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex gap-4 mt-2 text-base-content/80">
             {[
-              {
-                icon: Facebook,
-                href: "https://facebook.com/mehedi.hasan1102",
-                label: "Facebook",
-              },
+
               {
                 icon: Github,
                 href: "https://github.com/mehedi-hasan1102",
                 label: "GitHub",
-              },
-              {
-                icon: Twitter,
-                href: "https://x.com/mehedihasan1102",
-                label: "Twitter",
-              },
-              {
+              },{
                 icon: Linkedin,
                 href: "https://www.linkedin.com/in/mehedi-hasan1102",
                 label: "LinkedIn",
+              },
+               { icon: Code,
+                 url: "https://dev.to/mehedihasan1102", 
+                 label: "Dev.to",
+                 },
+
+              {
+                icon: X,
+                href: "https://x.com/mehedihasan1102",
+                label: "Twitter",
+              },
+              
+             
+              {
+                icon: Facebook,
+                href: "https://facebook.com/mehedi.hasan1102",
+                label: "Facebook",
               },
               {
                 icon: Youtube,
@@ -88,16 +95,16 @@ const Footer = () => {
           className="flex flex-wrap justify-center gap-4 text-xs tracking-wide text-base-content/70"
         >
           {[
-            
+
 
             { label: "About me", to: "#about" },
-  { label: "Resume", to: "#resume" },
-  { label: "Services", to: "#services" },
-  { label: "Portfolio", to: "#portfolio" },
- 
-  { label: "Blogs", to: "#blogs" },
-  { label: "Contact", to: "#contact" },
-          // eslint-disable-next-line no-unused-vars
+            { label: "Resume", to: "#resume" },
+            { label: "Services", to: "#services" },
+            { label: "Portfolio", to: "#portfolio" },
+
+            { label: "Blogs", to: "#blogs" },
+            { label: "Contact", to: "#contact" },
+            // eslint-disable-next-line no-unused-vars
           ].map((item, index) => (
             <motion.a
               key={item.label}
@@ -109,14 +116,14 @@ const Footer = () => {
             </motion.a>
           ))}
         </motion.div>
-<p className="text-center text-xs text-base-content/50 m-4">
+        <p className="text-center text-xs text-base-content/50 m-4">
           &copy; {new Date().getFullYear()} Mehedi Hasan. All rights reserved.
         </p>
-        
+
       </div>
       {/* Copyright */}
-        
-     
+
+
     </motion.footer>
   );
 };
