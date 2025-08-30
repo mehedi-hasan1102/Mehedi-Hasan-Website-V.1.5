@@ -31,8 +31,8 @@
   "description": "Learn how to write clear, professional Git commits that improve collaboration and code readability.",
   "fullContent": "Writing clear and professional Git commits is more than a habit—it’s a skill that makes collaboration smoother, code history readable, and debugging easier. Here’s a concise guide to crafting quality commits.\n\n🔹 Structure of a Good Commit\n\nA professional commit usually consists of:\n1) Type – what kind of change it is (feature, fix, docs, etc.)\n2) Short message – 50 characters max, written in imperative tone (e.g., “Add login validation”)\n3) Optional detailed description – wrap text at 72 characters for readability, explaining why the change was made\n\n🔹 Common Commit Types\n\nfeat: Adding a new feature\nfix: Bug fix\ndocs: Documentation-only changes\nstyle: Formatting, missing semicolons, whitespace\nrefactor: Code change that neither fixes a bug nor adds a feature\ntest: Adding or updating tests\nchore: Maintenance tasks (configs, dependencies)\n\n🔹 Good commits\n\nfeat: add user authentication\nfix: resolve crash on profile update\ndocs: update README with installation steps\nstyle: format code with Prettier\nrefactor: simplify dashboard component logic\ntest: add unit tests for login reducer\nchore: update project dependencies\n\n🔹 Pro Tips\n\n1) Always use imperative mood: e.g., Add feature instead of Added feature\n2) Keep your commits focused: one commit = one purpose\n3) Include context in the description when necessary",
   "link": "https://dev.to/mehedihasan1102/structure-of-a-good-git-commit-1c7m",
-  "category": "Web Development",
-  "tags": "github"
+  "category": "GitHub"
+  
 }
 
 ]
