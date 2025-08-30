@@ -48,10 +48,12 @@ const Footer = () => {
                 href: "https://www.linkedin.com/in/mehedi-hasan1102",
                 label: "LinkedIn",
               },
-               { icon: Code,
-                 url: "https://dev.to/mehedihasan1102", 
-                 label: "Dev.to",
-                 },
+               
+                 {
+                icon: Code,
+                href: "https://dev.to/mehedihasan1102",
+                label: "Dev.to",
+              },
 
               {
                 icon: X,
