@@ -16,9 +16,9 @@ import {
   SiTypescript,
   SiNextdotjs,
 } from "react-icons/si";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import { BorderBeam } from "@stianlarsen/border-beam";
-
+import { Typewriter } from "react-simple-typewriter";
 
 const techIcons = [
   { icon: SiReact, label: "React", color: "#61DAFB" },
@@ -123,24 +123,22 @@ const HeroSection = () => {
           {/* Typewriter intro */}
           <motion.span className="mt-4 text-xs sm:text-sm text-base-content/60 font-mono flex flex-wrap items-center gap-x-2 gap-y-1 break-words">
             <span className="text-secondary">&lt;span&gt;</span>
-            <span>Hey, I'm</span>
-            <span className="text-primary">
+            
+            <span className="text-base-content ">
               <Typewriter
-                options={{
-                  strings: ["Mehedi Hasan"],
-                  autoStart: true,
-                  loop: true,
-                  delay: 100,
-                  deleteSpeed: 50,
-                  pauseFor: 2000,
-                }}
-              />
+        words={["Hey, I'm Mehedi Hasan"]}
+        loop={1}            
+        cursor
+        // cursorStyle="_"
+        typeSpeed={100}     
+        deleteSpeed={0}     
+      />
             </span>
             <span className="text-secondary">&lt;/span&gt;</span>
           </motion.span>
 
           {/* Headline */}
-          <motion.h1
+          {/* <motion.h1
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
@@ -151,7 +149,21 @@ const HeroSection = () => {
               {`{Full Stack}`}
             </span>{" "}
             Web Developer
-          </motion.h1>
+          </motion.h1> */}
+          <motion.h1
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.3 }}
+  className="text-3xl sm:text-4xl md:text-5xl leading-tight mt-4 break-words"
+>
+  Junior{" "}
+  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+    {`{Full Stack}`}
+  </span>{" "}
+  Web Developer
+  <span className="animate-blink">_</span> {/* blinking cursor */}
+</motion.h1>
+
 
           {/* Description */}
           <motion.p
